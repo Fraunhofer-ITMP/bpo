@@ -1,0 +1,19 @@
+cff-version: 0.0.1
+message: If you use this ontology, please cite it using these metadata.
+title: BPO - the Bioassay Protocol Ontology
+abstract: To enhance the reproducibility and usability of bioassays in antimicrobial resistance (AMR) associated antibacterial drug discovery and development, there is an increasing need for standardisation of bio-assay metadata into machine-readable formats. Such a standardisation process requires mapping bioassay data to standard ontologies or dictionaries. Overall, the standardisation can be performed at the study result output level and at the protocol level. At the result output level, general ontologies such as the BioAssay Ontology (BAO) already exist, but antibacterial drug discovery and AMR-specific ontologies that can aid in the standardisation process at the protocol level are missing. Hence, we propose a new application-specific ontology that will enable researchers to convert unstructured bioassay protocol data into structured machine-readable formats thereby promoting their overall reusability.
+authors:
+  - family-names: Gadiya
+    given-names: Yojana
+    orcid: "https://orcid.org/0000-0002-7683-0452"
+  - family-names: Arrazuria
+    given-names: Rakel
+    orcid: "https://orcid.org/0000-0002-0757-3915"
+  - family-names: Hansen
+    given-names: Jon Ulf
+    orcid: "https://orcid.org/0000-0002-6410-5755"
+  - name: "Bioassay Protocol Ontology"
+version: 0.0.1
+date-released: "2022-06-20"
+license: Creative Commons CC-BY 4.0
+repository-code: "https://github.com/Fraunhofer-ITMP/bpo"
