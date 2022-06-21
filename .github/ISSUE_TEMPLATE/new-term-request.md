@@ -23,7 +23,7 @@ the definition should be understandable even for non-specialists. Include a PubM
 
 ## Suggested parent term
 
-Please look in the hierarchy in a browser such as [OLS](http://www.ebi.ac.uk/ols/ontologies/hancestro)
+Please look in the hierarchy in a browser such as [OLS](http://www.ebi.ac.uk/ols/ontologies/)
 
 ## Attribution
 
