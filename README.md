@@ -30,7 +30,7 @@ The ontology is available in [Ontology Web Language (OWL)](https://www.w3.org/TR
 
 The **current version of the ontology is 0.0.1** and can be found [here](bpo.owl). 
 
-BPO has 189 classes and 2,207 axioms.
+BPO has officially 189 classes, only 13 are minted in the BPO namespace and probably solely because the terms requests have not been handled in a timeline compatible with your needs.
 
 ## Ontology Overview
 
