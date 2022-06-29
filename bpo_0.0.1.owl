@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://github.com/Fraunhofer-ITMP/bpo/"
-     xml:base="https://github.com/Fraunhofer-ITMP/bpo/"
+<rdf:RDF xmlns="https://github.com/Fraunhofer-ITMP/bpo.owl#"
+     xml:base="https://github.com/Fraunhofer-ITMP/bpo.owl"
+     xmlns:efo="http://www.ebi.ac.uk/efo/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -8,9 +9,22 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:purl="http://purl.obolibrary.org/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:ncbitaxon="http://purl.obolibrary.org/obo/ncbitaxon#">
-    <owl:Ontology rdf:about="https://github.com/Fraunhofer-ITMP/bpo/"/>
+    <owl:Ontology rdf:about="https://github.com/Fraunhofer-ITMP/bpo.owl">
+        <owl:versionIRI rdf:resource="https://github.com/Fraunhofer-ITMP/bpo-0.0.1.owl"/>
+        <protege:defaultLanguage>en</protege:defaultLanguage>
+        <terms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An_ontology_for_bioassay_protocols</terms:description>
+        <terms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The NCIt OBO Edition project aims to increase integration of the NCIt with OBO Library ontologies. NCIt is a reference terminology that includes broad coverage of the cancer domain, including cancer related diseases, findings and abnormalities.</terms:description>
+        <terms:isVersionOf rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"/>
+        <terms:license rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://creativecommons.org/licenses/by/4.0/</terms:license>
+        <terms:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bioassay_Protocol_Ontology</terms:title>
+        <terms:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI Thesaurus OBO Edition</terms:title>
+        <rdfs:comment>NCI Thesaurus, a controlled vocabulary in support of NCI administrative and scientific activities. Produced by the Enterprise Vocabulary System (EVS), a project by the NCI Center for Biomedical Informatics and Information Technology. National Cancer Institute, National Institutes of Health, Bethesda, MD 20892, U.S.A.</rdfs:comment>
+        <owl:versionInfo>22.03d</owl:versionInfo>
+    </owl:Ontology>
     
 
 
@@ -80,6 +94,7 @@
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112">
         <obo:IAO_0000111 xml:lang="en">example</obo:IAO_0000111>
+        <obo:IAO_0000111 xml:lang="en">example of usage</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">A phrase describing how a class name should be used. May also include other kinds of examples that facilitate immediate understanding of a class semantics, such as widely known prototypical subclasses or instances of the class. Although essential for high level terms, examples for low level terms (e.g., Affymetrix HU133 array) are not</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">A phrase describing how a term should be used and/or a citation to a work which uses it. May also include other kinds of examples that facilitate immediate understanding, such as widely know prototypes or instances of a class, or cases where a relation is said to hold.</obo:IAO_0000115>
@@ -136,12 +151,32 @@ We don&apos;t have definitions of &apos;meaning&apos; or &apos;expression&apos; 
 Personally, I am more comfortable weakening definition to documentation, with instructions as to what is desirable. 
 
 We also have the outstanding issue of how to aim different definitions to different audiences. A clinical audience reading chebi wants a different sort of definition documentation/definition from a chemistry trained audience, and similarly there is a need for a definition that is adequate for an ontologist to work with.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">2012-04-05: 
+Barry Smith
+
+The official OBI definition, explaining the meaning of a class or property: &apos;Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions&apos;  is terrible.
+
+Can you fix to something like:
+
+A statement of necessary and sufficient conditions explaining the meaning of an expression referring to a class or property.
+
+Alan Ruttenberg
+
+Your proposed definition is a reasonable candidate, except that it is very common that necessary and sufficient conditions are not given. Mostly they are necessary, occasionally they are necessary and sufficient or just sufficient. Often they use terms that are not themselves defined and so they effectively can&apos;t be evaluated by those criteria. 
+
+On the specifics of the proposed definition:
+
+We don&apos;t have definitions of &apos;meaning&apos; or &apos;expression&apos; or &apos;property&apos;. For &apos;reference&apos; in the intended sense I think we use the term &apos;denotation&apos;. For &apos;expression&apos;, I think we you mean symbol, or identifier. For &apos;meaning&apos; it differs for class and property. For class we want documentation that let&apos;s the intended reader determine whether an entity is instance of the class, or not. For property we want documentation that let&apos;s the intended reader determine, given a pair of potential relata, whether the assertion that the relation holds is true. The &apos;intended reader&apos; part suggests that we also specify who, we expect, would be able to understand the definition, and also generalizes over human and computer reader to include textual and logical definition. 
+
+Personally, I am more comfortable weakening definition to documentation, with instructions as to what is desirable. 
+
+We also have the outstanding issue of how to aim different definitions to different audiences. A clinical audience reading chebi wants a different sort of definition documentation/definition from a chemistry trained audience, and similarly there is a need for a definition that is adequate for an ontologist to work with.  </obo:IAO_0000116>
         <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
         <oboInOwl:hasExactSynonym>DEFINITION</oboInOwl:hasExactSynonym>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
-        <rdfs:label xml:lang="en">definition</rdfs:label>
         <rdfs:label>definition</rdfs:label>
+        <rdfs:label xml:lang="en">definition</rdfs:label>
         <rdfs:label>textual definition</rdfs:label>
     </owl:AnnotationProperty>
     <owl:Axiom>
@@ -168,6 +203,7 @@ We also have the outstanding issue of how to aim different definitions to differ
         <obo:IAO_0000115 xml:lang="en">An administrative note intended for its editor. It may not be included in the publication version of the ontology, so it should contain nothing necessary for end users to understand the ontology.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obfoundry.org/obo/obi&gt;</obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obofoundry.org/obo/obi&gt;</obo:IAO_0000119>
         <obo:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IAO:0000116</obo:hasDbXref>
         <obo:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uberon</obo:hasOBONamespace>
         <obo:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">editor_note</obo:id>
@@ -206,13 +242,29 @@ We also have the outstanding issue of how to aim different definitions to differ
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118">
+        <obo:IAO_0000111 xml:lang="en">alternative term</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115 xml:lang="en">An alternative name for a class or property which means the same thing as the preferred name (semantically equivalent)</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:label xml:lang="en">alternative term</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119">
         <obo:IAO_0000111 xml:lang="en">definition source</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">Formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">Discussion on obo-discuss mailing-list, see http://bit.ly/hgm99w</obo:IAO_0000119>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Discussion on obo-discuss mailing-list, see http://bit.ly/hgm99w</obo:IAO_0000119>
         <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
@@ -237,6 +289,21 @@ We also have the outstanding issue of how to aim different definitions to differ
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
         <rdfs:label xml:lang="en">curator note</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">curator notes</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000412 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
+        <obo:IAO_0000111 xml:lang="en">imported from</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115 xml:lang="en">For external terms/classes, the ontology from which the term was imported</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:label xml:lang="en">imported from</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -406,6 +473,12 @@ We also have the outstanding issue of how to aim different definitions to differ
     
 
 
+    <!-- http://purl.obolibrary.org/obo/RO_0000087 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000087"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/hasDbXref -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/hasDbXref"/>
@@ -439,6 +512,24 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- http://purl.obolibrary.org/obo/ncbitaxon#has_rank -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/ncbitaxon#has_rank"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_URI -->
+
+    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/EFO_URI"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/organizational_class -->
+
+    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/organizational_class"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/source_definition -->
+
+    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/source_definition"/>
     
 
 
@@ -587,6 +678,7 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- http://purl.obolibrary.org/obo/BFO_0000001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000001">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <obo:BFO_0000179>entity</obo:BFO_0000179>
         <obo:BFO_0000180>Entity</obo:BFO_0000180>
         <obo:IAO_0000112 xml:lang="en">Julius Caesar</obo:IAO_0000112>
@@ -700,6 +792,7 @@ We also have the outstanding issue of how to aim different definitions to differ
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <obo:BFO_0000179>occurrent</obo:BFO_0000179>
         <obo:BFO_0000180>Occurrent</obo:BFO_0000180>
+        <obo:IAO_0000115 xml:lang="en">An entity that has temporal parts and that happens, unfolds or develops through time.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: every occurrent that is not a temporal or spatiotemporal region is s-dependent on some independent continuant that is not a spatial region</obo:IAO_0000116>
         <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: s-dependence obtains between every process and its participants in the sense that, as a matter of necessity, this process could not have existed unless these or those participants existed also. A process may have a succession of participants at different phases of its unfolding. Thus there may be different players on the field at different times during the course of a football game; but the process which is the entire game s-depends_on all of these players nonetheless. Some temporal parts of this process will s-depend_on on only some of the players.</obo:IAO_0000116>
         <obo:IAO_0000116 xml:lang="en">Occurrent doesn&apos;t have a closure axiom because the subclasses don&apos;t necessarily exhaust all possibilites. An example would be the sum of a process and the process boundary of another process.</obo:IAO_0000116>
@@ -826,6 +919,7 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- http://purl.obolibrary.org/obo/BFO_0000011 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000011">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
         <obo:BFO_0000179>st-region</obo:BFO_0000179>
         <obo:BFO_0000180>SpatiotemporalRegion</obo:BFO_0000180>
         <obo:IAO_0000112 xml:lang="en">the spatiotemporal region occupied by a human life</obo:IAO_0000112>
@@ -838,10 +932,15 @@ We also have the outstanding issue of how to aim different definitions to differ
         <obo:IAO_0000601 xml:lang="en">Every spatiotemporal region occupies_spatiotemporal_region itself.</obo:IAO_0000601>
         <obo:IAO_0000601 xml:lang="en">Every spatiotemporal region s is such that s occupies_spatiotemporal_region s. (axiom label in BFO2 Reference: [107-002])</obo:IAO_0000601>
         <obo:IAO_0000602>(forall (r) (if (SpatioTemporalRegion r) (occupiesSpatioTemporalRegion r r))) // axiom label in BFO2 CLIF: [107-002]</obo:IAO_0000602>
+        <obo:IAO_0000602>(forall (r) (if (SpatioTemporalRegion r) (occupiesSpatioTemporalRegion r r))) // axiom label in BFO2 CLIF: [107-002] </obo:IAO_0000602>
         <obo:IAO_0000602>(forall (x t) (if (SpatioTemporalRegion x) (exists (y) (and (SpatialRegion y) (spatiallyProjectsOntoAt x y t))))) // axiom label in BFO2 CLIF: [099-001]</obo:IAO_0000602>
+        <obo:IAO_0000602>(forall (x t) (if (SpatioTemporalRegion x) (exists (y) (and (SpatialRegion y) (spatiallyProjectsOntoAt x y t))))) // axiom label in BFO2 CLIF: [099-001] </obo:IAO_0000602>
         <obo:IAO_0000602>(forall (x y) (if (and (SpatioTemporalRegion x) (occurrentPartOf y x)) (SpatioTemporalRegion y))) // axiom label in BFO2 CLIF: [096-001]</obo:IAO_0000602>
+        <obo:IAO_0000602>(forall (x y) (if (and (SpatioTemporalRegion x) (occurrentPartOf y x)) (SpatioTemporalRegion y))) // axiom label in BFO2 CLIF: [096-001] </obo:IAO_0000602>
         <obo:IAO_0000602>(forall (x) (if (SpatioTemporalRegion x) (Occurrent x))) // axiom label in BFO2 CLIF: [095-001]</obo:IAO_0000602>
+        <obo:IAO_0000602>(forall (x) (if (SpatioTemporalRegion x) (Occurrent x))) // axiom label in BFO2 CLIF: [095-001] </obo:IAO_0000602>
         <obo:IAO_0000602>(forall (x) (if (SpatioTemporalRegion x) (exists (y) (and (TemporalRegion y) (temporallyProjectsOnto x y))))) // axiom label in BFO2 CLIF: [098-001]</obo:IAO_0000602>
+        <obo:IAO_0000602>(forall (x) (if (SpatioTemporalRegion x) (exists (y) (and (TemporalRegion y) (temporallyProjectsOnto x y))))) // axiom label in BFO2 CLIF: [098-001] </obo:IAO_0000602>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
         <rdfs:label xml:lang="en">spatiotemporal region</rdfs:label>
     </owl:Class>
@@ -884,7 +983,19 @@ We also have the outstanding issue of how to aim different definitions to differ
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000011"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
+        <owl:annotatedTarget>(forall (r) (if (SpatioTemporalRegion r) (occupiesSpatioTemporalRegion r r))) // axiom label in BFO2 CLIF: [107-002] </owl:annotatedTarget>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/107-002"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000011"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
         <owl:annotatedTarget>(forall (x t) (if (SpatioTemporalRegion x) (exists (y) (and (SpatialRegion y) (spatiallyProjectsOntoAt x y t))))) // axiom label in BFO2 CLIF: [099-001]</owl:annotatedTarget>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/099-001"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000011"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
+        <owl:annotatedTarget>(forall (x t) (if (SpatioTemporalRegion x) (exists (y) (and (SpatialRegion y) (spatiallyProjectsOntoAt x y t))))) // axiom label in BFO2 CLIF: [099-001] </owl:annotatedTarget>
         <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/099-001"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -896,13 +1007,31 @@ We also have the outstanding issue of how to aim different definitions to differ
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000011"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
+        <owl:annotatedTarget>(forall (x y) (if (and (SpatioTemporalRegion x) (occurrentPartOf y x)) (SpatioTemporalRegion y))) // axiom label in BFO2 CLIF: [096-001] </owl:annotatedTarget>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/096-001"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000011"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
         <owl:annotatedTarget>(forall (x) (if (SpatioTemporalRegion x) (Occurrent x))) // axiom label in BFO2 CLIF: [095-001]</owl:annotatedTarget>
         <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/095-001"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000011"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
+        <owl:annotatedTarget>(forall (x) (if (SpatioTemporalRegion x) (Occurrent x))) // axiom label in BFO2 CLIF: [095-001] </owl:annotatedTarget>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/095-001"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000011"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
         <owl:annotatedTarget>(forall (x) (if (SpatioTemporalRegion x) (exists (y) (and (TemporalRegion y) (temporallyProjectsOnto x y))))) // axiom label in BFO2 CLIF: [098-001]</owl:annotatedTarget>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/098-001"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000011"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
+        <owl:annotatedTarget>(forall (x) (if (SpatioTemporalRegion x) (exists (y) (and (TemporalRegion y) (temporallyProjectsOnto x y))))) // axiom label in BFO2 CLIF: [098-001] </owl:annotatedTarget>
         <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/098-001"/>
     </owl:Axiom>
     
@@ -921,12 +1050,12 @@ We also have the outstanding issue of how to aim different definitions to differ
         <obo:IAO_0000112 xml:lang="en">the flight of a bird</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">the life of an organism</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">your process of aging.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">An occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">p is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: The realm of occurrents is less pervasively marked by the presence of natural units than is the case in the realm of independent continuants. Thus there is here no counterpart of ‘object’. In BFO 1.0 ‘process’ served as such a counterpart. In BFO 2.0 ‘process’ is, rather, the occurrent counterpart of ‘material entity’. Those natural – as contrasted with engineered, which here means: deliberately executed – units which do exist in the realm of occurrents are typically either parasitic on the existence of natural units on the continuant side, or they are fiat in nature. Thus we can count lives; we can count football games; we can count chemical reactions performed in experiments or in chemical manufacturing. We cannot count the processes taking place, for instance, in an episode of insect mating behavior.Even where natural units are identifiable, for example cycles in a cyclical process such as the beating of a heart or an organism’s sleep/wake cycle, the processes in question form a sequence with no discontinuities (temporal gaps) of the sort that we find for instance where billiard balls or zebrafish or planets are separated by clear spatial gaps. Lives of organisms are process units, but they too unfold in a continuous series from other, prior processes such as fertilization, and they unfold in turn in continuous series of post-life processes such as post-mortem decay. Clear examples of boundaries of processes are almost always of the fiat sort (midnight, a time of death as declared in an operating theater or on a death certificate, the initiation of a state of war)</obo:IAO_0000116>
         <obo:IAO_0000602>(iff (Process a) (and (Occurrent a) (exists (b) (properTemporalPartOf b a)) (exists (c t) (and (MaterialEntity c) (specificallyDependsOnAt a c t))))) // axiom label in BFO2 CLIF: [083-003] </obo:IAO_0000602>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
         <rdfs:label xml:lang="en">process</rdfs:label>
-        <rdfs:label>process</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
@@ -939,6 +1068,61 @@ We also have the outstanding issue of how to aim different definitions to differ
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
         <owl:annotatedTarget>(iff (Process a) (and (Occurrent a) (exists (b) (properTemporalPartOf b a)) (exists (c t) (and (MaterialEntity c) (specificallyDependsOnAt a c t))))) // axiom label in BFO2 CLIF: [083-003] </owl:annotatedTarget>
         <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/083-003"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000019 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+        <obo:BFO_0000179>quality</obo:BFO_0000179>
+        <obo:BFO_0000180>Quality</obo:BFO_0000180>
+        <obo:IAO_0000112 xml:lang="en">the ambient temperature of this portion of air</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the color of a tomato</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the length of the circumference of your waist</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the mass of this piece of gold.</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the shape of your nose</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the shape of your nostril</obo:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A quality is an entity that describes some aspect which is intrinsic to that particular object and is dependent on or more material entities in which it inheres in or is borne by. Example the color of a tomato, the ambient temperature of air, the circumference of a waist, the shape of a nose, the mass of a piece of gold, the weight of a chimpanzee</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">James Malone</obo:IAO_0000117>
+        <obo:IAO_0000600 xml:lang="en">a quality is a specifically dependent continuant that, in contrast to roles and dispositions, does not require any further process in order to be realized. (axiom label in BFO2 Reference: [055-001])</obo:IAO_0000600>
+        <obo:IAO_0000601 xml:lang="en">If an entity is a quality at any time that it exists, then it is a quality at every time that it exists. (axiom label in BFO2 Reference: [105-001])</obo:IAO_0000601>
+        <obo:IAO_0000602>(forall (x) (if (Quality x) (SpecificallyDependentContinuant x))) // axiom label in BFO2 CLIF: [055-001] </obo:IAO_0000602>
+        <obo:IAO_0000602>(forall (x) (if (exists (t) (and (existsAt x t) (Quality x))) (forall (t_1) (if (existsAt x t_1) (Quality x))))) // axiom label in BFO2 CLIF: [105-001] </obo:IAO_0000602>
+        <efo:EFO_URI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/EFO_0001436</efo:EFO_URI>
+        <efo:organizational_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</efo:organizational_class>
+        <efo:source_definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A specifically dependent continuant [snap:SpecificallyDependentContinuant] that is exhibited if it inheres in an entity or entities at all (a categorical property).</efo:source_definition>
+        <oboInOwl:hasAlternativeId>http://www.ifomis.org/bfo/1.1/snap#Quality</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIt:C25283</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SNOMEDCT:263496004</oboInOwl:hasDbXref>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:label>quality</rdfs:label>
+        <rdfs:label xml:lang="en">quality</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000600"/>
+        <owl:annotatedTarget xml:lang="en">a quality is a specifically dependent continuant that, in contrast to roles and dispositions, does not require any further process in order to be realized. (axiom label in BFO2 Reference: [055-001])</owl:annotatedTarget>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/055-001"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000601"/>
+        <owl:annotatedTarget xml:lang="en">If an entity is a quality at any time that it exists, then it is a quality at every time that it exists. (axiom label in BFO2 Reference: [105-001])</owl:annotatedTarget>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/105-001"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
+        <owl:annotatedTarget>(forall (x) (if (Quality x) (SpecificallyDependentContinuant x))) // axiom label in BFO2 CLIF: [055-001] </owl:annotatedTarget>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/055-001"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
+        <owl:annotatedTarget>(forall (x) (if (exists (t) (and (existsAt x t) (Quality x))) (forall (t_1) (if (existsAt x t_1) (Quality x))))) // axiom label in BFO2 CLIF: [105-001] </owl:annotatedTarget>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/105-001"/>
     </owl:Axiom>
     
 
@@ -966,7 +1150,6 @@ We also have the outstanding issue of how to aim different definitions to differ
         <obo:IAO_0000602>(iff (SpecificallyDependentContinuant a) (and (Continuant a) (forall (t) (if (existsAt a t) (exists (b) (and (IndependentContinuant b) (not (SpatialRegion b)) (specificallyDependsOnAt a b t))))))) // axiom label in BFO2 CLIF: [050-003] </obo:IAO_0000602>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
         <rdfs:label xml:lang="en">specifically dependent continuant</rdfs:label>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">specifically dependent continuant</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
@@ -993,7 +1176,7 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- http://purl.obolibrary.org/obo/BFO_0000029 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000029">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000141"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
         <obo:BFO_0000179>site</obo:BFO_0000179>
         <obo:BFO_0000180>Site</obo:BFO_0000180>
         <obo:IAO_0000112 xml:lang="en">Manhattan Canyon)</obo:IAO_0000112>
@@ -1014,8 +1197,8 @@ We also have the outstanding issue of how to aim different definitions to differ
         <obo:IAO_0000600 xml:lang="en">b is a site means: b is a three-dimensional immaterial entity that is (partially or wholly) bounded by a material entity or it is a three-dimensional immaterial part thereof. (axiom label in BFO2 Reference: [034-002])</obo:IAO_0000600>
         <obo:IAO_0000602>(forall (x) (if (Site x) (ImmaterialEntity x))) // axiom label in BFO2 CLIF: [034-002] </obo:IAO_0000602>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
-        <rdfs:label xml:lang="en">site</rdfs:label>
         <rdfs:label>site</rdfs:label>
+        <rdfs:label xml:lang="en">site</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000029"/>
@@ -1036,7 +1219,6 @@ We also have the outstanding issue of how to aim different definitions to differ
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000040">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
-        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/BFO_0000141"/>
         <obo:BFO_0000179>material</obo:BFO_0000179>
         <obo:BFO_0000180>MaterialEntity</obo:BFO_0000180>
         <obo:IAO_0000112 xml:lang="en">a flame</obo:IAO_0000112>
@@ -1103,72 +1285,16 @@ We also have the outstanding issue of how to aim different definitions to differ
     
 
 
-    <!-- http://purl.obolibrary.org/obo/BFO_0000141 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000141">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
-        <obo:BFO_0000179>immaterial</obo:BFO_0000179>
-        <obo:BFO_0000180>ImmaterialEntity</obo:BFO_0000180>
-        <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: Immaterial entities are divided into two subgroups:boundaries and sites, which bound, or are demarcated in relation, to material entities, and which can thus change location, shape and size and as their material hosts move or change shape or size (for example: your nasal passage; the hold of a ship; the boundary of Wales (which moves with the rotation of the Earth) [38, 7, 10</obo:IAO_0000116>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
-        <rdfs:label xml:lang="en">immaterial entity</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CHEBI_27375 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_27375">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0001009"/>
-        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vinblastine</obo:IAO_0000111>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vinblastine</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CHEBI_4027 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_4027">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0001009"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cyclophosphamide</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IDO_0000456 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000456">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
-        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Immunosuppressed organism</obo:IAO_0000111>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">immunosuppressed organism</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IDO_0000457 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000457">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
-        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Immunocompetent organism</obo:IAO_0000111>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">immunocompetent organism</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/IDO_0000610 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000610">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000115 xml:lang="en">A process that attenuates an immune response.</obo:IAO_0000115>
+        <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
+        <obo:IAO_0000117>Alexander Diehl</obo:IAO_0000117>
+        <obo:IAO_0000117>Lindsay Cowell</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">immunosuppression</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">immunosuppression</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IDO_0000611 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000611">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000610"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">physiologic immunosuppression</rdfs:label>
     </owl:Class>
     
 
@@ -1177,6 +1303,12 @@ We also have the outstanding issue of how to aim different definitions to differ
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000612">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000610"/>
+        <obo:IAO_0000115 xml:lang="en">An immunosuppression process which arises as the result of a disorder.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">Disorders that result in immunosuppression include those that result from infection, stress, malnutrition, and treatments such as chemotherapy or calcineurin inhibition.</obo:IAO_0000116>
+        <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
+        <obo:IAO_0000117>Alexander Diehl</obo:IAO_0000117>
+        <obo:IAO_0000117>Lindsay Cowell</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">pathologic immunosuppression</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pathologic immunosuppression</rdfs:label>
     </owl:Class>
     
@@ -1186,6 +1318,10 @@ We also have the outstanding issue of how to aim different definitions to differ
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0001009">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000612"/>
+        <obo:IAO_0000115>A pathologic immunosuppression process which arises as the result of treatment with a drug that attenuates immune responses.</obo:IAO_0000115>
+        <obo:IAO_0000117>Alex Diehl</obo:IAO_0000117>
+        <obo:IAO_0000117>Lindsay Cowell</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">drug-based immunosuppression</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">drug-based immunosuppression</rdfs:label>
     </owl:Class>
     
@@ -1281,7 +1417,9 @@ We also have the outstanding issue of how to aim different definitions to differ
         <ncbitaxon:has_rank rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_species"/>
         <oboInOwl:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCBITaxon:85055</oboInOwl:hasAlternativeId>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> mouse</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">house mouse</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mice</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mouse</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mus musculus</rdfs:label>
@@ -1396,8 +1534,8 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_1224 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_1224">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C173514"/>
-        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Added to class as leaf nodes are Gram negative</obo:IAO_0000116>
         <ncbitaxon:has_rank rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_phylum"/>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GC_ID:11</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:11321122</oboInOwl:hasDbXref>
@@ -1415,7 +1553,6 @@ We also have the outstanding issue of how to aim different definitions to differ
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alphaproteobacteriota</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">proteobacteria</oboInOwl:hasRelatedSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Proteobacteria</rdfs:label>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Proteobacteria </rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_1224"/>
@@ -2090,8 +2227,8 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_1783257 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_1783257">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C173514"/>
-        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Added to class as leaf nodes are Gram negative</obo:IAO_0000116>
         <ncbitaxon:has_rank rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_clade"/>
         <oboInOwl:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCBITaxon:51290</oboInOwl:hasAlternativeId>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GC_ID:11</oboInOwl:hasDbXref>
@@ -2107,8 +2244,8 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_1783272 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_1783272">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C173515"/>
-        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Added to class as leaf nodes are Gram positive</obo:IAO_0000116>
         <ncbitaxon:has_rank rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_clade"/>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GC_ID:11</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:18988685</oboInOwl:hasDbXref>
@@ -3574,7 +3711,6 @@ We also have the outstanding issue of how to aim different definitions to differ
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bacterium coli commune</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Enterococcus coli</oboInOwl:hasRelatedSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Escherichia coli</rdfs:label>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Escherichia coli </rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_562"/>
@@ -4447,29 +4583,11 @@ We also have the outstanding issue of how to aim different definitions to differ
     
 
 
-    <!-- http://purl.obolibrary.org/obo/NCIT_C14240 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C14240">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_1000048"/>
-        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">transgenic mouse</obo:IAO_0000111>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transgenic Mouse</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCIT_C14424 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C14424">
-        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0004429"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C57BL/6 Mouse</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/NCIT_C173514 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C173514">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/Fraunhofer-ITMP/BPO_00002"/>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">G -ve</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gram Negative Bacteria</rdfs:label>
     </owl:Class>
     
@@ -4478,7 +4596,8 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- http://purl.obolibrary.org/obo/NCIT_C173515 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C173515">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/Fraunhofer-ITMP/BPO_00002"/>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">G +ve</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gram Positive Bacteria</rdfs:label>
     </owl:Class>
     
@@ -4487,7 +4606,10 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- http://purl.obolibrary.org/obo/NCIT_C17375 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C17375">
-        <rdfs:subClassOf rdf:resource="https://github.com/Fraunhofer-ITMP/BPO_00007"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/Fraunhofer-ITMP/BPO_00028"/>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AIDS mouse</obo:IAO_0000119>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> M-AIDS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Murine AIDS</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Murine AIDS</rdfs:label>
     </owl:Class>
     
@@ -4510,6 +4632,7 @@ We also have the outstanding issue of how to aim different definitions to differ
         <obo:NCIT_P325>Administration within a muscle. (FDA)</obo:NCIT_P325>
         <obo:NCIT_P325>Injection of a medicinal product into muscular tissue.</obo:NCIT_P325>
         <obo:NCIT_P366>Intramuscular_Injection</obo:NCIT_P366>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VO:0000340</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>IM</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>INTRAMUSCULAR</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Intramuscular</oboInOwl:hasExactSynonym>
@@ -4649,15 +4772,6 @@ We also have the outstanding issue of how to aim different definitions to differ
         <obo:NCIT_P384>NCI-GLOSS</obo:NCIT_P384>
         <obo:NCIT_P385>CDR0000044049</obo:NCIT_P385>
     </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCIT_C37370 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C37370">
-        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0004429"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C3H/HeN Mouse</rdfs:label>
-    </owl:Class>
     
 
 
@@ -4912,6 +5026,7 @@ We also have the outstanding issue of how to aim different definitions to differ
         <obo:NCIT_P325>Administration within the dermis. (FDA)</obo:NCIT_P325>
         <obo:NCIT_P325>Injection of a medicinal product into the dermis.</obo:NCIT_P325>
         <obo:NCIT_P366>Intradermal_Route_of_Drug_Administration</obo:NCIT_P366>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VO:0000887</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>DL</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>I-DERMAL</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>I-dermal</oboInOwl:hasExactSynonym>
@@ -5079,6 +5194,7 @@ We also have the outstanding issue of how to aim different definitions to differ
         <obo:NCIT_P325>Administration within the peritoneal cavity. (FDA)</obo:NCIT_P325>
         <obo:NCIT_P325>Injection of a medicinal product into the peritoneal cavity.</obo:NCIT_P325>
         <obo:NCIT_P366>Intraperitoneal_Route_of_Drug_Administration</obo:NCIT_P366>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VO:0000344</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>I-PERITON</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>INTRAPERITONEAL</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>IP</oboInOwl:hasExactSynonym>
@@ -5258,6 +5374,7 @@ We also have the outstanding issue of how to aim different definitions to differ
         <obo:NCIT_P325>Injection of a medicinal product into a vein.</obo:NCIT_P325>
         <obo:NCIT_P366>Intravenous_Route_of_Drug_Administration</obo:NCIT_P366>
         <obo:NCIT_P375>Intravenous Route of Administration</obo:NCIT_P375>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VO:0000416</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>INTRAVENOUS</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>IV</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Intravenous</oboInOwl:hasExactSynonym>
@@ -5415,6 +5532,7 @@ We also have the outstanding issue of how to aim different definitions to differ
         <obo:NCIT_P325>Administration of a medicinal product to the nose to obtain a systemic or local effect. Inhalation therapy intended for the lower respiratory tract is excluded; see inhalation use.</obo:NCIT_P325>
         <obo:NCIT_P325>Administration to the nose; administered by way of the nose. (FDA)</obo:NCIT_P325>
         <obo:NCIT_P366>Nasal_Route_of_Drug_Administration</obo:NCIT_P366>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VO:0000341</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>Intranasal Route of Administration</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>NASAL</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Nasal</oboInOwl:hasExactSynonym>
@@ -5554,6 +5672,7 @@ We also have the outstanding issue of how to aim different definitions to differ
         <obo:NCIT_P325>Taking a medicinal product by means of swallowing.</obo:NCIT_P325>
         <obo:NCIT_P366>Oral_Route_of_Drug_administration</obo:NCIT_P366>
         <obo:NCIT_P375>Oral</obo:NCIT_P375>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VO:0000886</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>Intraoral Route of Administration</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>ORAL</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Oral</oboInOwl:hasExactSynonym>
@@ -5878,6 +5997,7 @@ We also have the outstanding issue of how to aim different definitions to differ
         <obo:NCIT_P325>Administration beneath the skin; hypodermic. Synonymous with the term SUBDERMAL. (FDA)</obo:NCIT_P325>
         <obo:NCIT_P325>Injection of a medicinal product directly underneath the skin, i.e. subdermally</obo:NCIT_P325>
         <obo:NCIT_P366>Subcutaneous_Route_of_Drug_Administration</obo:NCIT_P366>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VO:0000532</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>SC</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>SUBCUTANEOUS</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Subcutaneous</oboInOwl:hasExactSynonym>
@@ -6018,6 +6138,48 @@ We also have the outstanding issue of how to aim different definitions to differ
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0000011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000111>planned process</obo:IAO_0000111>
+        <obo:IAO_0000111 xml:lang="en">planned process</obo:IAO_0000111>
+        <obo:IAO_0000112>Injecting mice with a vaccine in order to test its efficacy</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A process that realizes a plan which is the concretization of a plan specification.</obo:IAO_0000115>
+        <obo:IAO_0000116>&apos;Plan&apos; includes a future direction sense. That can be problematic if plans are changed during their execution. There are however implicit contingencies for protocols that an agent has in his mind that can be considered part of the plan, even if the agent didn&apos;t have them in mind before. Therefore, a planned process can diverge from what the agent would have said the plan was before executing it, by adjusting to problems encountered during execution (e.g. choosing another reagent with equivalent properties, if the originally planned one has run out.)</obo:IAO_0000116>
+        <obo:IAO_0000116>We are only considering successfully completed planned processes. A plan may be modified, and details added during execution. For a given planned process, the associated realized plan specification is the one encompassing all changes made during execution. This means that all processes in which an agent acts towards achieving some 
+objectives is a planned process.</obo:IAO_0000116>
+        <obo:IAO_0000117>Bjoern Peters</obo:IAO_0000117>
+        <obo:IAO_0000119>branch derived</obo:IAO_0000119>
+        <obo:IAO_0000232>6/11/9: Edited at workshop. Used to include: is initiated by an agent</obo:IAO_0000232>
+        <obo:IAO_0000232 xml:lang="en">This class merges the previously separated objective driven process and planned process, as they the separation proved hard to maintain. (1/22/09, branch call)</obo:IAO_0000232>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label xml:lang="en">planned process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000094 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000094">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <obo:IAO_0000111>material processing</obo:IAO_0000111>
+        <obo:IAO_0000112>A cell lysis, production of a cloning vector, creating a buffer.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A planned process which results in physical changes in a specified input material</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Bjoern Peters</obo:IAO_0000117>
+        <obo:IAO_0000117>PERSON: Frank Gibson</obo:IAO_0000117>
+        <obo:IAO_0000117>PERSON: Jennifer Fostel</obo:IAO_0000117>
+        <obo:IAO_0000117>PERSON: Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000117>PERSON: Philippe Rocca Serra</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">material transformation</obo:IAO_0000118>
+        <obo:IAO_0000119 xml:lang="en">OBI branch derived</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">material processing</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0100026 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0100026">
@@ -6027,29 +6189,20 @@ We also have the outstanding issue of how to aim different definitions to differ
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OBI_0302859 -->
+    <!-- http://purl.obolibrary.org/obo/OBI_0302887 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0302859">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">genetically modified organism</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_1000048 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_1000048">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0302859"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">transgenic organism</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OMIT_0001305 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMIT_0001305">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10090"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Genetic Background</rdfs:label>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0302887">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <obo:IAO_0000111>staining</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">PMID: 18540298. Role of modified bleach method in staining of acid-fast bacilli in lymph node aspirates. Acta Cytol. 2008 May-Jun;52(3):325-8.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115 xml:lang="en">Staining is a process which results in the addition a class-specific (DNA, proteins, lipids, carbohydrates) dye to a substrate to qualify or quantify the presence of a specific compound.</obo:IAO_0000115>
+        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000119>adapted from Wikipedia: http://en.wikipedia.org/wiki/Staining</obo:IAO_0000119>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C23010</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">staining method</oboInOwl:hasExactSynonym>
+        <rdfs:label>staining</rdfs:label>
+        <rdfs:label xml:lang="en">staining</rdfs:label>
     </owl:Class>
     
 
@@ -6057,7 +6210,10 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- http://purl.obolibrary.org/obo/OMIT_0016996 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMIT_0016996">
-        <rdfs:subClassOf rdf:resource="https://github.com/Fraunhofer-ITMP/BPO_00007"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/Fraunhofer-ITMP/BPO_00028"/>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SCID mouse</obo:IAO_0000111>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> MESH:D016513</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C14294</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mice, SCID</rdfs:label>
     </owl:Class>
     
@@ -6206,6 +6362,7 @@ We also have the outstanding issue of how to aim different definitions to differ
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/VO_0000574">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000029"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C38114</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">route of administration</rdfs:label>
     </owl:Class>
     
@@ -6214,8 +6371,42 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- http://www.ebi.ac.uk/efo/EFO_0000602 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0000602">
-        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0004429"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/Fraunhofer-ITMP/BPO_00005"/>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Yojana Gadiya</obo:IAO_0000117>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> CIDO:0000390</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> JAX:000651</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> MGI:2161072</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> NIFSTD:birnlex_206</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> OMIT:0009861</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> VO:0000051</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C37357</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> BALB</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> BALB/cAnNCrl</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> BALBc</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> C</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BALB/cJ</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BALB/c</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0000606 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0000606">
+        <rdfs:subClassOf rdf:resource="https://github.com/Fraunhofer-ITMP/BPO_00005"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> EM:05396</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> JAX:000664</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> MGI:5498252</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIFSTD:birnlex_393</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> B6.129X1(CD1)-Kat2btm1Nkt/Orl</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> B6.129X1-Kat2btm1Nkt/Orl</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> B6.Cg-Kat2btm1Nkt/Orl</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> B6/J</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> B6J</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> C57/BL6</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> C57BL6J</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">B6</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C57BL/6J</rdfs:label>
     </owl:Class>
     
 
@@ -6223,8 +6414,10 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- http://www.ebi.ac.uk/efo/EFO_0004429 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0004429">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMIT_0001305"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inbred</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Property of an organism which indicates that the organism&apos;s parents were genetically related (potentially for several generations). Inbreeding results in closer homozygosity.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">James Malone</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">inbred</rdfs:label>
     </owl:Class>
     
 
@@ -6232,17 +6425,9 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- http://www.ebi.ac.uk/efo/EFO_0004430 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0004430">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMIT_0001305"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Outbred</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.ebi.ac.uk/efo/EFO_0005180 -->
-
-    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0005180">
-        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0004430"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CD1</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Propety of an organism which indicates that the organism&apos;s parents are not closely related (e.g. family members).</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">outbred</rdfs:label>
     </owl:Class>
     
 
@@ -6250,17 +6435,19 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- http://www.ebi.ac.uk/efo/EFO_0005184 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0005184">
-        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0004429"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/Fraunhofer-ITMP/BPO_00005"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> JAX:000671</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> MGI:2159738</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> MGI:2180839</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> MPD:8</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> OMIT:0009865</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MGI:2684695</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> D2</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> D2J</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> DBA</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> DBA/2</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DBA2</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DBA/2J</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.ebi.ac.uk/efo/EFO_0007732 -->
-
-    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0007732">
-        <rdfs:subClassOf rdf:resource="https://github.com/Fraunhofer-ITMP/BPO_00007"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C57BL/6NJ</rdfs:label>
     </owl:Class>
     
 
@@ -6268,7 +6455,13 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- http://www.ebi.ac.uk/efo/EFO_0007736 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0007736">
-        <rdfs:subClassOf rdf:resource="https://github.com/Fraunhofer-ITMP/BPO_00007"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/Fraunhofer-ITMP/BPO_00028"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> MGI:2162056</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> MPD:13</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JAX:001976</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Diabetic NOD mice</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Non-obese Diabetic</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NOD/LtJ</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NOD/ShiLtJ</rdfs:label>
     </owl:Class>
     
@@ -6277,7 +6470,11 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- http://www.ebi.ac.uk/efo/EFO_0021426 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0021426">
-        <rdfs:subClassOf rdf:resource="https://github.com/Fraunhofer-ITMP/BPO_00007"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/Fraunhofer-ITMP/BPO_00028"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JAX:008599</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> humanized hCYP1A1_1A2_Cyp1a1/1a2(-/-)_Ahr&lt;d&gt; mutant mice</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">B6.Cg-Cyp1tm1Dwn Ahrd Tg(CYP1A1</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CYP1A2)1Dwn/DwnJ</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">humanized mouse</rdfs:label>
     </owl:Class>
     
@@ -6286,12 +6483,12 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- https://github.com/Fraunhofer-ITMP/BPO_00001 -->
 
     <owl:Class rdf:about="https://github.com/Fraunhofer-ITMP/BPO_00001">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/Fraunhofer-ITMP/BPO_00002"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Acid-fast bacteria, also known as acid-fast bacilli or simply AFB, are a group of bacteria sharing the characteristic of acid fastness. Acid fastness is a physical property that gives a bacterium the ability to resist decolorization by acids during staining procedures</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jon Ulf Hansen</obo:IAO_0000117>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:30725806</obo:IAO_0000119>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AFB</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Acid-fast Bacteria</rdfs:label>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Acid-fast bacteria</rdfs:label>
     </owl:Class>
     
 
@@ -6299,8 +6496,9 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- https://github.com/Fraunhofer-ITMP/BPO_00002 -->
 
     <owl:Class rdf:about="https://github.com/Fraunhofer-ITMP/BPO_00002">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000612"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">antibody-based immunosuppression</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Grouping of microorganism based on the staining technique (Gram staining, Acid-fast staining, etc.) used to identify or distinguish them.</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">staining-based organism grouping</rdfs:label>
     </owl:Class>
     
 
@@ -6308,8 +6506,50 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- https://github.com/Fraunhofer-ITMP/BPO_00003 -->
 
     <owl:Class rdf:about="https://github.com/Fraunhofer-ITMP/BPO_00003">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000612"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radiation-based immunsuppression</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0302887"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A microscopy staining method for staining and identifying bacteria, based on the differential retention of a crystal violet-iodine complex within the cell membrane. Gram-positive organisms will appear blue-black or purple while Gram-negative organisms will appear red.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fuqi Xi</obo:IAO_0000117>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BAO:0002844</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C23014</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gram staining</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gram staining method</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Fraunhofer-ITMP/BPO_00004 -->
+
+    <owl:Class rdf:about="https://github.com/Fraunhofer-ITMP/BPO_00004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0302887"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Grouping of bacteria based on the staining technique (Gram staining, Acid-fast staining, etc.) used to identify or distinguish them.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fuqi Xi</obo:IAO_0000117>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C23015</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Acid-fast staining method</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Fraunhofer-ITMP/BPO_00005 -->
+
+    <owl:Class rdf:about="https://github.com/Fraunhofer-ITMP/BPO_00005">
+        <rdfs:subClassOf rdf:resource="https://github.com/Fraunhofer-ITMP/BPO_00007"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A mouse strain that has been maintained by sibling (sister x brother) matings for 20 or more consecutive generations. (from JAX Strain Information)</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fuqi Xi</obo:IAO_0000117>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OMIT:0009869</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">inbred mice</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">inbred mouse strain</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Fraunhofer-ITMP/BPO_00006 -->
+
+    <owl:Class rdf:about="https://github.com/Fraunhofer-ITMP/BPO_00006">
+        <rdfs:subClassOf rdf:resource="https://github.com/Fraunhofer-ITMP/BPO_00007"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An outbred strain is a colony of laboratory mouse within which there is some genetic variation, which has been closed for at least four generations. It is usually maintained to minimise inbreeding, which should not normally exceed one  percent per generation. This can be achieved with random mating using at least 25 breeding pairs per generation. A breeding scheme which ensures  that each breeding male is represented by one male, and each breeding female is represented by one female in the next generation can halve  these number. Usually this is achieved using a rotational breeding  scheme. However, most commercial colonies are maintained with hundreds  or even thousands of breeding animals where genetic drift due to  inbreeding is likely to be minimal, but the stock characteristics may  change as a result of selective breeding (e.g. for fast growth rate) or  genetic contamination (i.e. getting two stocks mixed). (from Isogenic)</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fuqi Xi</obo:IAO_0000117>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">outbred mice</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">outbred mouse strain</rdfs:label>
     </owl:Class>
     
 
@@ -6318,7 +6558,20 @@ We also have the outstanding issue of how to aim different definitions to differ
 
     <owl:Class rdf:about="https://github.com/Fraunhofer-ITMP/BPO_00007">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10090"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Organism model</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stains of mice distinguished based on their mating process.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fuqi Xi</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mouse strain by genetic background</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Fraunhofer-ITMP/BPO_00008 -->
+
+    <owl:Class rdf:about="https://github.com/Fraunhofer-ITMP/BPO_00008">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0001009"/>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Immunosuppression induced by application of cyclophosphamide</obo:IAO_0000111>
+        <obo:RO_0000087 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Philippe Rocca-Serra</obo:RO_0000087>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cyclophosphamide-induced immunosuppression</rdfs:label>
     </owl:Class>
     
 
@@ -6326,8 +6579,10 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- https://github.com/Fraunhofer-ITMP/BPO_00009 -->
 
     <owl:Class rdf:about="https://github.com/Fraunhofer-ITMP/BPO_00009">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C14240"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Csf3r knockout</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0001009"/>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Immunosuppression induced by application of vinblastine</obo:IAO_0000111>
+        <obo:RO_0000087 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Philippe Rocca-Serra</obo:RO_0000087>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vinblastine-induced immunosuppression</rdfs:label>
     </owl:Class>
     
 
@@ -6335,8 +6590,10 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- https://github.com/Fraunhofer-ITMP/BPO_00010 -->
 
     <owl:Class rdf:about="https://github.com/Fraunhofer-ITMP/BPO_00010">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C14240"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cxcr2fl/fl</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000612"/>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The pathologic suppression of the immune system with help of antibodies.</obo:IAO_0000111>
+        <obo:RO_0000087 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rakel Arrazuria</obo:RO_0000087>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">antibody-based immunosuppression</rdfs:label>
     </owl:Class>
     
 
@@ -6344,8 +6601,13 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- https://github.com/Fraunhofer-ITMP/BPO_00011 -->
 
     <owl:Class rdf:about="https://github.com/Fraunhofer-ITMP/BPO_00011">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C14240"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gfi-1-Deficient Mice</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://github.com/Fraunhofer-ITMP/BPO_00005"/>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Yojana Gadiya</obo:IAO_0000117>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> MGI:2160972</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> NCIT:C37370</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MGI:2160060</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C3Hf/HeN</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C3H/HeN</rdfs:label>
     </owl:Class>
     
 
@@ -6353,8 +6615,18 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- https://github.com/Fraunhofer-ITMP/BPO_00012 -->
 
     <owl:Class rdf:about="https://github.com/Fraunhofer-ITMP/BPO_00012">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C14240"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LysM-Cre Mcl-1fl/fl</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://github.com/Fraunhofer-ITMP/BPO_00006"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The original group of Swiss mice that served as progenitors of this stock consisted of two male and seven female albino mice derived from a non-inbred stock in the laboratory of Dr. de Coulon, Centre Anticancereux Romand, Lausanne, Switzerland. These animals were imported into the United States by Dr. Clara Lynch of the Rockefeller Institute in 1926. The Hauschka Ha/ICR stock was initiated in 1948 at the Institute for Cancer Research (ICR) in Philadelphia from “Swiss” mice of Rockefeller origin. (From Charles River)</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Yojana Gadiya</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.criver.com/products-services/find-model/cd-1r-igs-mouse</obo:IAO_0000119>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> CRL:022</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> EFO:0005180</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MGI:5649524</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> CD-1</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> CD-1 IGS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> CD1(ICR)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CD1 mus strain</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CD1</rdfs:label>
     </owl:Class>
     
 
@@ -6362,8 +6634,48 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- https://github.com/Fraunhofer-ITMP/BPO_00013 -->
 
     <owl:Class rdf:about="https://github.com/Fraunhofer-ITMP/BPO_00013">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C14240"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MRP8-Cre Mcl-1fl/fl</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://github.com/Fraunhofer-ITMP/BPO_00006"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The ICR outbred model was developed by Dr. T. S. Hauschka of Fox Chase Cancer Center in 1948. Dr. Hauschka left Fox Chase a portion of his colony. Taconic received breeder stock from Fox Chase in 1993. The mice were derived by hysterectomy into IBU colonies and are maintained by Poiley rotational bred mice. (From Charles River)</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Yojana Gadiya</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.taconic.com/mouse-model/icr</obo:IAO_0000119>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> IcrTac:ICR</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MGI:2160272</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICR</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Fraunhofer-ITMP/BPO_00014 -->
+
+    <owl:Class rdf:about="https://github.com/Fraunhofer-ITMP/BPO_00014">
+        <rdfs:subClassOf rdf:resource="https://github.com/Fraunhofer-ITMP/BPO_00006"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Taconic received the Swiss Webster outbred model from the Rockefeller Institute through Rockland Farms, Inc. in 1940. The mice have been maintained as a closed colony since 1951. The mice were derived by caesarean from randomly chosen breeders and reintroduced into a Barrier Nucleus Expansion Colony in 1965-1969. The mice were derived by caesarean in 1983 from randomly chosen breeders from all Taconic&apos;s barrier units (From Taconic)</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Yojana Gadiya</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.taconic.com/mouse-model/swiss-webster</obo:IAO_0000119>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> MGI:2160840</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> MPD:54</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Tac:856</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Tac:SW</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C106573</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> SW</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Swiss-Webster</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Swiss Webster</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Fraunhofer-ITMP/BPO_00015 -->
+
+    <owl:Class rdf:about="https://github.com/Fraunhofer-ITMP/BPO_00015">
+        <rdfs:subClassOf rdf:resource="https://github.com/Fraunhofer-ITMP/BPO_00006"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The ddY strain is derived from a mouse colony at the Institute of Infectious Diseases of Tokyo University (Denken; presently, the Institute of Medical Sciences of Tokyo University). This colony was introduced from Germany in the 1910s and 1920s and established as a strain at the National Institute of Health (Yoken, presently, the National Institute of Infectious Diseases). The strain name ddY stands for Deutschland, Denken, and Yoken. The ddY strain differs from the DDY strain because the DDY strain has been established as an inbred strain from the ddY colony at Yoken (note that the inbred strain DDY is spelled with all uppercase letters and with lowercase letters in the name of outbred strain ddY).</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Yojana Gadiya</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3435536/</obo:IAO_0000119>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Slc:ddY</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MGI:5558113</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Slc:ddY</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DDY/Slc</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ddY</rdfs:label>
     </owl:Class>
     
 
@@ -6371,8 +6683,16 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- https://github.com/Fraunhofer-ITMP/BPO_00016 -->
 
     <owl:Class rdf:about="https://github.com/Fraunhofer-ITMP/BPO_00016">
-        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0004430"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICR</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://github.com/Fraunhofer-ITMP/BPO_00006"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kunming (KM) mouse, an outbred strain, was introduced into China from the Haffkine institute of India in 1946. After being bred for several decades, the KM mouse has been a native breed, making up 70 per cent of all mice used in research in China.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Yojana Gadiya</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://pubmed.ncbi.nlm.nih.gov/23517725/</obo:IAO_0000119>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MGI:5651867</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Kongmin</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Kongmin White</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Kunmin</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KM mouse</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kunming</rdfs:label>
     </owl:Class>
     
 
@@ -6380,8 +6700,222 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- https://github.com/Fraunhofer-ITMP/BPO_00017 -->
 
     <owl:Class rdf:about="https://github.com/Fraunhofer-ITMP/BPO_00017">
-        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0004430"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kunming</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://github.com/Fraunhofer-ITMP/BPO_00006"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The NMRI outbred model was developed by Lynch et al. Poiley of the National Institutes of Health received stock from Lynch in 1937. The mice were inbred as NIH/P1. The Naval Medical Research Institute (NMRI) received stock from Lynch. Zentralinstitut für Versuchstierzucht in Hannover Germany (Han) received stock from NMRI. The mice were random bred. M&amp;B A/S (now Taconic Europe) received stock from Han in 1961 and again in 1985. The mice are maintained as an outbred stock.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Yojana Gadiya</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.taconic.com/mouse-model/nmri</obo:IAO_0000119>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> CRL:605</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Crl:NMRI(Han)</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> MPD:862</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> NCIT:C37416</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Tac:NMRI</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MGI:2160177</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Kongmin</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Kongmin White</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Kunmin</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KM mouse</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NMRI</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Fraunhofer-ITMP/BPO_00018 -->
+
+    <owl:Class rdf:about="https://github.com/Fraunhofer-ITMP/BPO_00018">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10090"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stains of mice derived by addition of foreign substances to the mice thereby causing effect on the mouse&apos;s immune system.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fuqi Xi</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mouse strain by immunological background</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Fraunhofer-ITMP/BPO_00019 -->
+
+    <owl:Class rdf:about="https://github.com/Fraunhofer-ITMP/BPO_00019">
+        <rdfs:subClassOf rdf:resource="https://github.com/Fraunhofer-ITMP/BPO_00018"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stains of mice whose immune system has been suppressed by addition of foreign material such as drugs.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fuqi Xi</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">immunosuppressed mouse strain</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Fraunhofer-ITMP/BPO_00020 -->
+
+    <owl:Class rdf:about="https://github.com/Fraunhofer-ITMP/BPO_00020">
+        <rdfs:subClassOf rdf:resource="https://github.com/Fraunhofer-ITMP/BPO_00018"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stains of mice whose immune system are functioning normally despite the addition of foreign material such as drugs.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fuqi Xi</obo:IAO_0000117>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">immunocompromised mouse strain</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">immunocompetent mouse strain</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Fraunhofer-ITMP/BPO_00021 -->
+
+    <owl:Class rdf:about="https://github.com/Fraunhofer-ITMP/BPO_00021">
+        <rdfs:subClassOf rdf:resource="https://github.com/Fraunhofer-ITMP/BPO_00019"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transgenic mouse strains are those that have been altered by the stable insertion of DNA called transgenes that suppress their immune system.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Yojana Gadiya</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.genetargeting.com/transgenic-mouse-models/</obo:IAO_0000119>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> OMIT:0009876</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C14240</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">transgenic mouse strain</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Fraunhofer-ITMP/BPO_00022 -->
+
+    <owl:Class rdf:about="https://github.com/Fraunhofer-ITMP/BPO_00022">
+        <rdfs:subClassOf rdf:resource="https://github.com/Fraunhofer-ITMP/BPO_00021"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gfi-1-deficient mouse mice contain a ZFN-mediated mutation that results in a premature stop codon in Gfi1, making these mice useful when studying human severe congenital neutropenia (SCN).</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Yojana Gadiya</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.jax.org/strain/035156</obo:IAO_0000119>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> MGI:6512041</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JAX:035156</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> C57BL/6-Gfi1em1Hlg/J</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Gfi1R412X</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">STOCK Gfi1em1Hlg/J</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gfi-1-deficient mouse</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Fraunhofer-ITMP/BPO_00023 -->
+
+    <owl:Class rdf:about="https://github.com/Fraunhofer-ITMP/BPO_00023">
+        <rdfs:subClassOf rdf:resource="https://github.com/Fraunhofer-ITMP/BPO_00021"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">G-CSFR- are Csf3r knockout mice are useful for studying granulopoiesis and hematopoietic stem cell regulation.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Yojana Gadiya</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.jax.org/strain/017838</obo:IAO_0000119>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JAX:017838</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">B6.129X1(Cg)-Csf3rtm1Link/J</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">G-CSFR-/- mouse</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Fraunhofer-ITMP/BPO_00024 -->
+
+    <owl:Class rdf:about="https://github.com/Fraunhofer-ITMP/BPO_00024">
+        <rdfs:subClassOf rdf:resource="https://github.com/Fraunhofer-ITMP/BPO_00021"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cxcr2−/− are floxed mice may be useful for studying the neutrophil granulocyte lineage and the migration of neutrophils during infection.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Yojana Gadiya</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.jax.org/strain/024638</obo:IAO_0000119>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JAX:024638</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Cxcr2fl</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Cxcr2fl/fl</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C57BL/6-Cxcr2tm1Rmra/J</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cxcr2−/− mouse</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Fraunhofer-ITMP/BPO_00025 -->
+
+    <owl:Class rdf:about="https://github.com/Fraunhofer-ITMP/BPO_00025">
+        <rdfs:subClassOf rdf:resource="https://github.com/Fraunhofer-ITMP/BPO_00021"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Genista mutation C57BL/6-Gfi1Gen converted the cysteine (C) residue normally found at position 318 of the third zinc finger domain of Gfi1 into a tyrosine (Y), thereby disrupting the Cys2His2 structural motif that constitutes the core component of zinc finger domains. The C318Y substitution present in Genista mice had no impact on the levels of expression of the mutated Gfi1C318Y protein. (From EMMA Mouse Repository)</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rakel Arrazuria</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.infrafrontier.eu/search?keyword=EM:05959</obo:IAO_0000119>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EM:05959</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> C57BL/6-Gfi1Gen/Orl</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C57BL/6-GfiGen</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Genista mouse</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Fraunhofer-ITMP/BPO_00026 -->
+
+    <owl:Class rdf:about="https://github.com/Fraunhofer-ITMP/BPO_00026">
+        <rdfs:subClassOf rdf:resource="https://github.com/Fraunhofer-ITMP/BPO_00021"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The LysM-Cre Mcl-1fl/fl knock-in/knock-out mouse has a nuclear-localized Cre recombinase inserted into the first coding ATG of the lysozyme 2 gene (Lyz2); both abolishing endogenous Lyz2 gene function and placing NLS-Cre expression under the control of the endogenous Lyz2 promoter/enhancer elements. These LysMcre mice may be useful for Cre-lox studies of the myeloid cell lineage (monocytes, mature macrophages and granulocytes) and the innate immune response.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rakel Arrazuria</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.jax.org/strain/004781</obo:IAO_0000119>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JAX:004781</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> LysMcre</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Mcl-1−/−</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">B6.129P2-Lyz2tm1(cre)Ifo/J</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LysM-Cre Mcl-1fl/fl mouse</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Fraunhofer-ITMP/BPO_00027 -->
+
+    <owl:Class rdf:about="https://github.com/Fraunhofer-ITMP/BPO_00027">
+        <rdfs:subClassOf rdf:resource="https://github.com/Fraunhofer-ITMP/BPO_00021"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MRP8-Cre Mcl-1fl/fl mouse transgenic mice may be useful in studies utilizing Cre-lox technology or fluorescent protein expression in granulocytes and granulocyte/macrophage progenitors (GMPs). (from JAX Strain Information)</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Yojana Gadiya</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.jax.org/strain/021614</obo:IAO_0000119>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JAX:021614</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> B6.Cg-Tg(S100A8-cre</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Mrp8creTg</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-EGFP)1Ilw/J</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">B6.Cg-Tg(S100A8-cre</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MRP8-Cre Mcl-1fl/fl mouse</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Fraunhofer-ITMP/BPO_00028 -->
+
+    <owl:Class rdf:about="https://github.com/Fraunhofer-ITMP/BPO_00028">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10090"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stains of mice that are used in laboratory experiment and do not involve any addition of foreign substances or generated via a different copulatory method.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fuqi Xi</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">other mouse strain</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Fraunhofer-ITMP/BPO_00029 -->
+
+    <owl:Class rdf:about="https://github.com/Fraunhofer-ITMP/BPO_00029">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000612"/>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The pathologic suppression of the immune system with help of radiations.</obo:IAO_0000111>
+        <obo:RO_0000087 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rakel Arrazuria</obo:RO_0000087>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radiation-based immunosuppression</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Fraunhofer-ITMP/BPO_00030 -->
+
+    <owl:Class rdf:about="https://github.com/Fraunhofer-ITMP/BPO_00030">
+        <rdfs:subClassOf rdf:resource="https://github.com/Fraunhofer-ITMP/BPO_00010"/>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The 1A8 monoclonal antibody reacts with mouse Ly6G. Ly6G is a 21-25 kDa member of the Ly-6 superfamily of GPI-anchored cell surface proteins with roles in cell signaling and cell adhesion. Ly6G is expressed differentially during development by cells in the myeloid lineage including monocytes, macrophages, granulocytes, and neutrophils. Monocytes typically express Ly6G transiently during development while mature granulocytes and peripheral neutrophils retain expression making Ly6G a good cell surface marker for these populations. Unlike the RB6-8C5 antibody, the 1A8 antibody reacts specifically with mouse Ly6G with no reported cross reactivity with Ly6C. (From BioxCell)</obo:IAO_0000111>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">InVivoMAb anti-mouse Ly6G, anti-mouse Ly6G</obo:IAO_0000116>
+        <obo:RO_0000087 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rakel Arrazuria</obo:RO_0000087>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1A8-based immunosupression</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Fraunhofer-ITMP/BPO_00031 -->
+
+    <owl:Class rdf:about="https://github.com/Fraunhofer-ITMP/BPO_00031">
+        <rdfs:subClassOf rdf:resource="https://github.com/Fraunhofer-ITMP/BPO_00010"/>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The NIMP-R14 monoclonal antibody is specific for murine neutrophils. The antibody is reported to react strongly with mouse Ly6G and Ly6C previously referred to as GR-1. Ly6G is a 21-25 kDa member of the Ly-6 superfamily of GPI-anchored cell surface proteins with roles in cell signaling and cell adhesion. Ly6G is expressed differentially during development by cells in the myeloid lineage including monocytes, macrophages, granulocytes, and neutrophils. Monocytes typically express Ly6G transiently during development while mature granulocytes and peripheral neutrophils retain expression making Ly6G a good cell surface marker for these populations. Ly6C is a monocyte/macrophage and endothelial cell differentiation antigen regulated by interferon gamma and is thought to play a role in the development and maturation of lymphocytes. The NIMP-R14 antibody has been shown to be useful for depletion of neutrophils in mice. (From BioxCell)</obo:IAO_0000111>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">InVivoMAb anti-mouse Ly6G/Ly6C, anti-mouse Ly6G/Ly6C</obo:IAO_0000116>
+        <obo:RO_0000087 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rakel Arrazuria</obo:RO_0000087>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIMP-R14-based immunosupression</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Fraunhofer-ITMP/BPO_00032 -->
+
+    <owl:Class rdf:about="https://github.com/Fraunhofer-ITMP/BPO_00032">
+        <rdfs:subClassOf rdf:resource="https://github.com/Fraunhofer-ITMP/BPO_00010"/>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The RB6-8C5 monoclonal antibody reacts strongly with mouse Ly6G and weakly with mouse Ly6C previously referred to as GR-1. Ly6G is a 21-25 kDa member of the Ly-6 superfamily of GPI-anchored cell surface proteins with roles in cell signaling and cell adhesion. Ly6G is expressed differentially during development by cells in the myeloid lineage including monocytes macrophages granulocytes and neutrophils. Monocytes typically express Ly6G transiently during development while mature granulocytes and peripheral neutrophils retain expression making Ly6G a good cell surface marker for these populations.The RB6-8C5 antibody has been shown to inhibit the binding of the 1A8 antibody. The 1A8 monoclonal antibody reacts specifically with mouse Ly6G with no reported cross reactivity with Ly6C. (From BioxCell)</obo:IAO_0000111>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">InVivoPlus anti-mouse Ly6G/Ly6C (Gr-1), InVivoMAb anti-mouse Ly6G/Ly6C (Gr-1), anti-mouse Ly6G/Ly6C (Gr-1), anti-Gr-1</obo:IAO_0000116>
+        <obo:RO_0000087 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rakel Arrazuria</obo:RO_0000087>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RB6-8C5-based immunosupression</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 
