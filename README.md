@@ -28,28 +28,31 @@ The [ROBOT](http://robot.obolibrary.org/) tool was used to build this ontology a
 
 The ontology is available in [Ontology Web Language (OWL)](https://www.w3.org/TR/owl-guide/) format.
 
-The **current version of the ontology is 0.0.1** and can be found [here](bpo.owl). 
+The **current version of the ontology is 0.0.1** and can be found [here](bpo_0.0.1.owl). 
 
-BPO has officially 189 classes, only 13 are minted in the BPO namespace and probably solely because the terms requests have not been handled in a timeline compatible with your needs.
+BPO has 202 classes and 2,547 axioms and follows the BFO top-level ontology tree.
 
 ## Ontology Overview
 
 Since the current ontology is an application ontology, it makes use of various existing ontologies for its purpose. The ontologies used, and the number of terms extracted from them are shown below:
 
-[comment]: <> (| Ontology Name | Ontology abbreviation | Number of terms |)
-
-[comment]: <> (| --------------- | --------------- | --------------- |)
-
-[comment]: <> (| Row 1 Column 1 | NCBITaxon | Row 1 Column 3 |)
-
-[comment]: <> (| Row 2 Column 1 | PATO | Row 2 Column 3 |)
-
-[comment]: <> (| Row 3 Column 1 | Row 3 Column 2 | Row 3 Column 3 |)
+| Ontology Name | Ontology abbreviation | Number of terms | BFO compliant |
+| --------------- | --------------- | --------------- | --------------- |
+| NCBI taxonomy database| NCBITaxon | 120 | No |
+| Phenotype And Trait Ontology | PATO | 7 | Yes |
+| National Cancer Institute Thesaurus | NCIt | 13 | No |
+| Vaccine Ontology | VO | 1 | No |
+| Ontology for Biomedical Investigations | OBI | 4 | Yes |
+| Ontology for MIRNA Target | OMIT | 1 | Yes |
+| Microbial Conditions Ontology | MCO | 3 | Yes |
+| Infectious Disease Ontology | IDO | 3 | Yes |
+| Experimental Factor Ontology | EFO | 7 | Yes |
+| *Bioassay Protocol Ontology* | BPO | 32 | Yes |
 
 ## Developers / Contributors
 | Person | Role |
 | --- | ----------- |
-| [Yojana Gadiya](https://orcid.org/0000-0002-7683-0452) | Maintainers and Developer |
+| [Yojana Gadiya](https://orcid.org/0000-0002-7683-0452) | Maintainer and Developer |
 | [Rakel Arrazuria](https://orcid.org/0000-0002-0757-3915) | Domain expert | 
 | [Jon Ulf Hansen](https://orcid.org/0000-0002-6410-5755) | Domain expert | 
 | [Danielle Welter](https://orcid.org/0000-0003-1058-2668) | Ontology expert | 
