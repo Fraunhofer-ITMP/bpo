@@ -1,0 +1,8 @@
+ID	Label 	Type (is-a)	editor note	editor preferred term	
+ID	A rdfs:label	C %	A IAO:0000116	A IAO:0000111	
+http://purl.obolibrary.org/obo/BFO_0000040	material entity	owl:Thing	
+http://purl.obolibrary.org/obo/OBI_0100026	organism	material entity	
+http://purl.obolibrary.org/obo/BFO_0000019	quality	owl:Thing	
+http://purl.obolibrary.org/obo/PATO_0001241	physical object quality	quality	
+http://purl.obolibrary.org/obo/BFO_0000015	process	owl:Thing	
+http://purl.obolibrary.org/obo/IDO_0000610	immunosuppression	process	

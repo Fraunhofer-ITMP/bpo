@@ -1,0 +1,14 @@
+ID	Label	Type (is-a)	database_cross_reference	
+ID	A rdfs:label	C %	A oboInOwl:hasDbXref	
+http://purl.obolibrary.org/obo/BFO_0000029	site	owl:Thing	
+http://purl.obolibrary.org/obo/VO_0000574	route of administration	site	NCIT:C38114	
+http://purl.obolibrary.org/obo/NCIT_C38284	Nasal Route of Administration	route of administration	VO:0000341	
+http://purl.obolibrary.org/obo/NCIT_C38276	Intravenous Route of Administration	route of administration	VO:0000416	
+http://purl.obolibrary.org/obo/NCIT_C38299	Subcutaneous Route of Administration	route of administration	VO:0000532	
+http://purl.obolibrary.org/obo/NCIT_C28161	Intramuscular Route of Administration	route of administration	VO:0000340	
+http://purl.obolibrary.org/obo/NCIT_C38258	Intraperitoneal Route of Administration	route of administration	VO:0000344	
+http://purl.obolibrary.org/obo/NCIT_C38238	Intradermal Route of Administration	route of administration	VO:0000887	
+http://purl.obolibrary.org/obo/NCIT_C38288	Oral Route of Administration	route of administration	VO:0000886	
+http://purl.obolibrary.org/obo/NCIT_C38225	Intrabronchial Route of Administration	route of administration	
+http://purl.obolibrary.org/obo/NCIT_C38289	Oropharyngeal Route of Administration	route of administration	
+http://purl.obolibrary.org/obo/NCIT_C38208	Endotracheal Route of Administration	route of administration	

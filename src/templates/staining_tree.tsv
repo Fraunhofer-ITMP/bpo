@@ -1,0 +1,7 @@
+ID	Label 	Type (is-a)	Synonym	Description	TermEditor	database_cross_reference	
+ID	A rdfs:label	C % 	A oboInOwl:hasExactSynonym	A obo:IAO_0000115	A obo:IAO_0000117	A oboInOwl:hasDbXref SPLIT=,
+http://purl.obolibrary.org/obo/OBI_0302887	staining	owl:Thing	staining method			NCIT:C23010
+https://github.com/Fraunhofer-ITMP/BPO_00003	Gram staining process	staining	Gram staining	A microscopy staining method for staining and identifying bacteria, based on the differential retention of a crystal violet-iodine complex within the cell membrane. Gram-positive organisms will appear blue-black or purple while Gram-negative organisms will appear red.	Fuqi Xi	NCIT:C23014
+https://github.com/Fraunhofer-ITMP/BPO_00004	Acid-fast staining process	staining		Grouping of bacteria based on the staining technique (Gram staining, Acid-fast staining, etc.) used to identify or distinguish them.	Fuqi Xi	NCIT:C23015
+
+
