@@ -1,2 +1,9 @@
 http://www.ebi.ac.uk/efo/EFO_0004429 #inbred
 http://www.ebi.ac.uk/efo/EFO_0004430 #outbred
+http://www.ebi.ac.uk/efo/EFO_0000602 #BALB/c
+http://www.ebi.ac.uk/efo/EFO_0000606 #C57BL/6J
+http://purl.obolibrary.org/obo/NCBITaxon_10090 #Mus musculus
+http://www.ebi.ac.uk/efo/EFO_0005184 #DBA/2J
+http://www.ebi.ac.uk/efo/EFO_0007736 #NOD/ShiLtJ
+http://www.ebi.ac.uk/efo/EFO_0021426 #humanized mouse
+http://purl.obolibrary.org/obo/BFO_0000019 #quality
