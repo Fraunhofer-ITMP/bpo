@@ -1,0 +1,2 @@
+http://www.ebi.ac.uk/efo/EFO_0004429 #inbred
+http://www.ebi.ac.uk/efo/EFO_0004430 #outbred

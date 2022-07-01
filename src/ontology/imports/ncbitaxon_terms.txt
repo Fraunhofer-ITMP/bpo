@@ -1,0 +1,27 @@
+http://purl.obolibrary.org/obo/NCBITaxon_1314 #Streptococcus pyogenes
+http://purl.obolibrary.org/obo/NCBITaxon_1301 #Streptococcus
+http://purl.obolibrary.org/obo/NCBITaxon_1313 #Streptococcus pneumoniae
+http://purl.obolibrary.org/obo/NCBITaxon_1280 #Staphylococcus aureus
+http://purl.obolibrary.org/obo/NCBITaxon_1496 #Clostridioides difficile
+http://purl.obolibrary.org/obo/NCBITaxon_1352 #Enterococcus faecium
+http://purl.obolibrary.org/obo/NCBITaxon_573 #Klebsiella pneumoniae
+http://purl.obolibrary.org/obo/NCBITaxon_613 #Serratia
+http://purl.obolibrary.org/obo/NCBITaxon_625 #Shigella sp.
+http://purl.obolibrary.org/obo/NCBITaxon_590 #Salmonella
+http://purl.obolibrary.org/obo/NCBITaxon_287 #Pseudomonas aeruginosa
+http://purl.obolibrary.org/obo/NCBITaxon_583 #Proteus <enterobacteria>
+http://purl.obolibrary.org/obo/NCBITaxon_485 #Neisseria gonorrhoeae
+http://purl.obolibrary.org/obo/NCBITaxon_210 #Helicobacter pylori
+http://purl.obolibrary.org/obo/NCBITaxon_727 #Haemophilus influenzae
+http://purl.obolibrary.org/obo/NCBITaxon_205 #Campylobacter sp.
+http://purl.obolibrary.org/obo/NCBITaxon_292 #Burkholderia cepacia
+http://purl.obolibrary.org/obo/NCBITaxon_470 #Acinetobacter baumannii
+http://purl.obolibrary.org/obo/NCBITaxon_810 #Chlamydia
+http://purl.obolibrary.org/obo/NCBITaxon_562 #Escherichia coli
+http://purl.obolibrary.org/obo/NCBITaxon_543 #Enterobacteriaceae
+http://purl.obolibrary.org/obo/NCBITaxon_37162 #Mycobacterium avium complex sp.
+http://purl.obolibrary.org/obo/NCBITaxon_1773 #Mycobacterium tuberculosis
+http://purl.obolibrary.org/obo/NCBITaxon_1763 #Mycobacterium
+http://purl.obolibrary.org/obo/NCBITaxon_2 #Bacteria
+http://purl.obolibrary.org/obo/NCBITaxon_10090 #Mouse
+http://purl.obolibrary.org/obo/NCBITaxon_2759 #Eukaryota
