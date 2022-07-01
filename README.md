@@ -1,6 +1,8 @@
-<p align="center">
-  <img style="width: 150px; height: 150px;" src="">
-</p>
+[comment]: <> (<p align="center">)
+
+[comment]: <> (  <img style="width: 150px; height: 150px;" src="">)
+
+[comment]: <> (</p>)
 
 <h1 align="center">
   <br>
