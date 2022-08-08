@@ -5,7 +5,6 @@ http://www.ebi.ac.uk/efo/EFO_0000606 #C57BL/6J
 http://purl.obolibrary.org/obo/NCBITaxon_10090 #Mus musculus
 http://www.ebi.ac.uk/efo/EFO_0005184 #DBA/2J
 http://www.ebi.ac.uk/efo/EFO_0007736 #NOD/ShiLtJ
-http://www.ebi.ac.uk/efo/EFO_0021426 #humanized mouse
 http://purl.obolibrary.org/obo/BFO_0000019 #quality
 http://www.ebi.ac.uk/efo/EFO_0000598 #129S6
 http://www.ebi.ac.uk/efo/EFO_0001329 #C3H/HeJ
