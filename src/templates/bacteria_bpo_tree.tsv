@@ -1,43 +1,43 @@
-ID	Label	Type (is-a)	Synonym	Description	TermEditor	Source	Has quality
-ID	A rdfs:label	C %	A oboInOwl:hasExactSynonym	A obo:IAO_0000115	A obo:IAO_0000117	A obo:IAO_0000119	C RO:0000086 some %
-http://purl.obolibrary.org/obo/BFO_0000040	material entity	owl:Thing					
-http://purl.obolibrary.org/obo/OBI_0100026	organism	material entity					
-http://purl.obolibrary.org/obo/NCBITaxon_2	Bacteria	organism					
-http://purl.obolibrary.org/obo/NCBITaxon_2759	Eukaryota	organism					
-https://github.com/Fraunhofer-ITMP/BPO_00002	staining-based organism grouping	organism		Grouping of microorganism based on the staining technique (Gram staining, Acid-fast staining, etc.) used to identify or distinguish them.			
-http://purl.obolibrary.org/obo/NCIT_C173514	Gram Negative Bacteria	staining-based organism grouping	G -ve				https://github.com/Fraunhofer-ITMP/BPO_00003
-http://purl.obolibrary.org/obo/NCIT_C173515	Gram Positive Bacteria	staining-based organism grouping	G +ve				
-https://github.com/Fraunhofer-ITMP/BPO_00001	Acid-fast Bacteria	staining-based organism grouping	AFB	Acid-fast bacteria, also known as acid-fast bacilli or simply AFB, are a group of bacteria sharing the characteristic of acid fastness. Acid fastness is a physical property that gives a bacterium the ability to resist decolorization by acids during staining procedures	Jon Ulf Hansen	PMID:30725806	
-http://purl.obolibrary.org/obo/NCBITaxon_543	Enterobacteriaceae	Gram Negative Bacteria 
-http://purl.obolibrary.org/obo/NCBITaxon_562	Escherichia coli	Gram Negative Bacteria 
-http://purl.obolibrary.org/obo/NCBITaxon_1783257	PVC group	Gram Negative Bacteria 
-http://purl.obolibrary.org/obo/NCBITaxon_810	Chlamydia	Gram Negative Bacteria 
-http://purl.obolibrary.org/obo/NCBITaxon_470	Acinetobacter baumannii	Gram Negative Bacteria 
-http://purl.obolibrary.org/obo/NCBITaxon_1224	Proteobacteria	Gram Negative Bacteria 
-http://purl.obolibrary.org/obo/NCBITaxon_292	Burkholderia cepacia	Gram Negative Bacteria 
-http://purl.obolibrary.org/obo/NCBITaxon_205	Campylobacter sp.	Gram Negative Bacteria 
-http://purl.obolibrary.org/obo/NCBITaxon_727	Haemophilus influenzae	Gram Negative Bacteria 
-http://purl.obolibrary.org/obo/NCBITaxon_210	Helicobacter pylori	Gram Negative Bacteria 
-http://purl.obolibrary.org/obo/NCBITaxon_485	Neisseria gonorrhoeae	Gram Negative Bacteria 
-http://purl.obolibrary.org/obo/NCBITaxon_287	Pseudomonas aeruginosa	Gram Negative Bacteria 
-http://purl.obolibrary.org/obo/NCBITaxon_583	Proteus <enterobacteria>	Gram Negative Bacteria 
-http://purl.obolibrary.org/obo/NCBITaxon_590	Salmonella	Gram Negative Bacteria 
-http://purl.obolibrary.org/obo/NCBITaxon_625	Shigella sp.	Gram Negative Bacteria 
-http://purl.obolibrary.org/obo/NCBITaxon_613	Serratia	Gram Negative Bacteria 
-http://purl.obolibrary.org/obo/NCBITaxon_573	Klebsiella pneumoniae	Gram Negative Bacteria 
-http://purl.obolibrary.org/obo/NCBITaxon_1783272	Terrabacteria group	Gram Positive Bacteria 
-http://purl.obolibrary.org/obo/NCBITaxon_1352	Enterococcus faecium	Gram Positive Bacteria 
-http://purl.obolibrary.org/obo/NCBITaxon_1496	Clostridioides difficile	Gram Positive Bacteria 
-http://purl.obolibrary.org/obo/NCBITaxon_1280	Staphylococcus aureus	Gram Positive Bacteria 
-http://purl.obolibrary.org/obo/NCBITaxon_1313	Streptococcus pneumoniae	Gram Positive Bacteria 
+ID	Label	Type (is-a)	Synonym	Description	TermEditor	Source
+ID	A rdfs:label	C %	A oboInOwl:hasExactSynonym	A obo:IAO_0000115	A obo:IAO_0000117	A obo:IAO_0000119
+http://purl.obolibrary.org/obo/BFO_0000040	material entity	owl:Thing				
+http://purl.obolibrary.org/obo/OBI_0100026	organism	material entity				
+http://purl.obolibrary.org/obo/NCBITaxon_2	Bacteria	organism				
+http://purl.obolibrary.org/obo/NCBITaxon_2759	Eukaryota	organism				
+https://github.com/Fraunhofer-ITMP/BPO_00002	staining-based organism grouping	organism		Grouping of microorganism based on the staining technique (Gram staining, Acid-fast staining, etc.) used to identify or distinguish them.		
+http://purl.obolibrary.org/obo/NCIT_C173514	Gram Negative Bacteria	staining-based organism grouping	G -ve			
+http://purl.obolibrary.org/obo/NCIT_C173515	Gram Positive Bacteria	staining-based organism grouping	G +ve			
+https://github.com/Fraunhofer-ITMP/BPO_00001	Acid-fast Bacteria	staining-based organism grouping	AFB	Acid-fast bacteria, also known as acid-fast bacilli or simply AFB, are a group of bacteria sharing the characteristic of acid fastness. Acid fastness is a physical property that gives a bacterium the ability to resist decolorization by acids during staining procedures	Jon Ulf Hansen	PMID:30725806
+http://purl.obolibrary.org/obo/NCBITaxon_543	Enterobacteriaceae	Gram Negative Bacteria				
+http://purl.obolibrary.org/obo/NCBITaxon_562	Escherichia coli	Gram Negative Bacteria				
+http://purl.obolibrary.org/obo/NCBITaxon_1783257	PVC group	Gram Negative Bacteria				
+http://purl.obolibrary.org/obo/NCBITaxon_810	Chlamydia	Gram Negative Bacteria				
+http://purl.obolibrary.org/obo/NCBITaxon_470	Acinetobacter baumannii	Gram Negative Bacteria				
+http://purl.obolibrary.org/obo/NCBITaxon_1224	Proteobacteria	Gram Negative Bacteria				
+http://purl.obolibrary.org/obo/NCBITaxon_292	Burkholderia cepacia	Gram Negative Bacteria				
+http://purl.obolibrary.org/obo/NCBITaxon_205	Campylobacter sp.	Gram Negative Bacteria				
+http://purl.obolibrary.org/obo/NCBITaxon_727	Haemophilus influenzae	Gram Negative Bacteria				
+http://purl.obolibrary.org/obo/NCBITaxon_210	Helicobacter pylori	Gram Negative Bacteria				
+http://purl.obolibrary.org/obo/NCBITaxon_485	Neisseria gonorrhoeae	Gram Negative Bacteria				
+http://purl.obolibrary.org/obo/NCBITaxon_287	Pseudomonas aeruginosa	Gram Negative Bacteria				
+http://purl.obolibrary.org/obo/NCBITaxon_583	Proteus <enterobacteria>	Gram Negative Bacteria				
+http://purl.obolibrary.org/obo/NCBITaxon_590	Salmonella	Gram Negative Bacteria				
+http://purl.obolibrary.org/obo/NCBITaxon_625	Shigella sp.	Gram Negative Bacteria				
+http://purl.obolibrary.org/obo/NCBITaxon_613	Serratia	Gram Negative Bacteria				
+http://purl.obolibrary.org/obo/NCBITaxon_573	Klebsiella pneumoniae	Gram Negative Bacteria				
+http://purl.obolibrary.org/obo/NCBITaxon_1783272	Terrabacteria group	Gram Positive Bacteria				
+http://purl.obolibrary.org/obo/NCBITaxon_1352	Enterococcus faecium	Gram Positive Bacteria				
+http://purl.obolibrary.org/obo/NCBITaxon_1496	Clostridioides difficile	Gram Positive Bacteria				
+http://purl.obolibrary.org/obo/NCBITaxon_1280	Staphylococcus aureus	Gram Positive Bacteria				
+http://purl.obolibrary.org/obo/NCBITaxon_1313	Streptococcus pneumoniae	Gram Positive Bacteria				
 http://purl.obolibrary.org/obo/NCBITaxon_1301	Streptococcus	Gram Positive Bacteria				
-http://purl.obolibrary.org/obo/NCBITaxon_1314	Streptococcus pyogenes	Gram Positive Bacteria 					
+http://purl.obolibrary.org/obo/NCBITaxon_1314	Streptococcus pyogenes	Gram Positive Bacteria				
 http://purl.obolibrary.org/obo/NCBITaxon_37162	Mycobacterium avium complex sp.	Acid-fast Bacteria				
 http://purl.obolibrary.org/obo/NCBITaxon_1773	Mycobacterium tuberculosis	Acid-fast Bacteria				
-http://purl.obolibrary.org/obo/NCBITaxon_1785	Mycobacterium sp.	Acid-fast Bacteria					
-http://purl.obolibrary.org/obo/BFO_0000015	process	owl:Thing	
-http://purl.obolibrary.org/obo/OBI_0000011	planned process	process	
-http://purl.obolibrary.org/obo/OBI_0000094	material processing	planned process	
+http://purl.obolibrary.org/obo/NCBITaxon_1785	Mycobacterium sp.	Acid-fast Bacteria				
+http://purl.obolibrary.org/obo/BFO_0000015	process	owl:Thing				
+http://purl.obolibrary.org/obo/OBI_0000011	planned process	process				
+http://purl.obolibrary.org/obo/OBI_0000094	material processing	planned process				
 http://purl.obolibrary.org/obo/OBI_0302887	staining	material processing	staining method			NCIT:C23010
 https://github.com/Fraunhofer-ITMP/BPO_00003	Gram staining process	staining	Gram staining	A microscopy staining method for staining and identifying bacteria, based on the differential retention of a crystal violet-iodine complex within the cell membrane. Gram-positive organisms will appear blue-black or purple while Gram-negative organisms will appear red.	Fuqi Xi	NCIT:C23014
 https://github.com/Fraunhofer-ITMP/BPO_00004	Acid-fast staining process	staining		Grouping of bacteria based on the staining technique (Gram staining, Acid-fast staining, etc.) used to identify or distinguish them.	Fuqi Xi	NCIT:C23015
