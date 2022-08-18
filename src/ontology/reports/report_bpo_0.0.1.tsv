@@ -1,0 +1,230 @@
+Level	Rule Name	Subject	Property	Value
+ERROR	duplicate_label	BFO:0000019	rdfs:label	quality
+ERROR	duplicate_label	PATO:0000001	rdfs:label	quality
+WARN	annotation_whitespace	http://www.ebi.ac.uk/efo/EFO_0000602	rdfs:comment	"Description from https://www.jax.org/strain/000651:
+
+BALB/c mice are particularly well known for the production of plasmacytomas following injection with mineral oil forming the basis for the production of monoclonal antibodies. Although not all BALB/c substrains have been examined for plasmacytoma induction, substrains derived from the Andervont (An) lineage (which includes BALB/cByJ) typically are susceptible, while those descended from BALB/cJ are resistant (see: Potter M, 1985). Mammary tumor incidence is normally low but infection with mammary tumor virus by fostering to MMTV+ C3H mice dramatically increases tumor number and age of onset. BALB/c mice develop other cancers later in life including reticular neoplasms, primary lung tumors, and renal tumors. Rare spontaneous myoepitheliomas arising from myoepithelial cells of various exocrine glands have been observed in both BALB/cJ and BALB/cByJ substrains.
+
+White et al. reported a variation in thioglycolate medium-induced peritoneal leukocyte recruitment in 4 analyzed strains. The response of total leukocyte recruitment, from greatest to least, was C57BL/6J>BALB/c>CD1>129X1/SvJ. Variations were also found in the timeline of response and cell types most impacted.
+
+BALB/c mice immunized with PLP180-199 develop an atypical form of experimental autoimmune encephalomyelitis (EAE) in which susceptibility is determined by location. In the spinal cord 60-70% mice develop pathological lesions and in the brain and cerebellum 100% of mice develop sever lesions.
+
+Dorso-ventral vaginal septa is observed in some BALB/cJ females, and may contribute to non-productive females in this strain. (Cunliffe-Beamer T, Lab Anim Sci, 1976)
+"
+WARN	annotation_whitespace	http://www.ebi.ac.uk/efo/EFO_0007736	IAO:0000115	"Diabetes in NOD/ShiLtJ mice is characterized by insulitis, a leukocytic infiltrate of the pancreatic islets. Marked decreases in pancreatic insulin content occur in females at about 12 weeks of age and several weeks later in males. Onset of diabetes is marked by moderate glycosuria and by a non-fasting plasma glucose higher than 250 mg/dl. Diabetic mice are hypoinsulinemic and hyperglucagonemic, indicating a selective destruction of pancreatic islet beta cells. Susceptibility to IDDM in NOD/ShiLtJ mice is polygenic, and environment, including housing conditions, health status, and diet, exerts a strong effect on penetrance. NOD/ShiLtJ females are more widely used than males because the onset of IDDM symptoms occurs earlier and with a higher incidence (90-100% by 30 weeks of age). NOD/ShiLtJ males develop IDDM at a frequency of between 40-60% by 30-40 weeks of age. Male mice are useful for certain applications, including pharmaceutical studies, \""accelerated transfer\"" of IDDM, and some in vitro studies. The major component of diabetes susceptibility in NOD mice is the unique MHC haplotype (H2g7 = Kd, Aad, Abg7, Enull, Db). NOD mice also exhibit multiple aberrant immunophenotypes including defective antigen presenting cell immunoregulatory functions, defects in the regulation of theT lymphocyte repertoire, defective NK cell function, defective cytokine production from macrophages (Fan et al., 2004) and impaired wound healing. They also lack hemolytic complement, C5. NOD/ShiLtJ mice also are severely hearing-impaired. A variety of mutations causing immunodeficiencies, targeted mutations in cytokine genes, as well as transgenes affecting immune functions, have been backcrossed into the NOD/ShiLt inbred strain background.
+
+Diabetes onset was monitored weekly between the ages of 3 and 30 weeks in 120 male and 120 female NOD/ShiLtJ bred in the Bar Harbor and Sacramento facilities. Mice were fed a 6% fat diet (LabDiet 5K0Q, St. Louis MO), ad libitum. Diabetes was defined by a non-fasting blood glucose level exceeding 250 mg/dL. Blood was sampled from the submandibular route and analyzed using a OneTouch Ultra 2 handheld glucometer that was validated using a control solution on each measurement day. Data were combined from three independent studies, each involving 40 males and 40 females. The median female onset was 17 weeks in each study, and the Kaplan-Meier curves from the individual studies did not differ significantly. "
+WARN	annotation_whitespace	https://github.com/Fraunhofer-ITMP/BPO_00011	oboInOwl:hasDbXref	 MGI:2160972
+WARN	annotation_whitespace	https://github.com/Fraunhofer-ITMP/BPO_00011	oboInOwl:hasDbXref	 NCIT:C37370
+WARN	duplicate_exact_synonym	NCBITaxon:10088	oboInOwl:hasExactSynonym	Mus
+WARN	duplicate_exact_synonym	NCBITaxon:862507	oboInOwl:hasExactSynonym	Mus
+WARN	duplicate_exact_synonym	NCBITaxon:10088	oboInOwl:hasExactSynonym	mouse
+WARN	duplicate_exact_synonym	NCBITaxon:10090	oboInOwl:hasExactSynonym	mouse
+WARN	duplicate_exact_synonym	NCBITaxon:10088	oboInOwl:hasExactSynonym	mice
+WARN	duplicate_exact_synonym	https://github.com/Fraunhofer-ITMP/BPO_00034	oboInOwl:hasExactSynonym	mice
+WARN	duplicate_label_synonym	NCIT:C17375	oboInOwl:hasExactSynonym	Murine AIDS
+WARN	duplicate_label_synonym	NCIT:C28161	oboInOwl:hasExactSynonym	Intramuscular Route of Administration
+WARN	duplicate_label_synonym	NCIT:C38208	oboInOwl:hasExactSynonym	Endotracheal Route of Administration
+WARN	duplicate_label_synonym	NCIT:C38225	oboInOwl:hasExactSynonym	Intrabronchial Route of Administration
+WARN	duplicate_label_synonym	NCIT:C38238	oboInOwl:hasExactSynonym	Intradermal Route of Administration
+WARN	duplicate_label_synonym	NCIT:C38258	oboInOwl:hasExactSynonym	Intraperitoneal Route of Administration
+WARN	duplicate_label_synonym	NCIT:C38276	oboInOwl:hasExactSynonym	Intravenous Route of Administration
+WARN	duplicate_label_synonym	NCIT:C38284	oboInOwl:hasExactSynonym	Nasal Route of Administration
+WARN	duplicate_label_synonym	NCIT:C38288	oboInOwl:hasExactSynonym	Oral Route of Administration
+WARN	duplicate_label_synonym	NCIT:C38289	oboInOwl:hasExactSynonym	Oropharyngeal Route of Administration
+WARN	duplicate_label_synonym	NCIT:C38299	oboInOwl:hasExactSynonym	Subcutaneous Route of Administration
+WARN	duplicate_scoped_synonym	NCBITaxon:1760	oboInOwl:hasExactSynonym	high G+C Gram-positive bacteria
+WARN	duplicate_scoped_synonym	NCBITaxon:1760	oboInOwl:hasRelatedSynonym	high G+C Gram-positive bacteria
+WARN	duplicate_scoped_synonym	NCBITaxon:2759	oboInOwl:hasExactSynonym	eukaryotes
+WARN	duplicate_scoped_synonym	NCBITaxon:2759	oboInOwl:hasRelatedSynonym	eukaryotes
+WARN	duplicate_scoped_synonym	NCBITaxon:40674	oboInOwl:hasExactSynonym	mammals
+WARN	duplicate_scoped_synonym	NCBITaxon:40674	oboInOwl:hasRelatedSynonym	mammals
+WARN	duplicate_scoped_synonym	NCBITaxon:7711	oboInOwl:hasExactSynonym	chordates
+WARN	duplicate_scoped_synonym	NCBITaxon:7711	oboInOwl:hasRelatedSynonym	chordates
+WARN	duplicate_scoped_synonym	NCBITaxon:7742	oboInOwl:hasExactSynonym	vertebrates
+WARN	duplicate_scoped_synonym	NCBITaxon:7742	oboInOwl:hasRelatedSynonym	vertebrates
+WARN	duplicate_scoped_synonym	NCBITaxon:9347	oboInOwl:hasExactSynonym	placentals
+WARN	duplicate_scoped_synonym	NCBITaxon:9347	oboInOwl:hasRelatedSynonym	placentals
+WARN	invalid_xref	https://github.com/Fraunhofer-ITMP/BPO_00011	oboInOwl:hasDbXref	 MGI:2160972
+WARN	invalid_xref	https://github.com/Fraunhofer-ITMP/BPO_00011	oboInOwl:hasDbXref	 NCIT:C37370
+WARN	missing_definition	BFO:0000001	IAO:0000115	
+WARN	missing_definition	BFO:0000002	IAO:0000115	
+WARN	missing_definition	BFO:0000003	IAO:0000115	
+WARN	missing_definition	BFO:0000004	IAO:0000115	
+WARN	missing_definition	BFO:0000011	IAO:0000115	
+WARN	missing_definition	BFO:0000015	IAO:0000115	
+WARN	missing_definition	BFO:0000020	IAO:0000115	
+WARN	missing_definition	BFO:0000029	IAO:0000115	
+WARN	missing_definition	BFO:0000040	IAO:0000115	
+WARN	missing_definition	HANCESTRO:0301	IAO:0000115	
+WARN	missing_definition	IAO:0000115	IAO:0000115	
+WARN	missing_definition	IDO:0000610	IAO:0000115	
+WARN	missing_definition	IDO:0000612	IAO:0000115	
+WARN	missing_definition	IDO:0001009	IAO:0000115	
+WARN	missing_definition	NCBITaxon:10066	IAO:0000115	
+WARN	missing_definition	NCBITaxon:10088	IAO:0000115	
+WARN	missing_definition	NCBITaxon:10090	IAO:0000115	
+WARN	missing_definition	NCBITaxon:1113537	IAO:0000115	
+WARN	missing_definition	NCBITaxon:117570	IAO:0000115	
+WARN	missing_definition	NCBITaxon:117571	IAO:0000115	
+WARN	missing_definition	NCBITaxon:119060	IAO:0000115	
+WARN	missing_definition	NCBITaxon:120793	IAO:0000115	
+WARN	missing_definition	NCBITaxon:1224	IAO:0000115	
+WARN	missing_definition	NCBITaxon:1236	IAO:0000115	
+WARN	missing_definition	NCBITaxon:1239	IAO:0000115	
+WARN	missing_definition	NCBITaxon:1279	IAO:0000115	
+WARN	missing_definition	NCBITaxon:1280	IAO:0000115	
+WARN	missing_definition	NCBITaxon:1300	IAO:0000115	
+WARN	missing_definition	NCBITaxon:1301	IAO:0000115	
+WARN	missing_definition	NCBITaxon:1313	IAO:0000115	
+WARN	missing_definition	NCBITaxon:1314	IAO:0000115	
+WARN	missing_definition	NCBITaxon:1338369	IAO:0000115	
+WARN	missing_definition	NCBITaxon:1350	IAO:0000115	
+WARN	missing_definition	NCBITaxon:1352	IAO:0000115	
+WARN	missing_definition	NCBITaxon:135621	IAO:0000115	
+WARN	missing_definition	NCBITaxon:135625	IAO:0000115	
+WARN	missing_definition	NCBITaxon:136841	IAO:0000115	
+WARN	missing_definition	NCBITaxon:1385	IAO:0000115	
+WARN	missing_definition	NCBITaxon:1437010	IAO:0000115	
+WARN	missing_definition	NCBITaxon:1496	IAO:0000115	
+WARN	missing_definition	NCBITaxon:1760	IAO:0000115	
+WARN	missing_definition	NCBITaxon:1762	IAO:0000115	
+WARN	missing_definition	NCBITaxon:1763	IAO:0000115	
+WARN	missing_definition	NCBITaxon:1773	IAO:0000115	
+WARN	missing_definition	NCBITaxon:1783257	IAO:0000115	
+WARN	missing_definition	NCBITaxon:1783272	IAO:0000115	
+WARN	missing_definition	NCBITaxon:1785	IAO:0000115	
+WARN	missing_definition	NCBITaxon:186801	IAO:0000115	
+WARN	missing_definition	NCBITaxon:186802	IAO:0000115	
+WARN	missing_definition	NCBITaxon:186804	IAO:0000115	
+WARN	missing_definition	NCBITaxon:186826	IAO:0000115	
+WARN	missing_definition	NCBITaxon:1870884	IAO:0000115	
+WARN	missing_definition	NCBITaxon:1903411	IAO:0000115	
+WARN	missing_definition	NCBITaxon:1903414	IAO:0000115	
+WARN	missing_definition	NCBITaxon:194	IAO:0000115	
+WARN	missing_definition	NCBITaxon:1963758	IAO:0000115	
+WARN	missing_definition	NCBITaxon:2	IAO:0000115	
+WARN	missing_definition	NCBITaxon:201174	IAO:0000115	
+WARN	missing_definition	NCBITaxon:204428	IAO:0000115	
+WARN	missing_definition	NCBITaxon:204429	IAO:0000115	
+WARN	missing_definition	NCBITaxon:205	IAO:0000115	
+WARN	missing_definition	NCBITaxon:206351	IAO:0000115	
+WARN	missing_definition	NCBITaxon:209	IAO:0000115	
+WARN	missing_definition	NCBITaxon:210	IAO:0000115	
+WARN	missing_definition	NCBITaxon:213849	IAO:0000115	
+WARN	missing_definition	NCBITaxon:2593542	IAO:0000115	
+WARN	missing_definition	NCBITaxon:2629414	IAO:0000115	
+WARN	missing_definition	NCBITaxon:2750822	IAO:0000115	
+WARN	missing_definition	NCBITaxon:2759	IAO:0000115	
+WARN	missing_definition	NCBITaxon:28216	IAO:0000115	
+WARN	missing_definition	NCBITaxon:286	IAO:0000115	
+WARN	missing_definition	NCBITaxon:287	IAO:0000115	
+WARN	missing_definition	NCBITaxon:2887326	IAO:0000115	
+WARN	missing_definition	NCBITaxon:2890311	IAO:0000115	
+WARN	missing_definition	NCBITaxon:292	IAO:0000115	
+WARN	missing_definition	NCBITaxon:29547	IAO:0000115	
+WARN	missing_definition	NCBITaxon:314146	IAO:0000115	
+WARN	missing_definition	NCBITaxon:314147	IAO:0000115	
+WARN	missing_definition	NCBITaxon:32008	IAO:0000115	
+WARN	missing_definition	NCBITaxon:32523	IAO:0000115	
+WARN	missing_definition	NCBITaxon:32524	IAO:0000115	
+WARN	missing_definition	NCBITaxon:32525	IAO:0000115	
+WARN	missing_definition	NCBITaxon:33154	IAO:0000115	
+WARN	missing_definition	NCBITaxon:33208	IAO:0000115	
+WARN	missing_definition	NCBITaxon:33213	IAO:0000115	
+WARN	missing_definition	NCBITaxon:33511	IAO:0000115	
+WARN	missing_definition	NCBITaxon:337687	IAO:0000115	
+WARN	missing_definition	NCBITaxon:37162	IAO:0000115	
+WARN	missing_definition	NCBITaxon:39107	IAO:0000115	
+WARN	missing_definition	NCBITaxon:40674	IAO:0000115	
+WARN	missing_definition	NCBITaxon:468	IAO:0000115	
+WARN	missing_definition	NCBITaxon:469	IAO:0000115	
+WARN	missing_definition	NCBITaxon:470	IAO:0000115	
+WARN	missing_definition	NCBITaxon:481	IAO:0000115	
+WARN	missing_definition	NCBITaxon:482	IAO:0000115	
+WARN	missing_definition	NCBITaxon:485	IAO:0000115	
+WARN	missing_definition	NCBITaxon:51291	IAO:0000115	
+WARN	missing_definition	NCBITaxon:543	IAO:0000115	
+WARN	missing_definition	NCBITaxon:561	IAO:0000115	
+WARN	missing_definition	NCBITaxon:562	IAO:0000115	
+WARN	missing_definition	NCBITaxon:570	IAO:0000115	
+WARN	missing_definition	NCBITaxon:573	IAO:0000115	
+WARN	missing_definition	NCBITaxon:583	IAO:0000115	
+WARN	missing_definition	NCBITaxon:590	IAO:0000115	
+WARN	missing_definition	NCBITaxon:6072	IAO:0000115	
+WARN	missing_definition	NCBITaxon:613	IAO:0000115	
+WARN	missing_definition	NCBITaxon:620	IAO:0000115	
+WARN	missing_definition	NCBITaxon:625	IAO:0000115	
+WARN	missing_definition	NCBITaxon:68525	IAO:0000115	
+WARN	missing_definition	NCBITaxon:712	IAO:0000115	
+WARN	missing_definition	NCBITaxon:72274	IAO:0000115	
+WARN	missing_definition	NCBITaxon:72293	IAO:0000115	
+WARN	missing_definition	NCBITaxon:72294	IAO:0000115	
+WARN	missing_definition	NCBITaxon:724	IAO:0000115	
+WARN	missing_definition	NCBITaxon:727	IAO:0000115	
+WARN	missing_definition	NCBITaxon:7711	IAO:0000115	
+WARN	missing_definition	NCBITaxon:7742	IAO:0000115	
+WARN	missing_definition	NCBITaxon:77643	IAO:0000115	
+WARN	missing_definition	NCBITaxon:7776	IAO:0000115	
+WARN	missing_definition	NCBITaxon:80840	IAO:0000115	
+WARN	missing_definition	NCBITaxon:809	IAO:0000115	
+WARN	missing_definition	NCBITaxon:810	IAO:0000115	
+WARN	missing_definition	NCBITaxon:81852	IAO:0000115	
+WARN	missing_definition	NCBITaxon:8287	IAO:0000115	
+WARN	missing_definition	NCBITaxon:85007	IAO:0000115	
+WARN	missing_definition	NCBITaxon:862507	IAO:0000115	
+WARN	missing_definition	NCBITaxon:87882	IAO:0000115	
+WARN	missing_definition	NCBITaxon:89593	IAO:0000115	
+WARN	missing_definition	NCBITaxon:90964	IAO:0000115	
+WARN	missing_definition	NCBITaxon:909768	IAO:0000115	
+WARN	missing_definition	NCBITaxon:91061	IAO:0000115	
+WARN	missing_definition	NCBITaxon:91347	IAO:0000115	
+WARN	missing_definition	NCBITaxon:9347	IAO:0000115	
+WARN	missing_definition	NCBITaxon:9989	IAO:0000115	
+WARN	missing_definition	NCIT:C173514	IAO:0000115	
+WARN	missing_definition	NCIT:C173515	IAO:0000115	
+WARN	missing_definition	NCIT:C17375	IAO:0000115	
+WARN	missing_definition	OBI:0000011	IAO:0000115	
+WARN	missing_definition	OBI:0000094	IAO:0000115	
+WARN	missing_definition	OBI:0100026	IAO:0000115	
+WARN	missing_definition	OBI:0302887	IAO:0000115	
+WARN	missing_definition	OMIT:0016996	IAO:0000115	
+WARN	missing_definition	VO:0000574	IAO:0000115	
+WARN	missing_definition	http://www.ebi.ac.uk/efo/EFO_0002547	IAO:0000115	
+WARN	missing_definition	http://www.ebi.ac.uk/efo/EFO_0021426	IAO:0000115	
+WARN	missing_definition	oboInOwl:hasAlternativeId	IAO:0000115	
+WARN	missing_definition	oboInOwl:hasExactSynonym	IAO:0000115	
+WARN	missing_definition	oboInOwl:hasNarrowSynonym	IAO:0000115	
+WARN	missing_definition	oboInOwl:hasOBONamespace	IAO:0000115	
+WARN	missing_definition	oboInOwl:inSubset	IAO:0000115	
+WARN	missing_subset_declaration	NCIT:C116977	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	NCIT:C118169	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	NCIT:C148636	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	NCIT:C150107	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	NCIT:C157711	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	NCIT:C177537	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	NCIT:C186328	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	NCIT:C186341	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	NCIT:C54452	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	NCIT:C54455	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	NCIT:C61410	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	NCIT:C66729	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	NCIT:C66830	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	NCIT:C77526	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	NCIT:C77527	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	NCIT:C78420	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	NCIT:C78425	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	NCIT:C90259	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	obo:pato#attribute_slim	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	obo:pato#mpath_slim	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	obo:pato#value_slim	rdfs:subPropertyOf	
+WARN	missing_synonymtype_declaration	obo:ncbitaxon#acronym	rdfs:subPropertyOf	
+WARN	missing_synonymtype_declaration	obo:ncbitaxon#blast_name	rdfs:subPropertyOf	
+WARN	missing_synonymtype_declaration	obo:ncbitaxon#common_name	rdfs:subPropertyOf	
+WARN	missing_synonymtype_declaration	obo:ncbitaxon#equivalent_name	rdfs:subPropertyOf	
+WARN	missing_synonymtype_declaration	obo:ncbitaxon#genbank_common_name	rdfs:subPropertyOf	
+WARN	missing_synonymtype_declaration	obo:ncbitaxon#in_part	rdfs:subPropertyOf	
+WARN	missing_synonymtype_declaration	obo:ncbitaxon#misnomer	rdfs:subPropertyOf	
+WARN	missing_synonymtype_declaration	obo:ncbitaxon#misspelling	rdfs:subPropertyOf	
+WARN	missing_synonymtype_declaration	obo:ncbitaxon#scientific_name	rdfs:subPropertyOf	
+WARN	missing_synonymtype_declaration	obo:ncbitaxon#synonym	rdfs:subPropertyOf	
