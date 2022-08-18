@@ -11,3 +11,6 @@ http://purl.obolibrary.org/obo/PATO_0000001	quality	specifically dependent conti
 http://purl.obolibrary.org/obo/BFO_0000029	site	independent continuant
 http://purl.obolibrary.org/obo/BFO_0000015	process	occurrent
 http://purl.obolibrary.org/obo/BFO_0000011	spatiotemporal region	occurrent
+http://purl.obolibrary.org/obo/MCO_0000342	growth phase	spatiotemporal region
+http://purl.obolibrary.org/obo/MCO_0000366	exponential phase	growth phase
+http://purl.obolibrary.org/obo/MCO_0000368	stationary phase	growth phase
