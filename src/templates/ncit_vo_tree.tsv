@@ -1,6 +1,6 @@
 ID	Label	Type (is-a)	database_cross_reference
 ID	A rdfs:label	C %	A oboInOwl:hasDbXref
-http://purl.obolibrary.org/obo/BFO_0000029	site	owl:Thing
+http://purl.obolibrary.org/obo/BFO_0000029	site	owl:Thing	
 http://purl.obolibrary.org/obo/VO_0000574	route of administration	site	NCIT:C38114
 http://purl.obolibrary.org/obo/NCIT_C38284	Nasal Route of Administration	route of administration	VO:0000341
 http://purl.obolibrary.org/obo/NCIT_C38276	Intravenous Route of Administration	route of administration	VO:0000416
