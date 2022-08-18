@@ -96,13 +96,6 @@ def main(
             onto_name='pato.owl'
         )
 
-    # MCO
-    if not os.path.exists(f'{ONTOLOGY_IMPORT_DIR}/mco.owl'):
-        get_full_ontology(
-            onto_uri='http://purl.obolibrary.org/obo/mco.owl',
-            onto_name='mco.owl'
-        )
-
     # IDO
     if not os.path.exists(f'{ONTOLOGY_IMPORT_DIR}/ido.owl'):
         get_full_ontology(
@@ -230,27 +223,10 @@ def main(
                 reduce --reasoner ELK -o {ONTOLOGY_EXPORT_DIR}/organism_sex_ido_merged.owl"
         )
 
-    """Adding MCO and Refactoring ontology to BFO format"""
-    if not os.path.exists(f'{ONTOLOGY_IMPORT_DIR}/mco_extracted.owl'):
-        logger.warning(f'Creating MCO subtree.')
-        os.system(
-            f"java -jar {LIB_DIR}/robot.jar extract --method MIREOT -i {ONTOLOGY_IMPORT_DIR}/mco.owl \
-                --upper-term BFO:0000011 --lower-term MCO:0000366 --lower-term MCO:0000368 \
-                 --copy-ontology-annotations false --intermediates all \
-                 --imports exclude -o {ONTOLOGY_IMPORT_DIR}/mco_extracted.owl"
-        )
-
+    """Refactoring ontology to BFO format"""
     if not os.path.exists(f'{ONTOLOGY_EXPORT_DIR}/bpo_{version}.owl'):
-        logger.warning(f'Rearranging MCO subtree.')
-
         os.system(
-            f"java -jar {LIB_DIR}/robot.jar merge \
-            -i {ONTOLOGY_EXPORT_DIR}/organism_sex_ido_merged.owl -i {ONTOLOGY_IMPORT_DIR}/mco_extracted.owl \
-            --include-annotations false reduce --reasoner ELK -o {ONTOLOGY_EXPORT_DIR}/bpo_mco.owl"
-        )
-
-        os.system(
-            f"java -jar {LIB_DIR}/robot.jar template -i {ONTOLOGY_EXPORT_DIR}/mco_extracted.owl \
+            f"java -jar {LIB_DIR}/robot.jar template -i {ONTOLOGY_EXPORT_DIR}/organism_sex_ido_merged.owl \
                 --template {TEMPLATE_DIR}/upper_level_class.tsv merge \
                 -i {ONTOLOGY_EXPORT_DIR}/organism_sex_ido_merged.owl \
                 --include-annotations false reduce --reasoner ELK -o {ONTOLOGY_EXPORT_DIR}/bpo_{version}.owl"
