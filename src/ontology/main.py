@@ -9,6 +9,10 @@ ONTOLOGY_IMPORT_DIR = 'imports'
 LIB_DIR = '../../bin'
 ONTOLOGY_EXPORT_DIR = '../../imports'
 TEMPLATE_DIR = '../templates'
+REPORT_DIR = 'reports'
+
+os.makedirs(ONTOLOGY_EXPORT_DIR, exist_ok=True)
+os.makedirs(REPORT_DIR, exist_ok=True)
 
 logger = logging.getLogger(__name__)
 
@@ -56,7 +60,9 @@ def get_full_ontology(
     logger.warning(f'Ontologies downloaded successfully :) \n')
 
 
-def main():
+def main(
+    version: str
+):
     """Workflow to create the BPO ontology."""
 
     get_robot()
@@ -113,87 +119,167 @@ def main():
 
     """Trimming the NCIT"""
 
-    logger.warning(f'Refactoring NCIT')
-    os.system(
-        f"java -jar {LIB_DIR}/robot.jar extract --method STAR -i {ONTOLOGY_IMPORT_DIR}/ncit.owl \
-            --term-file {ONTOLOGY_IMPORT_DIR}/ncit_terms.txt --copy-ontology-annotations true --intermediates all \
-            --imports exclude -o {ONTOLOGY_EXPORT_DIR}/ncit_extracted.owl"
-    )
+    if not os.path.exists(f'{ONTOLOGY_IMPORT_DIR}/ncit_extracted.owl'):
+        logger.warning(f'Refactoring NCIT')
+        os.system(
+            f"java -jar {LIB_DIR}/robot.jar extract --method STAR -i {ONTOLOGY_IMPORT_DIR}/ncit.owl \
+                --term-file {ONTOLOGY_IMPORT_DIR}/ncit_terms.txt --copy-ontology-annotations true --intermediates all \
+                --imports exclude -o {ONTOLOGY_IMPORT_DIR}/ncit_extracted.owl"
+        )
 
-    # Refactoring the NCIT ontology to BFO format using VO tree
-    os.system(
-        f"java -jar {LIB_DIR}/robot.jar template -i {ONTOLOGY_EXPORT_DIR}/ncit_extracted.owl \
-            --template {TEMPLATE_DIR}/ncit_vo_tree.tsv merge -i {ONTOLOGY_EXPORT_DIR}/ncit_extracted.owl \
-            --include-annotations true reduce --reasoner ELK -o {ONTOLOGY_EXPORT_DIR}/administration_route.owl"
-    )
+    if not os.path.exists(f'{ONTOLOGY_EXPORT_DIR}/administration_route.owl'):
+        # Refactoring the NCIT ontology to BFO format using VO tree
+        os.system(
+            f"java -jar {LIB_DIR}/robot.jar template -i {ONTOLOGY_IMPORT_DIR}/ncit_extracted.owl \
+                --template {TEMPLATE_DIR}/ncit_vo_tree.tsv merge -i {ONTOLOGY_IMPORT_DIR}/ncit_extracted.owl \
+                --include-annotations true reduce --reasoner ELK -o {ONTOLOGY_EXPORT_DIR}/administration_route.owl"
+        )
 
     """Trimming the NCBITaxon"""
 
-    logger.warning(f'Refactoring NCBITaxon.')
-    os.system(
-        f"java -jar {LIB_DIR}/robot.jar extract --method STAR -i {ONTOLOGY_IMPORT_DIR}/ncbitaxon.owl \
-            --term-file {ONTOLOGY_IMPORT_DIR}/ncbitaxon_terms.txt --copy-ontology-annotations true \
-            --intermediates all --imports exclude -o {ONTOLOGY_EXPORT_DIR}/ncbitaxon_extracted.owl"
-    )
+    if not os.path.exists(f'{ONTOLOGY_EXPORT_DIR}/organism.owl'):
+        logger.warning(f'Refactoring NCBITaxon.')
+        os.system(
+            f"java -jar {LIB_DIR}/robot.jar extract --method STAR -i {ONTOLOGY_IMPORT_DIR}/ncbitaxon.owl \
+                --term-file {ONTOLOGY_IMPORT_DIR}/ncbitaxon_terms.txt --copy-ontology-annotations true \
+                --intermediates all --imports exclude -o {ONTOLOGY_IMPORT_DIR}/ncbitaxon_extracted.owl"
+        )
 
-    # Refactoring the ontology to include the re-grouping of bacteria
-    os.system(
-        f"java -jar {LIB_DIR}/robot.jar template -i {ONTOLOGY_EXPORT_DIR}/ncbitaxon_extracted.owl \
-            --template {TEMPLATE_DIR}/bacteria_bpo_tree.tsv merge \
-            -i {ONTOLOGY_EXPORT_DIR}/ncbitaxon_extracted.owl --include-annotations true reduce --reasoner ELK \
-            -o {ONTOLOGY_EXPORT_DIR}/organism.owl"
-    )
+        # Refactoring the ontology to include the re-grouping of bacteria
+        os.system(
+            f"java -jar {LIB_DIR}/robot.jar template -i {ONTOLOGY_IMPORT_DIR}/ncbitaxon_extracted.owl \
+                --template {TEMPLATE_DIR}/bacteria_bpo_tree.tsv merge \
+                -i {ONTOLOGY_IMPORT_DIR}/ncbitaxon_extracted.owl --include-annotations true reduce --reasoner ELK \
+                -o {ONTOLOGY_EXPORT_DIR}/organism.owl"
+        )
 
     """Merging NCBITaxon and NCIT"""
 
-    logger.warning(f'Merging ontologies')
-    os.system(
-        f"java -jar {LIB_DIR}/robot.jar merge -i {ONTOLOGY_EXPORT_DIR}/administration_route.owl \
-        -i {ONTOLOGY_EXPORT_DIR}/organism.owl --include-annotations false \
-        annotate --annotation dc:license https://creativecommons.org/licenses/by/4.0/ \
-        -o {ONTOLOGY_EXPORT_DIR}/route_organism_merged.owl"
-    )
+    if not os.path.exists(f'{ONTOLOGY_EXPORT_DIR}/route_organism_merged.owl'):
+        logger.warning(f'Merging ontologies')
+        os.system(
+            f"java -jar {LIB_DIR}/robot.jar merge -i {ONTOLOGY_EXPORT_DIR}/administration_route.owl \
+            -i {ONTOLOGY_EXPORT_DIR}/organism.owl --include-annotations false \
+            annotate --annotation dc:license https://creativecommons.org/licenses/by/4.0/ \
+            -o {ONTOLOGY_EXPORT_DIR}/route_organism_merged.owl"
+        )
 
     """Trimming the EFO"""
 
-    logger.warning(f'Refactoring EFO.')
+    if not os.path.exists(f'{ONTOLOGY_IMPORT_DIR}/efo_extracted.owl'):
+        logger.warning(f'Refactoring EFO.')
+        os.system(
+            f"java -jar {LIB_DIR}/robot.jar extract --method STAR -i {ONTOLOGY_IMPORT_DIR}/efo.owl \
+            --term-file {ONTOLOGY_IMPORT_DIR}/efo_terms.txt --copy-ontology-annotations false \
+            --intermediates none --imports exclude -o {ONTOLOGY_IMPORT_DIR}/efo_extracted.owl"
+        )
+
+    if not os.path.exists(f'{ONTOLOGY_EXPORT_DIR}/route_organism_efo_merged.owl'):
+        os.system(
+            f"java -jar {LIB_DIR}/robot.jar merge \
+            -i {ONTOLOGY_EXPORT_DIR}/route_organism_merged.owl -i {ONTOLOGY_IMPORT_DIR}/efo_extracted.owl \
+            --include-annotations false annotate --annotation dc:license https://creativecommons.org/licenses/by/4.0/ \
+             -o {ONTOLOGY_EXPORT_DIR}/route_organism_efo_merged.owl"
+        )
+
+    if not os.path.exists(f'{ONTOLOGY_EXPORT_DIR}/organism_with_strains.owl'):
+        logger.warning(f'Refactoring the mouse strain tree.')
+        os.system(
+            f"java -jar {LIB_DIR}/robot.jar template -i {ONTOLOGY_EXPORT_DIR}/route_organism_efo_merged.owl \
+            --template {TEMPLATE_DIR}/mouse_strain_tree.tsv merge \
+            -i {ONTOLOGY_EXPORT_DIR}/route_organism_efo_merged.owl \
+            --include-annotations false reduce --reasoner ELK -o {ONTOLOGY_EXPORT_DIR}/organism_with_strains.owl"
+        )
+
+    """Creating PATO tree and Merging with existing tree"""
+
+    if not os.path.exists(f'{ONTOLOGY_IMPORT_DIR}/pato_extracted.owl'):
+        logger.warning(f'Creating PATO subtree.')
+        os.system(
+            f"java -jar {LIB_DIR}/robot.jar extract --method MIREOT -i {ONTOLOGY_IMPORT_DIR}/pato.owl \
+            --upper-term PATO:0000001 --lower-term PATO:0000384 --lower-term PATO:0000383 \
+            --copy-ontology-annotations false --intermediates all \
+            --imports exclude -o {ONTOLOGY_IMPORT_DIR}/pato_extracted.owl"
+        )
+
+    if not os.path.exists(f'{ONTOLOGY_EXPORT_DIR}/organism_sex_merged.owl'):
+        logger.warning(f'Merging the PATO tree.')
+        os.system(
+            f"java -jar {LIB_DIR}/robot.jar merge \
+            -i {ONTOLOGY_EXPORT_DIR}/organism_with_strains.owl -i {ONTOLOGY_IMPORT_DIR}/pato_extracted.owl \
+            --include-annotations false annotate --annotation dc:license https://creativecommons.org/licenses/by/4.0/ \
+             -o {ONTOLOGY_EXPORT_DIR}/organism_sex_merged.owl"
+        )
+
+    """Creating IDO subtree and Merging with existing ontology"""
+
+    if not os.path.exists(f'{ONTOLOGY_IMPORT_DIR}/ido_extracted.owl'):
+        logger.warning(f'Creating IDO subtree.')
+        os.system(
+            f"java -jar {LIB_DIR}/robot.jar extract --method MIREOT -i {ONTOLOGY_IMPORT_DIR}/ido.owl \
+                --lower-term IDO:0001009 --copy-ontology-annotations false --intermediates all \
+                --imports exclude -o {ONTOLOGY_IMPORT_DIR}/ido_extracted.owl"
+        )
+
+    if not os.path.exists(f'{ONTOLOGY_EXPORT_DIR}/organism_sex_ido_merged.owl'):
+        logger.warning(f'Rearranging IDO subtree.')
+        os.system(
+            f"java -jar {LIB_DIR}/robot.jar template -i {ONTOLOGY_IMPORT_DIR}/ido_extracted.owl \
+                --template {TEMPLATE_DIR}/immunosuppression_tree.tsv merge \
+                -i {ONTOLOGY_EXPORT_DIR}/organism_sex_merged.owl --include-annotations false \
+                reduce --reasoner ELK -o {ONTOLOGY_EXPORT_DIR}/organism_sex_ido_merged.owl"
+        )
+
+    """Adding MCO and Refactoring ontology to BFO format"""
+    if not os.path.exists(f'{ONTOLOGY_IMPORT_DIR}/mco_extracted.owl'):
+        logger.warning(f'Creating MCO subtree.')
+        os.system(
+            f"java -jar {LIB_DIR}/robot.jar extract --method MIREOT -i {ONTOLOGY_IMPORT_DIR}/mco.owl \
+                --upper-term BFO:0000011 --lower-term MCO:0000366 --lower-term MCO:0000368 \
+                 --copy-ontology-annotations false --intermediates all \
+                 --imports exclude -o {ONTOLOGY_IMPORT_DIR}/mco_extracted.owl"
+        )
+
+    if not os.path.exists(f'{ONTOLOGY_EXPORT_DIR}/bpo_{version}.owl'):
+        logger.warning(f'Rearranging MCO subtree.')
+
+        os.system(
+            f"java -jar {LIB_DIR}/robot.jar merge \
+            -i {ONTOLOGY_EXPORT_DIR}/organism_sex_ido_merged.owl -i {ONTOLOGY_IMPORT_DIR}/mco_extracted.owl \
+            --include-annotations false reduce --reasoner ELK -o {ONTOLOGY_EXPORT_DIR}/bpo_mco.owl"
+        )
+
+        os.system(
+            f"java -jar {LIB_DIR}/robot.jar template -i {ONTOLOGY_EXPORT_DIR}/mco_extracted.owl \
+                --template {TEMPLATE_DIR}/upper_level_class.tsv merge \
+                -i {ONTOLOGY_EXPORT_DIR}/organism_sex_ido_merged.owl \
+                --include-annotations false reduce --reasoner ELK -o {ONTOLOGY_EXPORT_DIR}/bpo_{version}.owl"
+        )
+
+    logger.warning('Annotate the BPO ontology')
     os.system(
-        f"java -jar {LIB_DIR}/robot.jar extract --method STAR -i {ONTOLOGY_IMPORT_DIR}/efo.owl \
-        --term-file {ONTOLOGY_IMPORT_DIR}/efo_terms.txt --copy-ontology-annotations true \
-        --intermediates all --imports exclude -o {ONTOLOGY_EXPORT_DIR}/efo_extracted.owl"
+        f"java -jar {LIB_DIR}/robot.jar annotate --input {ONTOLOGY_EXPORT_DIR}/bpo_{version}.owl \
+             --ontology-iri https://github.com/Fraunhofer-ITMP/bpo.owl \
+             --version-iri https://github.com/Fraunhofer-ITMP/bpo-0.0.1.owl \
+             --annotation dc:title 'Bioassay Protocol Ontology' \
+             --annotation dc:license https://creativecommons.org/licenses/by/4.0/ \
+             --annotation dc:description 'An ontology for bioassay protocols' \
+             -o {ONTOLOGY_EXPORT_DIR}/bpo_{version}_annotated.owl"
     )
 
-    # logger.warning(f'Refactoring the mouse strain tree.')
-    # os.system(
-    #     f"java -jar {LIB_DIR}/robot.jar template -i {ONTOLOGY_EXPORT_DIR}/efo_extracted.owl \
-    #         --template {ONTOLOGY_IMPORT_DIR}/templates/mouse_strain_tree.tsv merge \
-    #         -i {ONTOLOGY_EXPORT_DIR}/organism_bpo.owl -i {ONTOLOGY_EXPORT_DIR}/efo_extracted.owl \
-    #         --include-annotations true reduce --reasoner ELK -o {ONTOLOGY_EXPORT_DIR}/organism_with_strains.owl"
-    # )
+    logger.warning(f'Reasoning merge')
+    os.system(
+        f"java -jar {LIB_DIR}/robot.jar materialize --reasoner ELK \
+        -i {ONTOLOGY_EXPORT_DIR}/bpo_{version}_annotated.owl \
+        reduce -o {ONTOLOGY_EXPORT_DIR}/bpo_{version}_reduced.owl"
+    )
 
-    # logger.warning('Annotate the BPO ontology')
-    # os.system(
-    #     f"java -jar {LIB_DIR}/robot.jar annotate --input {ONTOLOGY_EXPORT_DIR}/route_organism_merged.owl \
-    #          --ontology-iri https://github.com/Fraunhofer-ITMP/bpo.owl \
-    #          --version-iri https://github.com/Fraunhofer-ITMP/bpo-dev.owl \
-    #          --annotation dc:title Bioassay_Protocol_Ontology \
-    #          --annotation dc:license https://creativecommons.org/licenses/by/4.0/ \
-    #          --annotation dc:description An_ontology_for_bioassay_protocols \
-    #          -o {ONTOLOGY_EXPORT_DIR}/route_organism_merged.owl"
-    # )
-
-    # logger.warning(f'Reasoning the BPO ontology')
-    # os.system(
-    #     f"java -jar {LIB_DIR}/robot.jar materialize --reasoner ELK -i {ONTOLOGY_EXPORT_DIR}/route_organism_merged.owl \
-    #         reduce -o {ONTOLOGY_EXPORT_DIR}/route_organism_merged_reduced.owl"
-    # )
-    #
-    # logger.warning(f'Generating the ROBOT report')
-    # os.system(
-    #     f"java -jar {LIB_DIR}/robot.jar report -i {ONTOLOGY_EXPORT_DIR}/route_organism_merged_reduced.owl \
-    #         -o {ONTOLOGY_EXPORT_DIR}/route_organism_merged_report.tsv"
-    # )
+    logger.warning(f'Generating report')
+    os.system(
+        f"java -jar {LIB_DIR}/robot.jar report -i {ONTOLOGY_EXPORT_DIR}/bpo_{version}_reduced.owl \
+        -o {REPORT_DIR}/report_bpo_{version}.tsv"
+    )
 
 
 if __name__ == '__main__':
-    main()
+    main(version='0.0.1')
