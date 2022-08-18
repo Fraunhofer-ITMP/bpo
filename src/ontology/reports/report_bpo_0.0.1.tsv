@@ -61,6 +61,9 @@ WARN	missing_definition	IAO:0000115	IAO:0000115
 WARN	missing_definition	IDO:0000610	IAO:0000115	
 WARN	missing_definition	IDO:0000612	IAO:0000115	
 WARN	missing_definition	IDO:0001009	IAO:0000115	
+WARN	missing_definition	MCO:0000342	IAO:0000115	
+WARN	missing_definition	MCO:0000366	IAO:0000115	
+WARN	missing_definition	MCO:0000368	IAO:0000115	
 WARN	missing_definition	NCBITaxon:10066	IAO:0000115	
 WARN	missing_definition	NCBITaxon:10088	IAO:0000115	
 WARN	missing_definition	NCBITaxon:10090	IAO:0000115	
