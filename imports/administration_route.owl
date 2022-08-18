@@ -1,0 +1,1734 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+    <Ontology>
+        <protege:defaultLanguage>en</protege:defaultLanguage>
+        <terms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The NCIt OBO Edition project aims to increase integration of the NCIt with OBO Library ontologies. NCIt is a reference terminology that includes broad coverage of the cancer domain, including cancer related diseases, findings and abnormalities.</terms:description>
+        <terms:isVersionOf rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"/>
+        <terms:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI Thesaurus OBO Edition</terms:title>
+        <rdfs:comment>NCI Thesaurus, a controlled vocabulary in support of NCI administrative and scientific activities. Produced by the Enterprise Vocabulary System (EVS), a project by the NCI Center for Biomedical Informatics and Information Technology. National Cancer Institute, National Institutes of Health, Bethesda, MD 20892, U.S.A.</rdfs:comment>
+        <versionInfo>22.03d</versionInfo>
+    </Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_A32 -->
+
+    <AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_A32"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_NHC0 -->
+
+    <AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_NHC0"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_P106 -->
+
+    <AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P106"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_P107 -->
+
+    <AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P107"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_P108 -->
+
+    <AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P108"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_P207 -->
+
+    <AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P207"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_P317 -->
+
+    <AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P317"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_P322 -->
+
+    <AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P322"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_P325 -->
+
+    <AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P325"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_P366 -->
+
+    <AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P366"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_P375 -->
+
+    <AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P375"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_P378 -->
+
+    <AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P378"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_P383 -->
+
+    <AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P383"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_P384 -->
+
+    <AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P384"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_P385 -->
+
+    <AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P385"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_P386 -->
+
+    <AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P386"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_P393 -->
+
+    <AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P393"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_P394 -->
+
+    <AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P394"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_P395 -->
+
+    <AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P395"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_P396 -->
+
+    <AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P396"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
+
+    <AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
+
+    <AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#inSubset -->
+
+    <AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000029 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000029">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">site</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C28161 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C28161">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/VO_0000574"/>
+        <obo:IAO_0000115>Intramuscular injection is a route of drug administration via injection into muscle tissue. Aqueous or oleaginous solutions and emulsions or suspensions may be administered. Absorption rates, delay in availability of the drug to the systemic circulation, and duration of effect are perfusion-limited, depend on molecular size of the agent, volume, and osmolarity of the drug solution, fat content of the injection site, and patient physical activity.</obo:IAO_0000115>
+        <obo:NCIT_NHC0>C28161</obo:NCIT_NHC0>
+        <obo:NCIT_P106>Therapeutic or Preventive Procedure</obo:NCIT_P106>
+        <obo:NCIT_P108>Intramuscular Route of Administration</obo:NCIT_P108>
+        <obo:NCIT_P207>C1556154</obo:NCIT_P207>
+        <obo:NCIT_P317>Route of Administration (C-DRG-00301)</obo:NCIT_P317>
+        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
+        <obo:NCIT_P322>EDQM-HC</obo:NCIT_P322>
+        <obo:NCIT_P322>FDA</obo:NCIT_P322>
+        <obo:NCIT_P322>NICHD</obo:NCIT_P322>
+        <obo:NCIT_P325>Administration within a muscle. (FDA)</obo:NCIT_P325>
+        <obo:NCIT_P325>Injection of a medicinal product into muscular tissue.</obo:NCIT_P325>
+        <obo:NCIT_P366>Intramuscular_Injection</obo:NCIT_P366>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VO:0000340</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>IM</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>INTRAMUSCULAR</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Intramuscular</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Intramuscular Injection</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Intramuscular Route of Administration</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Intramuscular use</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>intramuscular injection</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C148636"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C150107"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C54452"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C54455"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C61410"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C66729"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C66830"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C77526"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C77527"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C78420"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C78425"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C90259"/>
+        <rdfs:label>Intramuscular Route of Administration</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C28161"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>INTRAMUSCULAR</annotatedTarget>
+        <obo:NCIT_P383>SY</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C28161"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>Intramuscular</annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>FDA</obo:NCIT_P384>
+        <obo:NCIT_P386>ICSR-CVM</obo:NCIT_P386>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C28161"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>Intramuscular Injection</annotatedTarget>
+        <obo:NCIT_P383>SY</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C28161"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>Intramuscular Route of Administration</annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C28161"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>Intramuscular Route of Administration</annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>NICHD</obo:NCIT_P384>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C28161"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>Intramuscular Route of Administration</annotatedTarget>
+        <obo:NCIT_P383>SY</obo:NCIT_P383>
+        <obo:NCIT_P384>caDSR</obo:NCIT_P384>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C28161"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>Intramuscular use</annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>EDQM-HC</obo:NCIT_P384>
+        <obo:NCIT_P385>20035000</obo:NCIT_P385>
+        <obo:NCIT_P386>ROA</obo:NCIT_P386>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C28161"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>intramuscular injection</annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI-GLOSS</obo:NCIT_P384>
+        <obo:NCIT_P385>CDR0000044049</obo:NCIT_P385>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C28161"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>Intramuscular injection is a route of drug administration via injection into muscle tissue. Aqueous or oleaginous solutions and emulsions or suspensions may be administered. Absorption rates, delay in availability of the drug to the systemic circulation, and duration of effect are perfusion-limited, depend on molecular size of the agent, volume, and osmolarity of the drug solution, fat content of the injection site, and patient physical activity.</annotatedTarget>
+        <obo:NCIT_P378>NCI</obo:NCIT_P378>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C28161"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/NCIT_P325"/>
+        <annotatedTarget>Administration within a muscle. (FDA)</annotatedTarget>
+        <obo:NCIT_P378>CDISC</obo:NCIT_P378>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C28161"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/NCIT_P325"/>
+        <annotatedTarget>Injection of a medicinal product into muscular tissue.</annotatedTarget>
+        <obo:NCIT_P378>EDQM-HC</obo:NCIT_P378>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C28161"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>IM</annotatedTarget>
+        <obo:NCIT_P383>AB</obo:NCIT_P383>
+        <obo:NCIT_P384>FDA</obo:NCIT_P384>
+        <obo:NCIT_P385>005</obo:NCIT_P385>
+        <obo:NCIT_P386>Route of Administration (C-DRG-00301)</obo:NCIT_P386>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C28161"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>IM</annotatedTarget>
+        <obo:NCIT_P383>AB</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C28161"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>INTRAMUSCULAR</annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>CDISC</obo:NCIT_P384>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C28161"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>INTRAMUSCULAR</annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>FDA</obo:NCIT_P384>
+        <obo:NCIT_P385>005</obo:NCIT_P385>
+        <obo:NCIT_P386>Route of Administration (C-DRG-00301)</obo:NCIT_P386>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C28161"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>INTRAMUSCULAR</annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>FDA</obo:NCIT_P384>
+        <obo:NCIT_P386>SPL</obo:NCIT_P386>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C38208 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C38208">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/VO_0000574"/>
+        <obo:IAO_0000115>Endotracheal drug administration involves the introduction of the agent directly through the endotracheal tube in an intubated patient. Generally this route is considered as a last resort for drug administration, and provides a fast, effective means of drug delivery in a patient who requires immediate medication. Plasma levels obtained via endotracheal administration are considerably less than those obtained with an equal dosage administered intravenously or intraosseously. Endotracheal administration must be followed by hyper-insufflation of the lungs to promote optimal drug absorption.</obo:IAO_0000115>
+        <obo:NCIT_NHC0>C38208</obo:NCIT_NHC0>
+        <obo:NCIT_P106>Functional Concept</obo:NCIT_P106>
+        <obo:NCIT_P108>Endotracheal Route of Administration</obo:NCIT_P108>
+        <obo:NCIT_P207>C1522653</obo:NCIT_P207>
+        <obo:NCIT_P317>Route of Administration (C-DRG-00301)</obo:NCIT_P317>
+        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
+        <obo:NCIT_P322>EDQM-HC</obo:NCIT_P322>
+        <obo:NCIT_P322>FDA</obo:NCIT_P322>
+        <obo:NCIT_P325>Administration directly into the trachea. Synonymous with the term intratracheal. (FDA)</obo:NCIT_P325>
+        <obo:NCIT_P325>Administration of a medicinal product to the trachea and/or bronchi by instillation (preparations for inhalation are excluded; see inhalation use).</obo:NCIT_P325>
+        <obo:NCIT_P366>Endotracheal_Route_of_Drug_Administration</obo:NCIT_P366>
+        <oboInOwl:hasExactSynonym>E-TRACHE</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>ENDOTRACHEAL</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>ET</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Endotracheal</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Endotracheal Route of Administration</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Endotracheopulmonary use</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Intratracheal</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Intratracheal Route of Administration</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C148636"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C150107"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C54452"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C54455"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C61410"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C66729"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C66830"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C77526"/>
+        <rdfs:label>Endotracheal Route of Administration</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38208"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>Endotracheal drug administration involves the introduction of the agent directly through the endotracheal tube in an intubated patient. Generally this route is considered as a last resort for drug administration, and provides a fast, effective means of drug delivery in a patient who requires immediate medication. Plasma levels obtained via endotracheal administration are considerably less than those obtained with an equal dosage administered intravenously or intraosseously. Endotracheal administration must be followed by hyper-insufflation of the lungs to promote optimal drug absorption.</annotatedTarget>
+        <obo:NCIT_P378>NCI</obo:NCIT_P378>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38208"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/NCIT_P325"/>
+        <annotatedTarget>Administration directly into the trachea. Synonymous with the term intratracheal. (FDA)</annotatedTarget>
+        <obo:NCIT_P378>CDISC</obo:NCIT_P378>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38208"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/NCIT_P325"/>
+        <annotatedTarget>Administration of a medicinal product to the trachea and/or bronchi by instillation (preparations for inhalation are excluded; see inhalation use).</annotatedTarget>
+        <obo:NCIT_P378>EDQM-HC</obo:NCIT_P378>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38208"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>E-TRACHE</annotatedTarget>
+        <obo:NCIT_P383>AB</obo:NCIT_P383>
+        <obo:NCIT_P384>FDA</obo:NCIT_P384>
+        <obo:NCIT_P385>401</obo:NCIT_P385>
+        <obo:NCIT_P386>Route of Administration (C-DRG-00301)</obo:NCIT_P386>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38208"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>ENDOTRACHEAL</annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>CDISC</obo:NCIT_P384>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38208"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>ENDOTRACHEAL</annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>FDA</obo:NCIT_P384>
+        <obo:NCIT_P385>401</obo:NCIT_P385>
+        <obo:NCIT_P386>Route of Administration (C-DRG-00301)</obo:NCIT_P386>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38208"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>ENDOTRACHEAL</annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>FDA</obo:NCIT_P384>
+        <obo:NCIT_P386>SPL</obo:NCIT_P386>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38208"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>ET</annotatedTarget>
+        <obo:NCIT_P383>AB</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38208"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>Endotracheal</annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>FDA</obo:NCIT_P384>
+        <obo:NCIT_P386>ICSR-CVM</obo:NCIT_P386>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38208"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>Endotracheal Route of Administration</annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38208"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>Endotracheopulmonary use</annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>EDQM-HC</obo:NCIT_P384>
+        <obo:NCIT_P385>20008000</obo:NCIT_P385>
+        <obo:NCIT_P386>ROA</obo:NCIT_P386>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38208"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>Intratracheal</annotatedTarget>
+        <obo:NCIT_P383>SY</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38208"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>Intratracheal Route of Administration</annotatedTarget>
+        <obo:NCIT_P383>SY</obo:NCIT_P383>
+        <obo:NCIT_P384>CDISC</obo:NCIT_P384>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38208"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>Intratracheal Route of Administration</annotatedTarget>
+        <obo:NCIT_P383>SY</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C38225 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C38225">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/VO_0000574"/>
+        <obo:IAO_0000115>Administration of a drug within a bronchus or bronchi. The intrabronchial drug delivery can be used for both local and systemic drug action.</obo:IAO_0000115>
+        <obo:NCIT_NHC0>C38225</obo:NCIT_NHC0>
+        <obo:NCIT_P106>Functional Concept</obo:NCIT_P106>
+        <obo:NCIT_P108>Intrabronchial Route of Administration</obo:NCIT_P108>
+        <obo:NCIT_P207>C1512914</obo:NCIT_P207>
+        <obo:NCIT_P317>Route of Administration (C-DRG-00301)</obo:NCIT_P317>
+        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
+        <obo:NCIT_P322>FDA</obo:NCIT_P322>
+        <obo:NCIT_P325>Administration within a bronchus. (FDA)</obo:NCIT_P325>
+        <obo:NCIT_P366>Intrabronchial_Route_of_Drug_Administration</obo:NCIT_P366>
+        <oboInOwl:hasExactSynonym>I-BRONCHI</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>INTRABRONCHIAL</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Intrabronchial</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Intrabronchial Route of Administration</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C54452"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C54455"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C61410"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C66729"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C66830"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C77526"/>
+        <rdfs:label>Intrabronchial Route of Administration</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38225"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>Administration of a drug within a bronchus or bronchi. The intrabronchial drug delivery can be used for both local and systemic drug action.</annotatedTarget>
+        <obo:NCIT_P378>NCI</obo:NCIT_P378>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38225"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/NCIT_P325"/>
+        <annotatedTarget>Administration within a bronchus. (FDA)</annotatedTarget>
+        <obo:NCIT_P378>CDISC</obo:NCIT_P378>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38225"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>I-BRONCHI</annotatedTarget>
+        <obo:NCIT_P383>AB</obo:NCIT_P383>
+        <obo:NCIT_P384>FDA</obo:NCIT_P384>
+        <obo:NCIT_P385>067</obo:NCIT_P385>
+        <obo:NCIT_P386>Route of Administration (C-DRG-00301)</obo:NCIT_P386>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38225"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>I-BRONCHI</annotatedTarget>
+        <obo:NCIT_P383>AB</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38225"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>INTRABRONCHIAL</annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>CDISC</obo:NCIT_P384>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38225"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>INTRABRONCHIAL</annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>FDA</obo:NCIT_P384>
+        <obo:NCIT_P385>067</obo:NCIT_P385>
+        <obo:NCIT_P386>Route of Administration (C-DRG-00301)</obo:NCIT_P386>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38225"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>INTRABRONCHIAL</annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>FDA</obo:NCIT_P384>
+        <obo:NCIT_P386>SPL</obo:NCIT_P386>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38225"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>Intrabronchial</annotatedTarget>
+        <obo:NCIT_P383>SY</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38225"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>Intrabronchial Route of Administration</annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C38238 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C38238">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/VO_0000574"/>
+        <obo:IAO_0000115>Intradermal injection is a method of drug administration within the substance of the skin, particularly the dermis.</obo:IAO_0000115>
+        <obo:NCIT_NHC0>C38238</obo:NCIT_NHC0>
+        <obo:NCIT_P106>Functional Concept</obo:NCIT_P106>
+        <obo:NCIT_P108>Intradermal Route of Administration</obo:NCIT_P108>
+        <obo:NCIT_P207>C1522475</obo:NCIT_P207>
+        <obo:NCIT_P317>Route of Administration (C-DRG-00301)</obo:NCIT_P317>
+        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
+        <obo:NCIT_P322>EDQM-HC</obo:NCIT_P322>
+        <obo:NCIT_P322>FDA</obo:NCIT_P322>
+        <obo:NCIT_P325>Administration within the dermis. (FDA)</obo:NCIT_P325>
+        <obo:NCIT_P325>Injection of a medicinal product into the dermis.</obo:NCIT_P325>
+        <obo:NCIT_P366>Intradermal_Route_of_Drug_Administration</obo:NCIT_P366>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VO:0000887</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>DL</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>I-DERMAL</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>I-dermal</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>IC</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>ID</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>INTRADERMAL</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Intracutaneous</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Intradermal</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Intradermal Injection</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Intradermal Route of Administration</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Intradermal use</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C148636"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C150107"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C54452"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C54455"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C61410"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C66729"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C66830"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C77526"/>
+        <rdfs:label>Intradermal Route of Administration</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38238"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>Intradermal injection is a method of drug administration within the substance of the skin, particularly the dermis.</annotatedTarget>
+        <obo:NCIT_P378>NCI</obo:NCIT_P378>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38238"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/NCIT_P325"/>
+        <annotatedTarget>Administration within the dermis. (FDA)</annotatedTarget>
+        <obo:NCIT_P378>CDISC</obo:NCIT_P378>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38238"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/NCIT_P325"/>
+        <annotatedTarget>Injection of a medicinal product into the dermis.</annotatedTarget>
+        <obo:NCIT_P378>EDQM-HC</obo:NCIT_P378>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38238"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>DL</annotatedTarget>
+        <obo:NCIT_P383>AB</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38238"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>I-DERMAL</annotatedTarget>
+        <obo:NCIT_P383>AB</obo:NCIT_P383>
+        <obo:NCIT_P384>FDA</obo:NCIT_P384>
+        <obo:NCIT_P385>008</obo:NCIT_P385>
+        <obo:NCIT_P386>Route of Administration (C-DRG-00301)</obo:NCIT_P386>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38238"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>I-dermal</annotatedTarget>
+        <obo:NCIT_P383>SY</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38238"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>IC</annotatedTarget>
+        <obo:NCIT_P383>AB</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38238"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>ID</annotatedTarget>
+        <obo:NCIT_P383>AB</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38238"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>INTRADERMAL</annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>CDISC</obo:NCIT_P384>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38238"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>INTRADERMAL</annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>FDA</obo:NCIT_P384>
+        <obo:NCIT_P385>008</obo:NCIT_P385>
+        <obo:NCIT_P386>Route of Administration (C-DRG-00301)</obo:NCIT_P386>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38238"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>INTRADERMAL</annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>FDA</obo:NCIT_P384>
+        <obo:NCIT_P386>SPL</obo:NCIT_P386>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38238"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>Intracutaneous</annotatedTarget>
+        <obo:NCIT_P383>SY</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38238"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>Intradermal</annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>FDA</obo:NCIT_P384>
+        <obo:NCIT_P386>ICSR-CVM</obo:NCIT_P386>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38238"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>Intradermal</annotatedTarget>
+        <obo:NCIT_P383>SY</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38238"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>Intradermal Injection</annotatedTarget>
+        <obo:NCIT_P383>SY</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38238"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>Intradermal Route of Administration</annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38238"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>Intradermal use</annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>EDQM-HC</obo:NCIT_P384>
+        <obo:NCIT_P385>20030000</obo:NCIT_P385>
+        <obo:NCIT_P386>ROA</obo:NCIT_P386>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C38258 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C38258">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/VO_0000574"/>
+        <obo:IAO_0000115>Administration of a drug via injection or infusion of a substance into the peritoneum, where it is absorbed by the lining.</obo:IAO_0000115>
+        <obo:NCIT_NHC0>C38258</obo:NCIT_NHC0>
+        <obo:NCIT_P106>Functional Concept</obo:NCIT_P106>
+        <obo:NCIT_P107>Intraperitoneal Route of Administration</obo:NCIT_P107>
+        <obo:NCIT_P108>Intraperitoneal Route of Administration</obo:NCIT_P108>
+        <obo:NCIT_P207>C1522583</obo:NCIT_P207>
+        <obo:NCIT_P317>Route of Administration (C-DRG-00301)</obo:NCIT_P317>
+        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
+        <obo:NCIT_P322>CTRP</obo:NCIT_P322>
+        <obo:NCIT_P322>EDQM-HC</obo:NCIT_P322>
+        <obo:NCIT_P322>FDA</obo:NCIT_P322>
+        <obo:NCIT_P325>A method of delivering fluids and drugs directly into the abdominal cavity through a thin tube.</obo:NCIT_P325>
+        <obo:NCIT_P325>Administration within the peritoneal cavity. (FDA)</obo:NCIT_P325>
+        <obo:NCIT_P325>Injection of a medicinal product into the peritoneal cavity.</obo:NCIT_P325>
+        <obo:NCIT_P366>Intraperitoneal_Route_of_Drug_Administration</obo:NCIT_P366>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VO:0000344</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>I-PERITON</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>INTRAPERITONEAL</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>IP</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Intraperitoneal</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Intraperitoneal Infusion</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Intraperitoneal Route of Administration</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Intraperitoneal use</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>intraperitoneal infusion</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>peritoneal infusion</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C116977"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C118169"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C148636"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C150107"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C54452"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C54455"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C61410"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C66729"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C66830"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C77526"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C77527"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C78420"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C78425"/>
+        <rdfs:label>Intraperitoneal Route of Administration</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38258"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>Administration of a drug via injection or infusion of a substance into the peritoneum, where it is absorbed by the lining.</annotatedTarget>
+        <obo:NCIT_P378>NCI</obo:NCIT_P378>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38258"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/NCIT_P325"/>
+        <annotatedTarget>A method of delivering fluids and drugs directly into the abdominal cavity through a thin tube.</annotatedTarget>
+        <obo:NCIT_P378>NCI-GLOSS</obo:NCIT_P378>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38258"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/NCIT_P325"/>
+        <annotatedTarget>Administration within the peritoneal cavity. (FDA)</annotatedTarget>
+        <obo:NCIT_P378>CDISC</obo:NCIT_P378>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38258"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/NCIT_P325"/>
+        <annotatedTarget>Injection of a medicinal product into the peritoneal cavity.</annotatedTarget>
+        <obo:NCIT_P378>EDQM-HC</obo:NCIT_P378>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38258"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>I-PERITON</annotatedTarget>
+        <obo:NCIT_P383>AB</obo:NCIT_P383>
+        <obo:NCIT_P384>FDA</obo:NCIT_P384>
+        <obo:NCIT_P385>004</obo:NCIT_P385>
+        <obo:NCIT_P386>Route of Administration (C-DRG-00301)</obo:NCIT_P386>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38258"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>INTRAPERITONEAL</annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>CDISC</obo:NCIT_P384>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38258"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>INTRAPERITONEAL</annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>FDA</obo:NCIT_P384>
+        <obo:NCIT_P385>004</obo:NCIT_P385>
+        <obo:NCIT_P386>Route of Administration (C-DRG-00301)</obo:NCIT_P386>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38258"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>INTRAPERITONEAL</annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>FDA</obo:NCIT_P384>
+        <obo:NCIT_P386>SPL</obo:NCIT_P386>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38258"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>IP</annotatedTarget>
+        <obo:NCIT_P383>AB</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38258"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>Intraperitoneal</annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>FDA</obo:NCIT_P384>
+        <obo:NCIT_P386>ICSR-CVM</obo:NCIT_P386>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38258"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>Intraperitoneal</annotatedTarget>
+        <obo:NCIT_P383>SY</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38258"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>Intraperitoneal Infusion</annotatedTarget>
+        <obo:NCIT_P383>SY</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38258"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>Intraperitoneal Route of Administration</annotatedTarget>
+        <obo:NCIT_P383>DN</obo:NCIT_P383>
+        <obo:NCIT_P384>CTRP</obo:NCIT_P384>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38258"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>Intraperitoneal Route of Administration</annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38258"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>Intraperitoneal Route of Administration</annotatedTarget>
+        <obo:NCIT_P383>SY</obo:NCIT_P383>
+        <obo:NCIT_P384>caDSR</obo:NCIT_P384>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38258"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>Intraperitoneal use</annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>EDQM-HC</obo:NCIT_P384>
+        <obo:NCIT_P385>20038000</obo:NCIT_P385>
+        <obo:NCIT_P386>ROA</obo:NCIT_P386>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38258"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>intraperitoneal infusion</annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI-GLOSS</obo:NCIT_P384>
+        <obo:NCIT_P385>CDR0000046071</obo:NCIT_P385>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38258"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>peritoneal infusion</annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI-GLOSS</obo:NCIT_P384>
+        <obo:NCIT_P385>CDR0000386219</obo:NCIT_P385>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C38276 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C38276">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/VO_0000574"/>
+        <obo:IAO_0000115>Administration of a drug within or into a vein or veins. Introduction of the drug directly into venous circulation results in 100% bioavailability due to an absence of the absorption phase, provides a precise and continuous mode of drug therapy, especially for drugs with a narrow therapeutic index.</obo:IAO_0000115>
+        <obo:NCIT_A32 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38114"/>
+        <obo:NCIT_NHC0>C38276</obo:NCIT_NHC0>
+        <obo:NCIT_P106>Functional Concept</obo:NCIT_P106>
+        <obo:NCIT_P108>Intravenous Route of Administration</obo:NCIT_P108>
+        <obo:NCIT_P207>C1522726</obo:NCIT_P207>
+        <obo:NCIT_P317>Route of Administration (C-DRG-00301)</obo:NCIT_P317>
+        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
+        <obo:NCIT_P322>EDQM-HC</obo:NCIT_P322>
+        <obo:NCIT_P322>FDA</obo:NCIT_P322>
+        <obo:NCIT_P322>GDC</obo:NCIT_P322>
+        <obo:NCIT_P322>NICHD</obo:NCIT_P322>
+        <obo:NCIT_P325>Administration within or into a vein or veins. (FDA)</obo:NCIT_P325>
+        <obo:NCIT_P325>Injection of a medicinal product into a vein.</obo:NCIT_P325>
+        <obo:NCIT_P366>Intravenous_Route_of_Drug_Administration</obo:NCIT_P366>
+        <obo:NCIT_P375>Intravenous Route of Administration</obo:NCIT_P375>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VO:0000416</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>INTRAVENOUS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>IV</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Intravenous</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Intravenous Route of Administration</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Intravenous use</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C148636"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C150107"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C157711"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C177537"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C54452"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C54455"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C61410"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C66729"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C66830"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C77526"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C90259"/>
+        <rdfs:label>Intravenous Route of Administration</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38276"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>Administration of a drug within or into a vein or veins. Introduction of the drug directly into venous circulation results in 100% bioavailability due to an absence of the absorption phase, provides a precise and continuous mode of drug therapy, especially for drugs with a narrow therapeutic index.</annotatedTarget>
+        <obo:NCIT_P378>NCI</obo:NCIT_P378>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38276"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/NCIT_P325"/>
+        <annotatedTarget>Administration within or into a vein or veins. (FDA)</annotatedTarget>
+        <obo:NCIT_P378>CDISC</obo:NCIT_P378>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38276"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/NCIT_P325"/>
+        <annotatedTarget>Injection of a medicinal product into a vein.</annotatedTarget>
+        <obo:NCIT_P378>EDQM-HC</obo:NCIT_P378>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38276"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/NCIT_P375"/>
+        <annotatedTarget>Intravenous Route of Administration</annotatedTarget>
+        <obo:NCIT_P393>Has Synonym</obo:NCIT_P393>
+        <obo:NCIT_P394>PT</obo:NCIT_P394>
+        <obo:NCIT_P395>route_of_administration</obo:NCIT_P395>
+        <obo:NCIT_P396>GDC</obo:NCIT_P396>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38276"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>INTRAVENOUS</annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>CDISC</obo:NCIT_P384>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38276"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>INTRAVENOUS</annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>FDA</obo:NCIT_P384>
+        <obo:NCIT_P385>002</obo:NCIT_P385>
+        <obo:NCIT_P386>Route of Administration (C-DRG-00301)</obo:NCIT_P386>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38276"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>INTRAVENOUS</annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>FDA</obo:NCIT_P384>
+        <obo:NCIT_P386>SPL</obo:NCIT_P386>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38276"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>IV</annotatedTarget>
+        <obo:NCIT_P383>AB</obo:NCIT_P383>
+        <obo:NCIT_P384>FDA</obo:NCIT_P384>
+        <obo:NCIT_P385>002</obo:NCIT_P385>
+        <obo:NCIT_P386>Route of Administration (C-DRG-00301)</obo:NCIT_P386>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38276"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>IV</annotatedTarget>
+        <obo:NCIT_P383>AB</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38276"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>Intravenous</annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>FDA</obo:NCIT_P384>
+        <obo:NCIT_P386>ICSR-CVM</obo:NCIT_P386>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38276"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>Intravenous</annotatedTarget>
+        <obo:NCIT_P383>SY</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38276"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>Intravenous Route of Administration</annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>GDC</obo:NCIT_P384>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38276"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>Intravenous Route of Administration</annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38276"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>Intravenous Route of Administration</annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>NICHD</obo:NCIT_P384>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38276"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>Intravenous Route of Administration</annotatedTarget>
+        <obo:NCIT_P383>SY</obo:NCIT_P383>
+        <obo:NCIT_P384>caDSR</obo:NCIT_P384>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38276"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>Intravenous use</annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>EDQM-HC</obo:NCIT_P384>
+        <obo:NCIT_P385>20045000</obo:NCIT_P385>
+        <obo:NCIT_P386>ROA</obo:NCIT_P386>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C38284 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C38284">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/VO_0000574"/>
+        <obo:IAO_0000115>Administration of a drug by the way of the nose. This often results in systemic action of the agent due to absorption through the nasal mucosa. The richly supplied vascular nature of the nasal mucosa coupled with its high drug permeation makes the nasal route of administration attractive for many drugs, including proteins and peptides.</obo:IAO_0000115>
+        <obo:NCIT_NHC0>C38284</obo:NCIT_NHC0>
+        <obo:NCIT_P106>Functional Concept</obo:NCIT_P106>
+        <obo:NCIT_P108>Nasal Route of Administration</obo:NCIT_P108>
+        <obo:NCIT_P207>C1522019</obo:NCIT_P207>
+        <obo:NCIT_P317>Route of Administration (C-DRG-00301)</obo:NCIT_P317>
+        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
+        <obo:NCIT_P322>EDQM-HC</obo:NCIT_P322>
+        <obo:NCIT_P322>FDA</obo:NCIT_P322>
+        <obo:NCIT_P322>NICHD</obo:NCIT_P322>
+        <obo:NCIT_P325>Administration of a medicinal product to the nose to obtain a systemic or local effect. Inhalation therapy intended for the lower respiratory tract is excluded; see inhalation use.</obo:NCIT_P325>
+        <obo:NCIT_P325>Administration to the nose; administered by way of the nose. (FDA)</obo:NCIT_P325>
+        <obo:NCIT_P366>Nasal_Route_of_Drug_Administration</obo:NCIT_P366>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VO:0000341</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>Intranasal Route of Administration</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>NASAL</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Nasal</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Nasal Route of Administration</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Nasal use</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C148636"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C150107"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C54452"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C54455"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C61410"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C66729"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C66830"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C77526"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C77527"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C78420"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C78425"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C90259"/>
+        <rdfs:label>Nasal Route of Administration</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38284"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>Nasal</annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>FDA</obo:NCIT_P384>
+        <obo:NCIT_P386>ICSR-CVM</obo:NCIT_P386>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38284"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>Nasal</annotatedTarget>
+        <obo:NCIT_P383>SY</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38284"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>Nasal Route of Administration</annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38284"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>Nasal Route of Administration</annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>NICHD</obo:NCIT_P384>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38284"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>Nasal use</annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>EDQM-HC</obo:NCIT_P384>
+        <obo:NCIT_P385>20049000</obo:NCIT_P385>
+        <obo:NCIT_P386>ROA</obo:NCIT_P386>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38284"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>Administration of a drug by the way of the nose. This often results in systemic action of the agent due to absorption through the nasal mucosa. The richly supplied vascular nature of the nasal mucosa coupled with its high drug permeation makes the nasal route of administration attractive for many drugs, including proteins and peptides.</annotatedTarget>
+        <obo:NCIT_P378>NCI</obo:NCIT_P378>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38284"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/NCIT_P325"/>
+        <annotatedTarget>Administration of a medicinal product to the nose to obtain a systemic or local effect. Inhalation therapy intended for the lower respiratory tract is excluded; see inhalation use.</annotatedTarget>
+        <obo:NCIT_P378>EDQM-HC</obo:NCIT_P378>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38284"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/NCIT_P325"/>
+        <annotatedTarget>Administration to the nose; administered by way of the nose. (FDA)</annotatedTarget>
+        <obo:NCIT_P378>CDISC</obo:NCIT_P378>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38284"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>Intranasal Route of Administration</annotatedTarget>
+        <obo:NCIT_P383>SY</obo:NCIT_P383>
+        <obo:NCIT_P384>CDISC</obo:NCIT_P384>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38284"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>NASAL</annotatedTarget>
+        <obo:NCIT_P383>AB</obo:NCIT_P383>
+        <obo:NCIT_P384>FDA</obo:NCIT_P384>
+        <obo:NCIT_P385>014</obo:NCIT_P385>
+        <obo:NCIT_P386>Route of Administration (C-DRG-00301)</obo:NCIT_P386>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38284"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>NASAL</annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>CDISC</obo:NCIT_P384>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38284"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>NASAL</annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>FDA</obo:NCIT_P384>
+        <obo:NCIT_P385>014</obo:NCIT_P385>
+        <obo:NCIT_P386>Route of Administration (C-DRG-00301)</obo:NCIT_P386>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38284"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>NASAL</annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>FDA</obo:NCIT_P384>
+        <obo:NCIT_P386>SPL</obo:NCIT_P386>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C38288 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C38288">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/VO_0000574"/>
+        <obo:IAO_0000115>The introduction of a substance to the mouth or into the gastrointestinal tract by the way of the mouth, usually for systemic action. It is the most common, convenient, and usually the safest and least expensive route of drug administration, but it uses the most complicated pathway to the tissues and bioavailability varies. The disadvantages of method are hepatic first pass metabolism and enzymatic degradation of the drug within the gastrointestinal tract. This prohibits oral administration of certain classes of drugs especially peptides and proteins.</obo:IAO_0000115>
+        <obo:NCIT_A32 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38114"/>
+        <obo:NCIT_NHC0>C38288</obo:NCIT_NHC0>
+        <obo:NCIT_P106>Functional Concept</obo:NCIT_P106>
+        <obo:NCIT_P108>Oral Route of Administration</obo:NCIT_P108>
+        <obo:NCIT_P207>C1527415</obo:NCIT_P207>
+        <obo:NCIT_P317>Route of Administration (C-DRG-00301)</obo:NCIT_P317>
+        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
+        <obo:NCIT_P322>EDQM-HC</obo:NCIT_P322>
+        <obo:NCIT_P322>FDA</obo:NCIT_P322>
+        <obo:NCIT_P322>GDC</obo:NCIT_P322>
+        <obo:NCIT_P322>NICHD</obo:NCIT_P322>
+        <obo:NCIT_P322>PCDC</obo:NCIT_P322>
+        <obo:NCIT_P325>Administration to or by way of the mouth. (FDA)</obo:NCIT_P325>
+        <obo:NCIT_P325>Taking a medicinal product by means of swallowing.</obo:NCIT_P325>
+        <obo:NCIT_P366>Oral_Route_of_Drug_administration</obo:NCIT_P366>
+        <obo:NCIT_P375>Oral</obo:NCIT_P375>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VO:0000886</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>Intraoral Route of Administration</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>ORAL</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Oral</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Oral Route of Administration</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Oral use</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Orally</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>PO</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Per Os</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C148636"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C150107"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C157711"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C177537"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C186328"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C186341"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C54452"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C54455"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C61410"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C66729"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C66830"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C77526"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C77527"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C78420"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C78425"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C90259"/>
+        <rdfs:label>Oral Route of Administration</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38288"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>The introduction of a substance to the mouth or into the gastrointestinal tract by the way of the mouth, usually for systemic action. It is the most common, convenient, and usually the safest and least expensive route of drug administration, but it uses the most complicated pathway to the tissues and bioavailability varies. The disadvantages of method are hepatic first pass metabolism and enzymatic degradation of the drug within the gastrointestinal tract. This prohibits oral administration of certain classes of drugs especially peptides and proteins.</annotatedTarget>
+        <obo:NCIT_P378>NCI</obo:NCIT_P378>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38288"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/NCIT_P325"/>
+        <annotatedTarget>Administration to or by way of the mouth. (FDA)</annotatedTarget>
+        <obo:NCIT_P378>CDISC</obo:NCIT_P378>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38288"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/NCIT_P325"/>
+        <annotatedTarget>Taking a medicinal product by means of swallowing.</annotatedTarget>
+        <obo:NCIT_P378>EDQM-HC</obo:NCIT_P378>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38288"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/NCIT_P375"/>
+        <annotatedTarget>Oral</annotatedTarget>
+        <obo:NCIT_P393>Has Synonym</obo:NCIT_P393>
+        <obo:NCIT_P394>PT</obo:NCIT_P394>
+        <obo:NCIT_P395>route_of_administration</obo:NCIT_P395>
+        <obo:NCIT_P396>GDC</obo:NCIT_P396>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38288"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>Intraoral Route of Administration</annotatedTarget>
+        <obo:NCIT_P383>SY</obo:NCIT_P383>
+        <obo:NCIT_P384>CDISC</obo:NCIT_P384>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38288"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>ORAL</annotatedTarget>
+        <obo:NCIT_P383>AB</obo:NCIT_P383>
+        <obo:NCIT_P384>FDA</obo:NCIT_P384>
+        <obo:NCIT_P385>001</obo:NCIT_P385>
+        <obo:NCIT_P386>Route of Administration (C-DRG-00301)</obo:NCIT_P386>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38288"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>ORAL</annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>CDISC</obo:NCIT_P384>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38288"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>ORAL</annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>FDA</obo:NCIT_P384>
+        <obo:NCIT_P385>001</obo:NCIT_P385>
+        <obo:NCIT_P386>Route of Administration (C-DRG-00301)</obo:NCIT_P386>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38288"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>ORAL</annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>FDA</obo:NCIT_P384>
+        <obo:NCIT_P386>SPL</obo:NCIT_P386>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38288"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>Oral</annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>FDA</obo:NCIT_P384>
+        <obo:NCIT_P386>ICSR-CVM</obo:NCIT_P386>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38288"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>Oral</annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>GDC</obo:NCIT_P384>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38288"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>Oral</annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>PCDC</obo:NCIT_P384>
+        <obo:NCIT_P386>HL</obo:NCIT_P386>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38288"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>Oral</annotatedTarget>
+        <obo:NCIT_P383>SY</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38288"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>Oral Route of Administration</annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38288"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>Oral Route of Administration</annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>NICHD</obo:NCIT_P384>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38288"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>Oral Route of Administration</annotatedTarget>
+        <obo:NCIT_P383>SY</obo:NCIT_P383>
+        <obo:NCIT_P384>caDSR</obo:NCIT_P384>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38288"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>Oral use</annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>EDQM-HC</obo:NCIT_P384>
+        <obo:NCIT_P385>20053000</obo:NCIT_P385>
+        <obo:NCIT_P386>ROA</obo:NCIT_P386>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38288"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>Orally</annotatedTarget>
+        <obo:NCIT_P383>SY</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38288"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>PO</annotatedTarget>
+        <obo:NCIT_P383>AB</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38288"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>PO</annotatedTarget>
+        <obo:NCIT_P383>SY</obo:NCIT_P383>
+        <obo:NCIT_P384>CDISC</obo:NCIT_P384>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38288"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>Per Os</annotatedTarget>
+        <obo:NCIT_P383>SY</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C38289 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C38289">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38288"/>
+        <obo:IAO_0000115>Administration of a drug directly to the mouth and pharynx.</obo:IAO_0000115>
+        <obo:NCIT_NHC0>C38289</obo:NCIT_NHC0>
+        <obo:NCIT_P106>Functional Concept</obo:NCIT_P106>
+        <obo:NCIT_P108>Oropharyngeal Route of Administration</obo:NCIT_P108>
+        <obo:NCIT_P207>C1522409</obo:NCIT_P207>
+        <obo:NCIT_P317>Route of Administration (C-DRG-00301)</obo:NCIT_P317>
+        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
+        <obo:NCIT_P322>EDQM-HC</obo:NCIT_P322>
+        <obo:NCIT_P322>FDA</obo:NCIT_P322>
+        <obo:NCIT_P325>Administration directly to the mouth and pharynx. (FDA)</obo:NCIT_P325>
+        <obo:NCIT_P325>Administration of a medicinal product to the oropharynx (throat) to obtain a local effect.</obo:NCIT_P325>
+        <obo:NCIT_P366>Oropharyngeal_Route_of_Drug_Administration</obo:NCIT_P366>
+        <oboInOwl:hasExactSynonym>ORO</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>OROPHARYNGEAL</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Oropharyngeal</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Oropharyngeal Route of Administration</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Oropharyngeal use</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C148636"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C150107"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C54452"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C54455"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C61410"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C66729"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C66830"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C77526"/>
+        <rdfs:label>Oropharyngeal Route of Administration</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38289"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>Administration of a drug directly to the mouth and pharynx.</annotatedTarget>
+        <obo:NCIT_P378>NCI</obo:NCIT_P378>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38289"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/NCIT_P325"/>
+        <annotatedTarget>Administration directly to the mouth and pharynx. (FDA)</annotatedTarget>
+        <obo:NCIT_P378>CDISC</obo:NCIT_P378>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38289"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/NCIT_P325"/>
+        <annotatedTarget>Administration of a medicinal product to the oropharynx (throat) to obtain a local effect.</annotatedTarget>
+        <obo:NCIT_P378>EDQM-HC</obo:NCIT_P378>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38289"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>ORO</annotatedTarget>
+        <obo:NCIT_P383>AB</obo:NCIT_P383>
+        <obo:NCIT_P384>FDA</obo:NCIT_P384>
+        <obo:NCIT_P385>410</obo:NCIT_P385>
+        <obo:NCIT_P386>Route of Administration (C-DRG-00301)</obo:NCIT_P386>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38289"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>ORO</annotatedTarget>
+        <obo:NCIT_P383>AB</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38289"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>OROPHARYNGEAL</annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>CDISC</obo:NCIT_P384>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38289"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>OROPHARYNGEAL</annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>FDA</obo:NCIT_P384>
+        <obo:NCIT_P385>410</obo:NCIT_P385>
+        <obo:NCIT_P386>Route of Administration (C-DRG-00301)</obo:NCIT_P386>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38289"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>OROPHARYNGEAL</annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>FDA</obo:NCIT_P384>
+        <obo:NCIT_P386>SPL</obo:NCIT_P386>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38289"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>Oropharyngeal</annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>FDA</obo:NCIT_P384>
+        <obo:NCIT_P386>ICSR-CVM</obo:NCIT_P386>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38289"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>Oropharyngeal</annotatedTarget>
+        <obo:NCIT_P383>SY</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38289"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>Oropharyngeal Route of Administration</annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38289"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>Oropharyngeal use</annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>EDQM-HC</obo:NCIT_P384>
+        <obo:NCIT_P385>20055000</obo:NCIT_P385>
+        <obo:NCIT_P386>ROA</obo:NCIT_P386>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C38299 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C38299">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/VO_0000574"/>
+        <obo:IAO_0000115>Drug administration beneath the skin. It provides for relatively slow, sustained release of the drug. The rate of absorption into the blood is perfusion-limited, proportional to the amount of drug at the site and can be enhanced by chemical or physical stimulation of blood flow. Subcutaneous administration minimizes the risks associated with intravascular injection: for subcutaneous infusions, external and implantable pumps are used.</obo:IAO_0000115>
+        <obo:NCIT_NHC0>C38299</obo:NCIT_NHC0>
+        <obo:NCIT_P106>Functional Concept</obo:NCIT_P106>
+        <obo:NCIT_P108>Subcutaneous Route of Administration</obo:NCIT_P108>
+        <obo:NCIT_P207>C1522438</obo:NCIT_P207>
+        <obo:NCIT_P317>Route of Administration (C-DRG-00301)</obo:NCIT_P317>
+        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
+        <obo:NCIT_P322>EDQM-HC</obo:NCIT_P322>
+        <obo:NCIT_P322>FDA</obo:NCIT_P322>
+        <obo:NCIT_P322>NICHD</obo:NCIT_P322>
+        <obo:NCIT_P325>Administration beneath the skin; hypodermic. Synonymous with the term SUBDERMAL. (FDA)</obo:NCIT_P325>
+        <obo:NCIT_P325>Injection of a medicinal product directly underneath the skin, i.e. subdermally</obo:NCIT_P325>
+        <obo:NCIT_P366>Subcutaneous_Route_of_Drug_Administration</obo:NCIT_P366>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VO:0000532</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>SC</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>SUBCUTANEOUS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Subcutaneous</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Subcutaneous Route of Administration</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Subcutaneous use</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Subdermal Route of Administration</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C148636"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C150107"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C54452"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C54455"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C61410"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C66729"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C66830"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C77526"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C77527"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C78420"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C78425"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C90259"/>
+        <rdfs:label>Subcutaneous Route of Administration</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38299"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>Drug administration beneath the skin. It provides for relatively slow, sustained release of the drug. The rate of absorption into the blood is perfusion-limited, proportional to the amount of drug at the site and can be enhanced by chemical or physical stimulation of blood flow. Subcutaneous administration minimizes the risks associated with intravascular injection: for subcutaneous infusions, external and implantable pumps are used.</annotatedTarget>
+        <obo:NCIT_P378>NCI</obo:NCIT_P378>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38299"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/NCIT_P325"/>
+        <annotatedTarget>Administration beneath the skin; hypodermic. Synonymous with the term SUBDERMAL. (FDA)</annotatedTarget>
+        <obo:NCIT_P378>CDISC</obo:NCIT_P378>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38299"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/NCIT_P325"/>
+        <annotatedTarget>Injection of a medicinal product directly underneath the skin, i.e. subdermally</annotatedTarget>
+        <obo:NCIT_P378>EDQM-HC</obo:NCIT_P378>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38299"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>SC</annotatedTarget>
+        <obo:NCIT_P383>AB</obo:NCIT_P383>
+        <obo:NCIT_P384>FDA</obo:NCIT_P384>
+        <obo:NCIT_P385>003</obo:NCIT_P385>
+        <obo:NCIT_P386>Route of Administration (C-DRG-00301)</obo:NCIT_P386>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38299"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>SC</annotatedTarget>
+        <obo:NCIT_P383>AB</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38299"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>SC</annotatedTarget>
+        <obo:NCIT_P383>SY</obo:NCIT_P383>
+        <obo:NCIT_P384>CDISC</obo:NCIT_P384>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38299"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>SUBCUTANEOUS</annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>CDISC</obo:NCIT_P384>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38299"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>SUBCUTANEOUS</annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>FDA</obo:NCIT_P384>
+        <obo:NCIT_P385>003</obo:NCIT_P385>
+        <obo:NCIT_P386>Route of Administration (C-DRG-00301)</obo:NCIT_P386>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38299"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>SUBCUTANEOUS</annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>FDA</obo:NCIT_P384>
+        <obo:NCIT_P386>SPL</obo:NCIT_P386>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38299"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>Subcutaneous</annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>FDA</obo:NCIT_P384>
+        <obo:NCIT_P386>ICSR-CVM</obo:NCIT_P386>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38299"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>Subcutaneous</annotatedTarget>
+        <obo:NCIT_P383>SY</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38299"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>Subcutaneous Route of Administration</annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38299"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>Subcutaneous Route of Administration</annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>NICHD</obo:NCIT_P384>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38299"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>Subcutaneous Route of Administration</annotatedTarget>
+        <obo:NCIT_P383>SY</obo:NCIT_P383>
+        <obo:NCIT_P384>caDSR</obo:NCIT_P384>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38299"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>Subcutaneous use</annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>EDQM-HC</obo:NCIT_P384>
+        <obo:NCIT_P385>20066000</obo:NCIT_P385>
+        <obo:NCIT_P386>ROA</obo:NCIT_P386>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38299"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>Subdermal Route of Administration</annotatedTarget>
+        <obo:NCIT_P383>SY</obo:NCIT_P383>
+        <obo:NCIT_P384>CDISC</obo:NCIT_P384>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VO_0000574 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/VO_0000574">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000029"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C38114</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">route of administration</rdfs:label>
+    </Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.6) https://github.com/owlcs/owlapi -->
+
