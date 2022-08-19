@@ -1,0 +1,209 @@
+ID	LABEL	SubClasses
+BFO:0000001	entity	continuant|occurrent
+BFO:0000002	continuant	independent continuant|specifically dependent continuant
+BFO:0000003	occurrent	process|spatiotemporal region
+BFO:0000004	independent continuant	material entity|site
+BFO:0000011	spatiotemporal region	growth phase
+BFO:0000015	process	immunosuppression|planned process
+BFO:0000019	quality	inbred|outbred
+BFO:0000020	specifically dependent continuant	quality|quality
+BFO:0000029	site	route of administration
+BFO:0000040	material entity	organism
+IDO:0000610	immunosuppression	pathologic immunosuppression
+IDO:0000612	pathologic immunosuppression	antibody-based immunosuppression|drug-based immunosuppression|radiation-based immunosuppression
+IDO:0001009	drug-based immunosuppression	cyclophosphamide-induced immunosuppression|vinblastine-induced immunosuppression
+MCO:0000342	growth phase	exponential phase|stationary phase
+MCO:0000366	exponential phase	
+MCO:0000368	stationary phase	
+NCBITaxon:10066	Muridae	Murinae
+NCBITaxon:10088	Mus <genus>	Mus <subgenus>
+NCBITaxon:10090	Mus musculus	129 mouse strain|BALB/c|C3H/HeJ|C57BL|CD1|Cxcr2−/− mouse|DBA/2J|G-CSFR-/- mouse|Genista mouse|Gfi-1-deficient mouse|ICR|Kunming|LysM-Cre Mcl-1fl/fl mouse|MRP8-Cre Mcl-1fl/fl mouse|Mice, SCID|Murine AIDS|NMRI|NOD mouse|Swiss Webster|ddY|humanized mouse
+NCBITaxon:1113537	Chlamydia/Chlamydophila group	Chlamydia
+NCBITaxon:117570	Teleostomi	Euteleostomi
+NCBITaxon:117571	Euteleostomi	Sarcopterygii
+NCBITaxon:119060	Burkholderiaceae	Burkholderia
+NCBITaxon:120793	Mycobacterium avium complex (MAC)	unclassified Mycobacterium avium complex (MAC)
+NCBITaxon:1224	Proteobacteria	Betaproteobacteria|Gammaproteobacteria|delta/epsilon subdivisions
+NCBITaxon:1236	Gammaproteobacteria	Enterobacterales|Moraxellales|Pasteurellales|Pseudomonadales
+NCBITaxon:1239	Firmicutes	Bacilli|Clostridia
+NCBITaxon:1279	Staphylococcus	Staphylococcus aureus
+NCBITaxon:1280	Staphylococcus aureus	
+NCBITaxon:1300	Streptococcaceae	Streptococcus
+NCBITaxon:1301	Streptococcus	Streptococcus pneumoniae|Streptococcus pyogenes
+NCBITaxon:1313	Streptococcus pneumoniae	
+NCBITaxon:1314	Streptococcus pyogenes	
+NCBITaxon:1338369	Dipnotetrapodomorpha	Tetrapoda
+NCBITaxon:1350	Enterococcus	Enterococcus faecium
+NCBITaxon:1352	Enterococcus faecium	
+NCBITaxon:135621	Pseudomonadaceae	Pseudomonas
+NCBITaxon:135625	Pasteurellales	Pasteurellaceae
+NCBITaxon:136841	Pseudomonas aeruginosa group	Pseudomonas aeruginosa
+NCBITaxon:1385	Bacillales	Staphylococcaceae
+NCBITaxon:1437010	Boreoeutheria	Euarchontoglires
+NCBITaxon:1496	Clostridioides difficile	
+NCBITaxon:1760	Actinomycetia	Corynebacteriales
+NCBITaxon:1762	Mycobacteriaceae	Mycobacterium
+NCBITaxon:1763	Mycobacterium	Mycobacterium avium complex (MAC)|Mycobacterium tuberculosis complex
+NCBITaxon:1773	Mycobacterium tuberculosis	
+NCBITaxon:1783257	PVC group	Chlamydiae
+NCBITaxon:1783272	Terrabacteria group	Actinobacteria|Firmicutes
+NCBITaxon:1785	Mycobacterium sp.	
+NCBITaxon:186801	Clostridia	Eubacteriales
+NCBITaxon:186802	Eubacteriales	Peptostreptococcaceae
+NCBITaxon:186804	Peptostreptococcaceae	Clostridioides
+NCBITaxon:186826	Lactobacillales	Enterococcaceae|Streptococcaceae
+NCBITaxon:1870884	Clostridioides	Clostridioides difficile
+NCBITaxon:1903411	Yersiniaceae	Serratia
+NCBITaxon:1903414	Morganellaceae	Proteus <enterobacteria>
+NCBITaxon:194	Campylobacter	unclassified Campylobacter
+NCBITaxon:1963758	Myomorpha	Muroidea
+NCBITaxon:2	Bacteria	PVC group|Proteobacteria|Terrabacteria group
+NCBITaxon:201174	Actinobacteria	Actinomycetia
+NCBITaxon:204428	Chlamydiae	Chlamydiia
+NCBITaxon:204429	Chlamydiia	Chlamydiales
+NCBITaxon:205	Campylobacter sp.	
+NCBITaxon:206351	Neisseriales	Neisseriaceae
+NCBITaxon:209	Helicobacter	Helicobacter pylori
+NCBITaxon:210	Helicobacter pylori	
+NCBITaxon:213849	Campylobacterales	Campylobacteraceae|Helicobacteraceae
+NCBITaxon:2593542	unclassified Campylobacter	Campylobacter sp.
+NCBITaxon:2629414	unclassified Shigella	Shigella sp.
+NCBITaxon:2750822	unclassified Mycobacterium avium complex (MAC)	Mycobacterium avium complex sp.
+NCBITaxon:2759	Eukaryota	Opisthokonta
+NCBITaxon:28216	Betaproteobacteria	Burkholderiales|Neisseriales
+NCBITaxon:286	Pseudomonas	Pseudomonas aeruginosa group
+NCBITaxon:287	Pseudomonas aeruginosa	
+NCBITaxon:2887326	Moraxellales	Moraxellaceae
+NCBITaxon:2890311	Klebsiella/Raoultella group	Klebsiella
+NCBITaxon:292	Burkholderia cepacia	
+NCBITaxon:29547	Epsilonproteobacteria	Campylobacterales
+NCBITaxon:314146	Euarchontoglires	Glires
+NCBITaxon:314147	Glires	Rodentia
+NCBITaxon:32008	Burkholderia	Burkholderia cepacia complex
+NCBITaxon:32523	Tetrapoda	Amniota
+NCBITaxon:32524	Amniota	Mammalia
+NCBITaxon:32525	Theria <mammals>	Eutheria
+NCBITaxon:33154	Opisthokonta	Metazoa
+NCBITaxon:33208	Metazoa	Eumetazoa
+NCBITaxon:33213	Bilateria	Deuterostomia
+NCBITaxon:33511	Deuterostomia	Chordata
+NCBITaxon:337687	Muroidea	Muridae
+NCBITaxon:37162	Mycobacterium avium complex sp.	
+NCBITaxon:39107	Murinae	Mus <genus>
+NCBITaxon:40674	Mammalia	Theria <mammals>
+NCBITaxon:468	Moraxellaceae	Acinetobacter
+NCBITaxon:469	Acinetobacter	Acinetobacter calcoaceticus/baumannii complex
+NCBITaxon:470	Acinetobacter baumannii	
+NCBITaxon:481	Neisseriaceae	Neisseria
+NCBITaxon:482	Neisseria	Neisseria gonorrhoeae
+NCBITaxon:485	Neisseria gonorrhoeae	
+NCBITaxon:51291	Chlamydiales	Chlamydiaceae
+NCBITaxon:543	Enterobacteriaceae	Escherichia|Klebsiella/Raoultella group|Salmonella|Shigella
+NCBITaxon:561	Escherichia	Escherichia coli
+NCBITaxon:562	Escherichia coli	
+NCBITaxon:570	Klebsiella	Klebsiella pneumoniae
+NCBITaxon:573	Klebsiella pneumoniae	
+NCBITaxon:583	Proteus <enterobacteria>	
+NCBITaxon:590	Salmonella	
+NCBITaxon:6072	Eumetazoa	Bilateria
+NCBITaxon:613	Serratia	
+NCBITaxon:620	Shigella	unclassified Shigella
+NCBITaxon:625	Shigella sp.	
+NCBITaxon:68525	delta/epsilon subdivisions	Epsilonproteobacteria
+NCBITaxon:712	Pasteurellaceae	Haemophilus
+NCBITaxon:72274	Pseudomonadales	Pseudomonadaceae
+NCBITaxon:72293	Helicobacteraceae	Helicobacter
+NCBITaxon:72294	Campylobacteraceae	Campylobacter
+NCBITaxon:724	Haemophilus	Haemophilus influenzae
+NCBITaxon:727	Haemophilus influenzae	
+NCBITaxon:7711	Chordata	Craniata <chordates>
+NCBITaxon:7742	Vertebrata <vertebrates>	Gnathostomata <vertebrates>
+NCBITaxon:77643	Mycobacterium tuberculosis complex	Mycobacterium tuberculosis
+NCBITaxon:7776	Gnathostomata <vertebrates>	Teleostomi
+NCBITaxon:80840	Burkholderiales	Burkholderiaceae
+NCBITaxon:809	Chlamydiaceae	Chlamydia/Chlamydophila group
+NCBITaxon:810	Chlamydia	
+NCBITaxon:81852	Enterococcaceae	Enterococcus
+NCBITaxon:8287	Sarcopterygii	Dipnotetrapodomorpha
+NCBITaxon:85007	Corynebacteriales	Mycobacteriaceae
+NCBITaxon:862507	Mus <subgenus>	Mus musculus
+NCBITaxon:87882	Burkholderia cepacia complex	Burkholderia cepacia
+NCBITaxon:89593	Craniata <chordates>	Vertebrata <vertebrates>
+NCBITaxon:90964	Staphylococcaceae	Staphylococcus
+NCBITaxon:909768	Acinetobacter calcoaceticus/baumannii complex	Acinetobacter baumannii
+NCBITaxon:91061	Bacilli	Bacillales|Lactobacillales
+NCBITaxon:91347	Enterobacterales	Enterobacteriaceae|Morganellaceae|Yersiniaceae
+NCBITaxon:9347	Eutheria	Boreoeutheria
+NCBITaxon:9989	Rodentia	Myomorpha
+NCIT:C173514	Gram Negative Bacteria	PVC group|Proteobacteria
+NCIT:C173515	Gram Positive Bacteria	Terrabacteria group
+NCIT:C17375	Murine AIDS	
+NCIT:C28161	Intramuscular Route of Administration	
+NCIT:C38208	Endotracheal Route of Administration	
+NCIT:C38225	Intrabronchial Route of Administration	
+NCIT:C38238	Intradermal Route of Administration	
+NCIT:C38258	Intraperitoneal Route of Administration	
+NCIT:C38276	Intravenous Route of Administration	
+NCIT:C38284	Nasal Route of Administration	
+NCIT:C38288	Oral Route of Administration	Oropharyngeal Route of Administration
+NCIT:C38289	Oropharyngeal Route of Administration	
+NCIT:C38299	Subcutaneous Route of Administration	
+OBI:0000011	planned process	material processing
+OBI:0000094	material processing	staining
+OBI:0100026	organism	Bacteria|Eukaryota|staining-based organism grouping|strain grouping
+OBI:0302887	staining	Acid-fast staining process|Gram staining process
+OMIT:0016996	Mice, SCID	
+PATO:0000001	quality	physical object quality
+PATO:0000047	biological sex	phenotypic sex
+PATO:0000383	female	
+PATO:0000384	male	
+PATO:0001241	physical object quality	organismal quality
+PATO:0001894	phenotypic sex	female|male
+PATO:0001995	organismal quality	biological sex
+VO:0000574	route of administration	Endotracheal Route of Administration|Intrabronchial Route of Administration|Intradermal Route of Administration|Intramuscular Route of Administration|Intraperitoneal Route of Administration|Intravenous Route of Administration|Nasal Route of Administration|Oral Route of Administration|Subcutaneous Route of Administration
+http://www.ebi.ac.uk/efo/EFO_0000597	129 mouse strain	129S6
+http://www.ebi.ac.uk/efo/EFO_0000598	129S6	
+http://www.ebi.ac.uk/efo/EFO_0000602	BALB/c	
+http://www.ebi.ac.uk/efo/EFO_0000606	C57BL/6J	
+http://www.ebi.ac.uk/efo/EFO_0001329	C3H/HeJ	
+http://www.ebi.ac.uk/efo/EFO_0002547	NOD mouse	NOD/ShiLtJ
+http://www.ebi.ac.uk/efo/EFO_0004429	inbred	
+http://www.ebi.ac.uk/efo/EFO_0004430	outbred	
+http://www.ebi.ac.uk/efo/EFO_0005181	C57BL	C57BL/6J
+http://www.ebi.ac.uk/efo/EFO_0005184	DBA/2J	
+http://www.ebi.ac.uk/efo/EFO_0007736	NOD/ShiLtJ	
+http://www.ebi.ac.uk/efo/EFO_0021426	humanized mouse	
+https://github.com/Fraunhofer-ITMP/BPO_00001	Acid-fast Bacteria	Mycobacterium avium complex sp.|Mycobacterium sp.|Mycobacterium tuberculosis
+https://github.com/Fraunhofer-ITMP/BPO_00002	staining-based organism grouping	Acid-fast Bacteria|Gram Negative Bacteria|Gram Positive Bacteria
+https://github.com/Fraunhofer-ITMP/BPO_00003	Gram staining process	
+https://github.com/Fraunhofer-ITMP/BPO_00004	Acid-fast staining process	
+https://github.com/Fraunhofer-ITMP/BPO_00005	inbred mouse strain	BALB/c|C3H/HeN|C57BL/6J|DBA/2J
+https://github.com/Fraunhofer-ITMP/BPO_00006	outbred mouse strain	CD1|ICR|Kunming|NMRI|Swiss Webster|ddY
+https://github.com/Fraunhofer-ITMP/BPO_00007	mouse strain by genetic background	inbred mouse strain|outbred mouse strain
+https://github.com/Fraunhofer-ITMP/BPO_00008	cyclophosphamide-induced immunosuppression	
+https://github.com/Fraunhofer-ITMP/BPO_00009	vinblastine-induced immunosuppression	
+https://github.com/Fraunhofer-ITMP/BPO_00010	antibody-based immunosuppression	1A8-based immunosupression|NIMP-R14-based immunosupression|RB6-8C5-based immunosupression
+https://github.com/Fraunhofer-ITMP/BPO_00011	C3H/HeN	
+https://github.com/Fraunhofer-ITMP/BPO_00012	CD1	
+https://github.com/Fraunhofer-ITMP/BPO_00013	ICR	
+https://github.com/Fraunhofer-ITMP/BPO_00014	Swiss Webster	
+https://github.com/Fraunhofer-ITMP/BPO_00015	ddY	
+https://github.com/Fraunhofer-ITMP/BPO_00016	Kunming	
+https://github.com/Fraunhofer-ITMP/BPO_00017	NMRI	
+https://github.com/Fraunhofer-ITMP/BPO_00018	mouse strain by immunological background	immunocompetent mouse strain|immunosuppressed mouse strain
+https://github.com/Fraunhofer-ITMP/BPO_00019	immunosuppressed mouse strain	transgenic mouse strain
+https://github.com/Fraunhofer-ITMP/BPO_00020	immunocompetent mouse strain	
+https://github.com/Fraunhofer-ITMP/BPO_00021	transgenic mouse strain	Cxcr2−/− mouse|G-CSFR-/- mouse|Genista mouse|Gfi-1-deficient mouse|LysM-Cre Mcl-1fl/fl mouse|MRP8-Cre Mcl-1fl/fl mouse
+https://github.com/Fraunhofer-ITMP/BPO_00022	Gfi-1-deficient mouse	
+https://github.com/Fraunhofer-ITMP/BPO_00023	G-CSFR-/- mouse	
+https://github.com/Fraunhofer-ITMP/BPO_00024	Cxcr2−/− mouse	
+https://github.com/Fraunhofer-ITMP/BPO_00025	Genista mouse	
+https://github.com/Fraunhofer-ITMP/BPO_00026	LysM-Cre Mcl-1fl/fl mouse	
+https://github.com/Fraunhofer-ITMP/BPO_00027	MRP8-Cre Mcl-1fl/fl mouse	
+https://github.com/Fraunhofer-ITMP/BPO_00028	other mouse strain	129S6|C3H/HeJ|Mice, SCID|Murine AIDS|NOD/ShiLtJ|humanized mouse
+https://github.com/Fraunhofer-ITMP/BPO_00029	radiation-based immunosuppression	
+https://github.com/Fraunhofer-ITMP/BPO_00030	1A8-based immunosupression	
+https://github.com/Fraunhofer-ITMP/BPO_00031	NIMP-R14-based immunosupression	
+https://github.com/Fraunhofer-ITMP/BPO_00032	RB6-8C5-based immunosupression	
+https://github.com/Fraunhofer-ITMP/BPO_00033	strain grouping	Mouse strain
+https://github.com/Fraunhofer-ITMP/BPO_00034	Mouse strain	mouse strain by genetic background|mouse strain by immunological background|other mouse strain

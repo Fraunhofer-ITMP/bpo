@@ -1,0 +1,2612 @@
+format-version: 1.2
+data-version: https://github.com/Fraunhofer-ITMP/bpo-0.0.1.owl
+ontology: https://github.com/Fraunhofer-ITMP/bpo.owl
+property_value: http://purl.org/dc/terms/description "An ontology for bioassay protocols" xsd:string
+property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/by/4.0/ xsd:string
+property_value: http://purl.org/dc/terms/title "Bioassay Protocol Ontology" xsd:string
+owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\nDeclaration(Class(<http://purl.obolibrary.org/obo/BFO_0000001>))\n############################\n#   Classes\n############################\n\n# Class: <http://purl.obolibrary.org/obo/BFO_0000001> (entity)\n\nSubClassOf(<http://purl.obolibrary.org/obo/BFO_0000001> owl:Thing)\n\n\n)
+
+[Term]
+id: BFO:0000001
+name: entity
+
+[Term]
+id: BFO:0000002
+name: continuant
+is_a: BFO:0000001 ! entity
+
+[Term]
+id: BFO:0000003
+name: occurrent
+is_a: BFO:0000001 ! entity
+
+[Term]
+id: BFO:0000004
+name: independent continuant
+is_a: BFO:0000002 ! continuant
+
+[Term]
+id: BFO:0000011
+name: spatiotemporal region
+is_a: BFO:0000003 ! occurrent
+
+[Term]
+id: BFO:0000015
+name: process
+is_a: BFO:0000003 ! occurrent
+
+[Term]
+id: BFO:0000019
+name: quality
+alt_id: http://www.ifomis.org/bfo/1.1/snap#Quality
+def: "A quality is an entity that describes some aspect which is intrinsic to that particular object and is dependent on or more material entities in which it inheres in or is borne by. Example the color of a tomato, the ambient temperature of air, the circumference of a waist, the shape of a nose, the mass of a piece of gold, the weight of a chimpanzee" []
+xref: NCIt:C25283
+xref: SNOMEDCT:263496004
+is_a: BFO:0000020 ! specifically dependent continuant
+property_value: EFO:URI http://www.ebi.ac.uk/efo/EFO_0001436 xsd:string
+property_value: IAO:0000117 "James Malone" xsd:string
+property_value: organizational:class "true" xsd:string
+property_value: source:definition "A specifically dependent continuant [snap:SpecificallyDependentContinuant] that is exhibited if it inheres in an entity or entities at all (a categorical property)." xsd:string
+
+[Term]
+id: BFO:0000020
+name: specifically dependent continuant
+is_a: BFO:0000002 ! continuant
+
+[Term]
+id: BFO:0000029
+name: site
+is_a: BFO:0000004 ! independent continuant
+
+[Term]
+id: BFO:0000040
+name: material entity
+is_a: BFO:0000004 ! independent continuant
+
+[Term]
+id: BPO:00001
+name: Acid-fast Bacteria
+def: "Acid-fast bacteria, also known as acid-fast bacilli or simply AFB, are a group of bacteria sharing the characteristic of acid fastness. Acid fastness is a physical property that gives a bacterium the ability to resist decolorization by acids during staining procedures" []
+synonym: "AFB" EXACT []
+is_a: BPO:00002 ! staining-based organism grouping
+property_value: IAO:0000117 "Jon Ulf Hansen" xsd:string
+property_value: IAO:0000119 PMID:30725806 xsd:string
+
+[Term]
+id: BPO:00002
+name: staining-based organism grouping
+def: "Grouping of microorganism based on the staining technique (Gram staining, Acid-fast staining, etc.) used to identify or distinguish them." []
+is_a: OBI:0100026 ! organism
+
+[Term]
+id: BPO:00003
+name: Gram staining process
+def: "A microscopy staining method for staining and identifying bacteria, based on the differential retention of a crystal violet-iodine complex within the cell membrane. Gram-positive organisms will appear blue-black or purple while Gram-negative organisms will appear red." []
+synonym: "Gram staining" EXACT []
+is_a: OBI:0302887 ! staining
+property_value: IAO:0000117 "Fuqi Xi" xsd:string
+property_value: IAO:0000119 NCIT:C23014 xsd:string
+
+[Term]
+id: BPO:00004
+name: Acid-fast staining process
+def: "Grouping of bacteria based on the staining technique (Gram staining, Acid-fast staining, etc.) used to identify or distinguish them." []
+is_a: OBI:0302887 ! staining
+property_value: IAO:0000117 "Fuqi Xi" xsd:string
+property_value: IAO:0000119 NCIT:C23015 xsd:string
+
+[Term]
+id: BPO:00005
+name: inbred mouse strain
+def: "A mouse strain that has been maintained by sibling (sister x brother) matings for 20 or more consecutive generations. (from JAX Strain Information)" []
+synonym: "inbred mice" EXACT []
+xref: OMIT:0009869
+is_a: BPO:00007 ! mouse strain by genetic background
+property_value: IAO:0000117 "Fuqi Xi" xsd:string
+
+[Term]
+id: BPO:00006
+name: outbred mouse strain
+def: "An outbred strain is a colony of laboratory mouse within which there is some genetic variation, which has been closed for at least four generations. It is usually maintained to minimise inbreeding, which should not normally exceed onepercent per generation. This can be achieved with random mating using at least 25 breeding pairs per generation. A breeding scheme which ensuresthat each breeding male is represented by one male, and each breeding female is represented by one female in the next generation can halvethese number. Usually this is achieved using a rotational breedingscheme. However, most commercial colonies are maintained with hundredsor even thousands of breeding animals where genetic drift due toinbreeding is likely to be minimal, but the stock characteristics maychange as a result of selective breeding (e.g. for fast growth rate) orgenetic contamination (i.e. getting two stocks mixed). (from Isogenic)" []
+synonym: "outbred mice" EXACT []
+is_a: BPO:00007 ! mouse strain by genetic background
+property_value: IAO:0000117 "Fuqi Xi" xsd:string
+
+[Term]
+id: BPO:00007
+name: mouse strain by genetic background
+def: "Stains of mice distinguished based on their mating process." []
+is_a: BPO:00034 ! Mouse strain
+property_value: IAO:0000117 "Fuqi Xi" xsd:string
+
+[Term]
+id: BPO:00008
+name: cyclophosphamide-induced immunosuppression
+def: "Immunosuppression induced by application of cyclophosphamide" []
+is_a: IDO:0001009 ! drug-based immunosuppression
+property_value: IAO:0000117 "Philippe Rocca-Serra" xsd:string
+
+[Term]
+id: BPO:00009
+name: vinblastine-induced immunosuppression
+def: "Immunosuppression induced by application of vinblastine" []
+is_a: IDO:0001009 ! drug-based immunosuppression
+property_value: IAO:0000117 "Philippe Rocca-Serra" xsd:string
+
+[Term]
+id: BPO:00010
+name: antibody-based immunosuppression
+def: "The pathologic suppression of the immune system with help of antibodies." []
+is_a: IDO:0000612 ! pathologic immunosuppression
+property_value: IAO:0000117 "Rakel Arrazuria" xsd:string
+
+[Term]
+id: BPO:00011
+name: C3H/HeN
+def: "C3H/HeN mice are used in a wide range of studies. They are homozygous for the Pde6brd1 allele and have an early onset severe retinal degeneration that causes blindness at weaning age. Despite an atherogenic diet, C3H/HeN mice do not develop aortic atherosclerosis, in contrast to the C57BL/6J. There is a genetically mediated difference between the C3H/HeN and the C3H/HeJ regarding their response to bacterial endotoxin (LPS). This response is linked to the TL4 protein (Toll-like receptor 4; previously lps). C3H/HeN are Tlr4lps-n (toll-like receptor 4; normal LPS response), previously LPSn. This strain will have a normal response to an LPS challenge, it is said to be endotoxin-sensitive." []
+synonym: "C3Hf/HeN" EXACT []
+xref:  MGI:2160972
+xref:  NCIT:C37370
+xref: MGI:2160060
+is_a: BPO:00005 ! inbred mouse strain
+property_value: IAO:0000117 "Rakel Arrazuria" xsd:string
+property_value: IAO:0000119 https://janvier-labs.com/en/fiche_produit/c3h_mouse/ xsd:string
+
+[Term]
+id: BPO:00012
+name: CD1
+def: "The original group of Swiss mice that served as progenitors of this stock consisted of two male and seven female albino mice derived from a non-inbred stock in the laboratory of Dr. de Coulon, Centre Anticancereux Romand, Lausanne, Switzerland. These animals were imported into the United States by Dr. Clara Lynch of the Rockefeller Institute in 1926. The Hauschka Ha/ICR stock was initiated in 1948 at the Institute for Cancer Research (ICR) in Philadelphia from “Swiss” mice of Rockefeller origin. (From Charles River)" []
+synonym: "CD-1" EXACT []
+synonym: "CD-1 IGS" EXACT []
+synonym: "CD1 mus strain" EXACT []
+synonym: "CD1(ICR)" EXACT []
+xref: CRL:022
+xref: EFO:0005180
+xref: MGI:5649524
+is_a: BPO:00006 ! outbred mouse strain
+is_a: NCBITaxon:10090 ! Mus musculus
+property_value: IAO:0000117 "Rakel Arrazuria" xsd:string
+property_value: IAO:0000119 https://www.criver.com/products-services/find-model/cd-1r-igs-mouse xsd:string
+
+[Term]
+id: BPO:00013
+name: ICR
+def: "The ICR outbred model was developed by Dr. T. S. Hauschka of Fox Chase Cancer Center in 1948. Dr. Hauschka left Fox Chase a portion of his colony. Taconic received breeder stock from Fox Chase in 1993. The mice were derived by hysterectomy into IBU colonies and are maintained by Poiley rotational bred mice. (From Charles River)" []
+xref: IcrTac:ICR
+xref: MGI:2160272
+is_a: BPO:00006 ! outbred mouse strain
+is_a: NCBITaxon:10090 ! Mus musculus
+property_value: IAO:0000117 "Yojana Gadiya" xsd:string
+property_value: IAO:0000119 https://www.taconic.com/mouse-model/icr xsd:string
+
+[Term]
+id: BPO:00014
+name: Swiss Webster
+def: "Taconic received the Swiss Webster outbred model from the Rockefeller Institute through Rockland Farms, Inc. in 1940. The mice have been maintained as a closed colony since 1951. The mice were derived by caesarean from randomly chosen breeders and reintroduced into a Barrier Nucleus Expansion Colony in 1965-1969. The mice were derived by caesarean in 1983 from randomly chosen breeders from all Taconic's barrier units (From Taconic)" []
+synonym: "SW" EXACT []
+synonym: "Swiss-Webster" EXACT []
+xref: MGI:2160840
+xref: MPD:54
+xref: NCIT:C106573
+xref: Tac:856
+xref: Tac:SW
+is_a: BPO:00006 ! outbred mouse strain
+is_a: NCBITaxon:10090 ! Mus musculus
+property_value: IAO:0000117 "Yojana Gadiya" xsd:string
+property_value: IAO:0000119 https://www.taconic.com/mouse-model/swiss-webster xsd:string
+
+[Term]
+id: BPO:00015
+name: ddY
+def: "The ddY strain is derived from a mouse colony at the Institute of Infectious Diseases of Tokyo University (Denken; presently, the Institute of Medical Sciences of Tokyo University). This colony was introduced from Germany in the 1910s and 1920s and established as a strain at the National Institute of Health (Yoken, presently, the National Institute of Infectious Diseases). The strain name ddY stands for Deutschland, Denken, and Yoken. The ddY strain differs from the DDY strain because the DDY strain has been established as an inbred strain from the ddY colony at Yoken (note that the inbred strain DDY is spelled with all uppercase letters and with lowercase letters in the name of outbred strain ddY)." []
+synonym: "DDY/Slc" EXACT []
+synonym: "Slc:ddY" EXACT []
+xref: MGI:5558113
+xref: Slc:ddY
+is_a: BPO:00006 ! outbred mouse strain
+is_a: NCBITaxon:10090 ! Mus musculus
+property_value: IAO:0000117 "Rakel Arrazuria" xsd:string
+property_value: IAO:0000119 https://www.ncbi.nlm.nih xsd:string
+property_value: IAO:0000119 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3435536/ xsd:string
+
+[Term]
+id: BPO:00016
+name: Kunming
+def: "Kunming (KM) mouse, an outbred strain, was introduced into China from the Haffkine institute of India in 1946. After being bred for several decades, the KM mouse has been a native breed, making up 70 per cent of all mice used in research in China." []
+synonym: "KM mouse" EXACT []
+synonym: "Kongmin" EXACT []
+synonym: "Kongmin White" EXACT []
+synonym: "Kunmin" EXACT []
+xref: MGI:5651867
+is_a: BPO:00006 ! outbred mouse strain
+is_a: NCBITaxon:10090 ! Mus musculus
+property_value: IAO:0000117 "Rakel Arrazuria" xsd:string
+property_value: IAO:0000119 https://pubmed.ncbi.nlm.nih.gov/23517725/ xsd:string
+
+[Term]
+id: BPO:00017
+name: NMRI
+def: "The NMRI outbred model was developed by Lynch et al. Poiley of the National Institutes of Health received stock from Lynch in 1937. The mice were inbred as NIH/P1. The Naval Medical Research Institute (NMRI) received stock from Lynch. Zentralinstitut für Versuchstierzucht in Hannover Germany (Han) received stock from NMRI. The mice were random bred. M&B A/S (now Taconic Europe) received stock from Han in 1961 and again in 1985. The mice are maintained as an outbred stock." []
+xref: CRL:605
+xref: Crl:NMRI(Han)
+xref: MGI:2160177
+xref: MPD:862
+xref: NCIT:C37416
+xref: Tac:NMRI
+is_a: BPO:00006 ! outbred mouse strain
+is_a: NCBITaxon:10090 ! Mus musculus
+property_value: IAO:0000117 "Rakel Arrazuria" xsd:string
+property_value: IAO:0000119 https://www.taconic.com/mouse-model/nmri xsd:string
+
+[Term]
+id: BPO:00018
+name: mouse strain by immunological background
+def: "Stains of mice derived by addition of foreign substances to the mice thereby causing effect on the mouse's immune system." []
+is_a: BPO:00034 ! Mouse strain
+property_value: IAO:0000117 "Fuqi Xi" xsd:string
+
+[Term]
+id: BPO:00019
+name: immunosuppressed mouse strain
+def: "Stains of mice whose immune system has been suppressed by addition of foreign material such as drugs." []
+is_a: BPO:00018 ! mouse strain by immunological background
+property_value: IAO:0000117 "Fuqi Xi" xsd:string
+
+[Term]
+id: BPO:00020
+name: immunocompetent mouse strain
+def: "Stains of mice whose immune system are functioning normally despite the addition of foreign material such as drugs." []
+synonym: "immunocompromised mouse strain" EXACT []
+is_a: BPO:00018 ! mouse strain by immunological background
+property_value: IAO:0000117 "Fuqi Xi" xsd:string
+
+[Term]
+id: BPO:00021
+name: transgenic mouse strain
+def: "Transgenic mouse strains are those that have been altered by the stable insertion of DNA called transgenes that suppress their immune system." []
+xref: NCIT:C14240
+xref: OMIT:0009876
+is_a: BPO:00019 ! immunosuppressed mouse strain
+property_value: IAO:0000117 "Yojana Gadiya" xsd:string
+property_value: IAO:0000119 https://www.genetargeting.com/transgenic-mouse-models/ xsd:string
+
+[Term]
+id: BPO:00022
+name: Gfi-1-deficient mouse
+def: "Gfi-1-deficient mouse mice contain a ZFN-mediated mutation that results in a premature stop codon in Gfi1, making these mice useful when studying human severe congenital neutropenia (SCN)." []
+synonym: "C57BL/6-Gfi1em1Hlg/J" EXACT []
+synonym: "Gfi1R412X" EXACT []
+synonym: "STOCK Gfi1em1Hlg/J" EXACT []
+xref: JAX:035156
+xref: MGI:6512041
+is_a: BPO:00021 ! transgenic mouse strain
+is_a: NCBITaxon:10090 ! Mus musculus
+property_value: IAO:0000117 "Yojana Gadiya" xsd:string
+property_value: IAO:0000119 https://www.jax.org/strain/035156 xsd:string
+
+[Term]
+id: BPO:00023
+name: G-CSFR-/- mouse
+def: "G-CSFR- are Csf3r knockout mice are useful for studying granulopoiesis and hematopoietic stem cell regulation." []
+synonym: "B6.129X1(Cg)-Csf3rtm1Link/J" EXACT []
+xref: JAX:017838
+is_a: BPO:00021 ! transgenic mouse strain
+is_a: NCBITaxon:10090 ! Mus musculus
+property_value: IAO:0000117 "Yojana Gadiya" xsd:string
+property_value: IAO:0000119 https://www.jax.org/strain/017838 xsd:string
+
+[Term]
+id: BPO:00024
+name: Cxcr2−/− mouse
+def: "Cxcr2−/− are floxed mice may be useful for studying the neutrophil granulocyte lineage and the migration of neutrophils during infection." []
+synonym: "C57BL/6-Cxcr2tm1Rmra/J" EXACT []
+synonym: "Cxcr2fl" EXACT []
+synonym: "Cxcr2fl/fl" EXACT []
+xref: JAX:024638
+is_a: BPO:00021 ! transgenic mouse strain
+is_a: NCBITaxon:10090 ! Mus musculus
+property_value: IAO:0000117 "Yojana Gadiya" xsd:string
+property_value: IAO:0000119 https://www.jax.org/strain/024638 xsd:string
+
+[Term]
+id: BPO:00025
+name: Genista mouse
+def: "The Genista mutation C57BL/6-Gfi1Gen converted the cysteine (C) residue normally found at position 318 of the third zinc finger domain of Gfi1 into a tyrosine (Y), thereby disrupting the Cys2His2 structural motif that constitutes the core component of zinc finger domains. The C318Y substitution present in Genista mice had no impact on the levels of expression of the mutated Gfi1C318Y protein. (From EMMA Mouse Repository)" []
+synonym: "C57BL/6-Gfi1Gen/Orl" EXACT []
+synonym: "C57BL/6-GfiGen" EXACT []
+xref: EM:05959
+is_a: BPO:00021 ! transgenic mouse strain
+is_a: NCBITaxon:10090 ! Mus musculus
+property_value: IAO:0000117 "Rakel Arrazuria" xsd:string
+property_value: IAO:0000119 https://www.infrafrontier.eu/search?keyword=EM:05959 xsd:string
+
+[Term]
+id: BPO:00026
+name: LysM-Cre Mcl-1fl/fl mouse
+def: "The LysM-Cre Mcl-1fl/fl knock-in/knock-out mouse has a nuclear-localized Cre recombinase inserted into the first coding ATG of the lysozyme 2 gene (Lyz2); both abolishing endogenous Lyz2 gene function and placing NLS-Cre expression under the control of the endogenous Lyz2 promoter/enhancer elements. These LysMcre mice may be useful for Cre-lox studies of the myeloid cell lineage (monocytes, mature macrophages and granulocytes) and the innate immune response." []
+synonym: "B6.129P2-Lyz2tm1(cre)Ifo/J" EXACT []
+synonym: "LysMcre" EXACT []
+synonym: "Mcl-1−/−" EXACT []
+xref: JAX:004781
+is_a: BPO:00021 ! transgenic mouse strain
+is_a: NCBITaxon:10090 ! Mus musculus
+property_value: IAO:0000117 "Rakel Arrazuria" xsd:string
+property_value: IAO:0000119 https://www.jax.org/strain/004781 xsd:string
+
+[Term]
+id: BPO:00027
+name: MRP8-Cre Mcl-1fl/fl mouse
+def: "MRP8-Cre Mcl-1fl/fl mouse transgenic mice may be useful in studies utilizing Cre-lox technology or fluorescent protein expression in granulocytes and granulocyte/macrophage progenitors (GMPs). (from JAX Strain Information)" []
+synonym: "-EGFP)1Ilw/J" EXACT []
+synonym: "B6.Cg-Tg(S100A8-cre" EXACT []
+synonym: "Mrp8creTg" EXACT []
+xref: JAX:021614
+is_a: BPO:00021 ! transgenic mouse strain
+is_a: NCBITaxon:10090 ! Mus musculus
+property_value: IAO:0000117 "Yojana Gadiya" xsd:string
+property_value: IAO:0000119 https://www.jax.org/strain/021614 xsd:string
+
+[Term]
+id: BPO:00028
+name: other mouse strain
+def: "Stains of mice that are used in laboratory experiment and do not involve any addition of foreign substances or generated via a different copulatory method." []
+is_a: BPO:00034 ! Mouse strain
+property_value: IAO:0000117 "Fuqi Xi" xsd:string
+
+[Term]
+id: BPO:00029
+name: radiation-based immunosuppression
+def: "The pathologic suppression of the immune system with help of radiations." []
+is_a: IDO:0000612 ! pathologic immunosuppression
+property_value: IAO:0000117 "Rakel Arrazuria" xsd:string
+
+[Term]
+id: BPO:00030
+name: 1A8-based immunosupression
+def: "The 1A8 monoclonal antibody reacts with mouse Ly6G. Ly6G is a 21-25 kDa member of the Ly-6 superfamily of GPI-anchored cell surface proteins with roles in cell signaling and cell adhesion. Ly6G is expressed differentially during development by cells in the myeloid lineage including monocytes, macrophages, granulocytes, and neutrophils. Monocytes typically express Ly6G transiently during development while mature granulocytes and peripheral neutrophils retain expression making Ly6G a good cell surface marker for these populations. Unlike the RB6-8C5 antibody, the 1A8 antibody reacts specifically with mouse Ly6G with no reported cross reactivity with Ly6C. (From BioxCell)" []
+synonym: "InVivoMAb anti-mouse Ly6G, anti-mouse Ly6G" EXACT []
+is_a: BPO:00010 ! antibody-based immunosuppression
+property_value: IAO:0000117 "Rakel Arrazuria" xsd:string
+
+[Term]
+id: BPO:00031
+name: NIMP-R14-based immunosupression
+def: "The NIMP-R14 monoclonal antibody is specific for murine neutrophils. The antibody is reported to react strongly with mouse Ly6G and Ly6C previously referred to as GR-1. Ly6G is a 21-25 kDa member of the Ly-6 superfamily of GPI-anchored cell surface proteins with roles in cell signaling and cell adhesion. Ly6G is expressed differentially during development by cells in the myeloid lineage including monocytes, macrophages, granulocytes, and neutrophils. Monocytes typically express Ly6G transiently during development while mature granulocytes and peripheral neutrophils retain expression making Ly6G a good cell surface marker for these populations. Ly6C is a monocyte/macrophage and endothelial cell differentiation antigen regulated by interferon gamma and is thought to play a role in the development and maturation of lymphocytes. The NIMP-R14 antibody has been shown to be useful for depletion of neutrophils in mice. (From BioxCell)" []
+synonym: "InVivoMAb anti-mouse Ly6G/Ly6C, anti-mouse Ly6G/Ly6C" EXACT []
+is_a: BPO:00010 ! antibody-based immunosuppression
+property_value: IAO:0000117 "Rakel Arrazuria" xsd:string
+
+[Term]
+id: BPO:00032
+name: RB6-8C5-based immunosupression
+def: "The RB6-8C5 monoclonal antibody reacts strongly with mouse Ly6G and weakly with mouse Ly6C previously referred to as GR-1. Ly6G is a 21-25 kDa member of the Ly-6 superfamily of GPI-anchored cell surface proteins with roles in cell signaling and cell adhesion. Ly6G is expressed differentially during development by cells in the myeloid lineage including monocytes macrophages granulocytes and neutrophils. Monocytes typically express Ly6G transiently during development while mature granulocytes and peripheral neutrophils retain expression making Ly6G a good cell surface marker for these populations.The RB6-8C5 antibody has been shown to inhibit the binding of the 1A8 antibody. The 1A8 monoclonal antibody reacts specifically with mouse Ly6G with no reported cross reactivity with Ly6C. (From BioxCell)" []
+synonym: "InVivoPlus anti-mouse Ly6G/Ly6C (Gr-1), InVivoMAb anti-mouse Ly6G/Ly6C (Gr-1), anti-mouse Ly6G/Ly6C (Gr-1), anti-Gr-1" EXACT []
+is_a: BPO:00010 ! antibody-based immunosuppression
+property_value: IAO:0000117 "Rakel Arrazuria" xsd:string
+
+[Term]
+id: BPO:00033
+name: strain grouping
+def: "Grouping of animal species based on the breeding (inbred or outbred) property" []
+is_a: OBI:0100026 ! organism
+property_value: IAO:0000117 "Yojana Gadiya" xsd:string
+
+[Term]
+id: BPO:00034
+name: Mouse strain
+def: "Strains belonging to mouse models" []
+synonym: "mice" EXACT []
+is_a: BPO:00033 ! strain grouping
+property_value: IAO:0000119 NCBITaxon:10090 xsd:string
+
+[Term]
+id: EFO:0000597
+name: 129 mouse strain
+def: "129 is a mouse strain as described in Jackson Laboratory http://www.informatics.jax.org/mgihome/nomen/strain_129.shtml" []
+is_a: NCBITaxon:10090 ! Mus musculus
+property_value: definition:citation http://www.informatics.jax.org/mgihome/nomen/strain_129.shtml xsd:string
+property_value: definition:citation "Simpson E. M., Linder C. C., Sargent E. E., Davisson M. T., Mobraaten L. E., and Sharp J. J. (1997) Genetic variation among 129 substrains and its importance for targeted mutagenesis in mice. Nature Genet. 16, 19-27." xsd:string
+property_value: IAO:0000117 "James Malone" xsd:string
+
+[Term]
+id: EFO:0000598
+name: 129S6
+def: "129S6 is a substrain of the mouse strain 129 as described in Jackson Laboratory http://www.informatics.jax.org/mgihome/nomen/strain_129.shtml" []
+synonym: "129S6/SvEvTac" EXACT []
+xref: NCIT:C37343
+xref: NIFSTD:birnlex_174
+is_a: BPO:00028 ! other mouse strain
+is_a: EFO:0000597 ! 129 mouse strain
+property_value: definition:citation http://www.informatics.jax.org/mgihome/nomen/strain_129.shtml xsd:string
+property_value: IAO:0000117 "James Malone" xsd:string
+property_value: IAO:0000117 "Tomasz Adamusiak" xsd:string
+
+[Term]
+id: EFO:0000602
+name: BALB/c
+def: "BALB/c is a mouse strain of albion mice." []
+comment: Description from https://www.jax.org/strain/000651:\n\nBALB/c mice are particularly well known for the production of plasmacytomas following injection with mineral oil forming the basis for the production of monoclonal antibodies. Although not all BALB/c substrains have been examined for plasmacytoma induction, substrains derived from the Andervont (An) lineage (which includes BALB/cByJ) typically are susceptible, while those descended from BALB/cJ are resistant (see: Potter M, 1985). Mammary tumor incidence is normally low but infection with mammary tumor virus by fostering to MMTV+ C3H mice dramatically increases tumor number and age of onset. BALB/c mice develop other cancers later in life including reticular neoplasms, primary lung tumors, and renal tumors. Rare spontaneous myoepitheliomas arising from myoepithelial cells of various exocrine glands have been observed in both BALB/cJ and BALB/cByJ substrains.\n\nWhite et al. reported a variation in thioglycolate medium-induced peritoneal leukocyte recruitment in 4 analyzed strains. The response of total leukocyte recruitment, from greatest to least, was C57BL/6J>BALB/c>CD1>129X1/SvJ. Variations were also found in the timeline of response and cell types most impacted.\n\nBALB/c mice immunized with PLP180-199 develop an atypical form of experimental autoimmune encephalomyelitis (EAE) in which susceptibility is determined by location. In the spinal cord 60-70% mice develop pathological lesions and in the brain and cerebellum 100% of mice develop sever lesions.\n\nDorso-ventral vaginal septa is observed in some BALB/cJ females, and may contribute to non-productive females in this strain. (Cunliffe-Beamer T, Lab Anim Sci, 1976)\n
+synonym: "BALB" EXACT []
+synonym: "BALB/cAnNCrl" EXACT []
+synonym: "BALB/cJ" EXACT []
+synonym: "BALBc" EXACT []
+synonym: "C" EXACT []
+xref: CIDO:0000390
+xref: JAX:000651
+xref: MGI:2161072
+xref: NCIT:C37357
+xref: NIFSTD:birnlex_206
+xref: OMIT:0009861
+xref: VO:0000051
+is_a: BPO:00005 ! inbred mouse strain
+is_a: NCBITaxon:10090 ! Mus musculus
+property_value: definition:citation http://en.wikipedia.org/wiki/BALB/c xsd:string
+property_value: definition:citation https://www.jax.org/strain/000651 xsd:string
+property_value: IAO:0000117 "James Malone" xsd:string
+property_value: IAO:0000117 "Rakel Arrazuria" xsd:string
+property_value: IAO:0000117 "Sirarat Sarntivijai" xsd:string
+property_value: IAO:0000117 "Tomasz Adamusiak" xsd:string
+
+[Term]
+id: EFO:0000606
+name: C57BL/6J
+def: "C57BL/6J is a mouse strain as described in Jackson Laboratory http://phenome.jax.org/db/q?rtn=strains/details&strainid=7" []
+synonym: "B6" EXACT []
+synonym: "B6.129X1(CD1)-Kat2btm1Nkt/Orl" EXACT []
+synonym: "B6.129X1-Kat2btm1Nkt/Orl" EXACT []
+synonym: "B6.Cg-Kat2btm1Nkt/Orl" EXACT []
+synonym: "B6/J" EXACT []
+synonym: "B6J" EXACT []
+synonym: "C57/BL6" EXACT []
+synonym: "C57BL6J" EXACT []
+xref: EM:05396
+xref: JAX:000664
+xref: MGI:5498252
+xref: NIFSTD:birnlex_393
+is_a: BPO:00005 ! inbred mouse strain
+is_a: EFO:0005181 ! C57BL
+property_value: definition:citation http://phenome.jax.org/db/q?rtn=strains/details&strainid=7 xsd:string
+property_value: IAO:0000117 "James Malone" xsd:string
+property_value: IAO:0000117 "Tomasz Adamusiak" xsd:string
+
+[Term]
+id: EFO:0001329
+name: C3H/HeJ
+def: "C3H/HeJ is a mouse strain as described in Jackson Laboratory http://jaxmice.jax.org/strain/000659.html" []
+synonym: "C3" EXACT []
+synonym: "C3H" EXACT []
+synonym: "C3H Heston" EXACT []
+xref: JAX:000659
+xref: NCIT:C37369
+is_a: BPO:00028 ! other mouse strain
+is_a: NCBITaxon:10090 ! Mus musculus
+property_value: IAO:0000117 "James Malone" xsd:string
+
+[Term]
+id: EFO:0002547
+name: NOD mouse
+xref: NCIt:C37417
+is_a: NCBITaxon:10090 ! Mus musculus
+property_value: IAO:0000117 "Jie Zheng" xsd:string
+property_value: IAO:0000117 "Tomasz Adamusiak" xsd:string
+
+[Term]
+id: EFO:0004429
+name: inbred
+def: "Property of an organism which indicates that the organism's parents were genetically related (potentially for several generations). Inbreeding results in closer homozygosity." []
+is_a: BFO:0000019 ! quality
+property_value: IAO:0000117 "James Malone" xsd:string
+
+[Term]
+id: EFO:0004430
+name: outbred
+def: "Propety of an organism which indicates that the organism's parents are not closely related (e.g. family members)." []
+is_a: BFO:0000019 ! quality
+
+[Term]
+id: EFO:0005181
+name: C57BL
+def: "An inbred strain of mouse created in 1921 by C. C. Little at the Bussey Institute for Research in Applied Biology." []
+is_a: NCBITaxon:10090 ! Mus musculus
+
+[Term]
+id: EFO:0005184
+name: DBA/2J
+def: "Inbred Strain TJL Mating System: Sibling x Sibling (Female x Male) Species: laboratory mouse H2 Haplotype: d Generation: F219p (14-DEC-06) Appearance: dilute brown Related Genotype: a/a Tyrp1b/Tyrp1b Myo5ad/Myo5ad Important Note This strain is homozygous for Cdh23ahl, the age related hearing loss 1 mutation, which on this background results in progressive hearing loss that is already severe by 3 months of age. Strain Description DBA/2J is a widely used inbred strain that is valuable in a wide number of research areas including cardiovascular biology, neurobiology, and sensorineural research." []
+synonym: "D2" EXACT []
+synonym: "D2J" EXACT []
+synonym: "DBA" EXACT []
+synonym: "DBA/2" EXACT []
+synonym: "DBA2" EXACT []
+xref: JAX:000671
+xref: MGI:2159738
+xref: MGI:2180839
+xref: MGI:2684695
+xref: MPD:8
+xref: OMIT:0009865
+is_a: BPO:00005 ! inbred mouse strain
+is_a: NCBITaxon:10090 ! Mus musculus
+property_value: definition:citation "Beck, J.A., et al., Genealogies of mouse inbred strains (2000), Nature, Jan2000, v24, p23" xsd:string
+property_value: IAO:0000117 "James Malone" xsd:string
+
+[Term]
+id: EFO:0007736
+name: NOD/ShiLtJ
+def: "Diabetes in NOD/ShiLtJ mice is characterized by insulitis, a leukocytic infiltrate of the pancreatic islets. Marked decreases in pancreatic insulin content occur in females at about 12 weeks of age and several weeks later in males. Onset of diabetes is marked by moderate glycosuria and by a non-fasting plasma glucose higher than 250 mg/dl. Diabetic mice are hypoinsulinemic and hyperglucagonemic, indicating a selective destruction of pancreatic islet beta cells. Susceptibility to IDDM in NOD/ShiLtJ mice is polygenic, and environment, including housing conditions, health status, and diet, exerts a strong effect on penetrance. NOD/ShiLtJ females are more widely used than males because the onset of IDDM symptoms occurs earlier and with a higher incidence (90-100% by 30 weeks of age). NOD/ShiLtJ males develop IDDM at a frequency of between 40-60% by 30-40 weeks of age. Male mice are useful for certain applications, including pharmaceutical studies, \"accelerated transfer\" of IDDM, and some in vitro studies. The major component of diabetes susceptibility in NOD mice is the unique MHC haplotype (H2g7 = Kd, Aad, Abg7, Enull, Db). NOD mice also exhibit multiple aberrant immunophenotypes including defective antigen presenting cell immunoregulatory functions, defects in the regulation of theT lymphocyte repertoire, defective NK cell function, defective cytokine production from macrophages (Fan et al., 2004) and impaired wound healing. They also lack hemolytic complement, C5. NOD/ShiLtJ mice also are severely hearing-impaired. A variety of mutations causing immunodeficiencies, targeted mutations in cytokine genes, as well as transgenes affecting immune functions, have been backcrossed into the NOD/ShiLt inbred strain background.\n\nDiabetes onset was monitored weekly between the ages of 3 and 30 weeks in 120 male and 120 female NOD/ShiLtJ bred in the Bar Harbor and Sacramento facilities. Mice were fed a 6% fat diet (LabDiet 5K0Q, St. Louis MO), ad libitum. Diabetes was defined by a non-fasting blood glucose level exceeding 250 mg/dL. Blood was sampled from the submandibular route and analyzed using a OneTouch Ultra 2 handheld glucometer that was validated using a control solution on each measurement day. Data were combined from three independent studies, each involving 40 males and 40 females. The median female onset was 17 weeks in each study, and the Kaplan-Meier curves from the individual studies did not differ significantly. " []
+synonym: "Diabetic NOD mice" EXACT []
+synonym: "NOD" EXACT []
+synonym: "NOD/LtJ" EXACT []
+synonym: "Non-obese Diabetic" EXACT []
+xref: JAX:001976
+xref: MGI:2162056
+xref: MPD:13
+is_a: BPO:00028 ! other mouse strain
+is_a: EFO:0002547 ! NOD mouse
+property_value: definition:citation https://www.jax.org/strain/001976 xsd:string
+property_value: IAO:0000117 "Sirarat Sarntivijai" xsd:string
+
+[Term]
+id: EFO:0021426
+name: humanized mouse
+synonym: "B6.Cg-Cyp1tm1Dwn Ahrd Tg(CYP1A1" EXACT []
+synonym: "CYP1A2)1Dwn/DwnJ" EXACT []
+synonym: "humanized hCYP1A1_1A2_Cyp1a1/1a2(-/-)_Ahr<d> mutant mice" EXACT []
+xref: JAX:008599
+is_a: BPO:00028 ! other mouse strain
+is_a: NCBITaxon:10090 ! Mus musculus
+property_value: IAO:0000117 "Yojana Gadiya" xsd:string
+
+[Term]
+id: IDO:0000610
+name: immunosuppression
+is_a: BFO:0000015 ! process
+
+[Term]
+id: IDO:0000612
+name: pathologic immunosuppression
+is_a: IDO:0000610 ! immunosuppression
+
+[Term]
+id: IDO:0001009
+name: drug-based immunosuppression
+is_a: IDO:0000612 ! pathologic immunosuppression
+
+[Term]
+id: MCO:0000342
+name: growth phase
+is_a: BFO:0000011 ! spatiotemporal region
+
+[Term]
+id: MCO:0000366
+name: exponential phase
+is_a: MCO:0000342 ! growth phase
+
+[Term]
+id: MCO:0000368
+name: stationary phase
+is_a: MCO:0000342 ! growth phase
+
+[Term]
+id: NCBITaxon:10066
+name: Muridae
+namespace: ncbi_taxonomy
+xref: GC_ID:1
+xref: PMID:15371245
+is_a: NCBITaxon:337687 ! Muroidea
+property_value: has_rank NCBITaxon:family
+
+[Term]
+id: NCBITaxon:10088
+name: Mus <genus>
+namespace: ncbi_taxonomy
+synonym: "mice" EXACT common_name []
+synonym: "mouse" EXACT common_name []
+synonym: "Mus" EXACT scientific_name []
+xref: GC_ID:1
+is_a: NCBITaxon:39107 ! Murinae
+property_value: has_rank NCBITaxon:genus
+
+[Term]
+id: NCBITaxon:10090
+name: Mus musculus
+namespace: ncbi_taxonomy
+alt_id: NCBITaxon:85055
+synonym: "house mouse" EXACT genbank_common_name []
+synonym: "house mouse" EXACT common_name []
+synonym: "mice C57BL/6xCBA/CaJ hybrid" EXACT misspelling []
+synonym: "mouse" EXACT common_name []
+synonym: "Mus muscaris" EXACT misnomer []
+xref: GC_ID:1
+xref: NCIt:C45247
+xref: SNOMEDCT:447612001
+is_a: NCBITaxon:862507 ! Mus <subgenus>
+property_value: has_rank NCBITaxon:species
+property_value: IAO:0000117 "Class imported / merged by efoimporter" xsd:string
+property_value: IAO:0000117 "James Malone" xsd:string
+
+[Term]
+id: NCBITaxon:1113537
+name: Chlamydia/Chlamydophila group
+namespace: ncbi_taxonomy
+xref: GC_ID:11
+xref: PMID:10319462
+xref: PMID:11211265
+xref: PMID:21048221
+xref: PMID:21048222
+xref: PMID:23620152
+is_a: NCBITaxon:809 ! Chlamydiaceae
+
+[Term]
+id: NCBITaxon:117570
+name: Teleostomi
+namespace: ncbi_taxonomy
+xref: GC_ID:1
+is_a: NCBITaxon:7776 ! Gnathostomata <vertebrates>
+property_value: has_rank NCBITaxon:clade
+
+[Term]
+id: NCBITaxon:117571
+name: Euteleostomi
+namespace: ncbi_taxonomy
+alt_id: NCBITaxon:40673
+synonym: "bony vertebrates" EXACT genbank_common_name []
+xref: GC_ID:1
+is_a: NCBITaxon:117570 ! Teleostomi
+property_value: has_rank NCBITaxon:clade
+
+[Term]
+id: NCBITaxon:119060
+name: Burkholderiaceae
+namespace: ncbi_taxonomy
+alt_id: NCBITaxon:119063
+synonym: "Burkholderia group" RELATED synonym []
+xref: GC_ID:11
+xref: PMID:16403855
+is_a: NCBITaxon:80840 ! Burkholderiales
+property_value: has_rank NCBITaxon:family
+
+[Term]
+id: NCBITaxon:120793
+name: Mycobacterium avium complex (MAC)
+namespace: ncbi_taxonomy
+synonym: "MAC" BROAD acronym []
+xref: GC_ID:11
+xref: PMID:1581195
+xref: PMID:30231956
+xref: PMID:8347508
+xref: PMID:9103630
+is_a: NCBITaxon:1763 ! Mycobacterium
+property_value: has_rank NCBITaxon:species_group
+
+[Term]
+id: NCBITaxon:1224
+name: Proteobacteria
+namespace: ncbi_taxonomy
+synonym: "Alphaproteobacteraeota" RELATED synonym []
+synonym: "Alphaproteobacteriota" RELATED synonym []
+synonym: "proteobacteria" RELATED blast_name []
+synonym: "purple bacteria" EXACT common_name []
+synonym: "purple bacteria and relatives" EXACT common_name []
+synonym: "purple non-sulfur bacteria" EXACT common_name []
+synonym: "purple photosynthetic bacteria" EXACT common_name []
+synonym: "purple photosynthetic bacteria and relatives" EXACT common_name []
+xref: GC_ID:11
+xref: PMID:11321122
+xref: PMID:11542017
+xref: PMID:11837318
+xref: PMID:26654112
+xref: PMID:29458499
+is_a: NCBITaxon:2 ! Bacteria
+is_a: NCIT:C173514 ! Gram Negative Bacteria
+property_value: has_rank NCBITaxon:phylum
+
+[Term]
+id: NCBITaxon:1236
+name: Gammaproteobacteria
+namespace: ncbi_taxonomy
+synonym: "g-proteobacteria" RELATED blast_name []
+synonym: "gamma proteobacteria" RELATED synonym []
+synonym: "gamma subdivision" RELATED synonym []
+synonym: "gamma subgroup" RELATED synonym []
+synonym: "Proteobacteria gamma subdivision" RELATED synonym []
+synonym: "Purple bacteria, gamma subdivision" RELATED synonym []
+xref: GC_ID:11
+xref: PMID:23334881
+is_a: NCBITaxon:1224 ! Proteobacteria
+property_value: has_rank NCBITaxon:class
+
+[Term]
+id: NCBITaxon:1239
+name: Firmicutes
+namespace: ncbi_taxonomy
+alt_id: NCBITaxon:31968
+synonym: "Bacillaeota" RELATED synonym []
+synonym: "Bacillota" RELATED synonym []
+synonym: "Bacillus/Clostridium group" RELATED synonym []
+synonym: "clostridial firmicutes" RELATED synonym []
+synonym: "Clostridium group firmicutes" RELATED synonym []
+synonym: "Firmacutes" RELATED synonym []
+synonym: "firmicutes" RELATED blast_name []
+synonym: "Low G+C firmicutes" RELATED synonym []
+synonym: "low G+C Gram-positive bacteria" EXACT common_name []
+synonym: "low GC Gram+" EXACT common_name []
+xref: GC_ID:11
+xref: PMID:10555317
+xref: PMID:11034484
+xref: PMID:11542017
+xref: PMID:15143038
+xref: PMID:25403554
+xref: PMID:26654112
+xref: PMID:29458499
+is_a: NCBITaxon:1783272 ! Terrabacteria group
+property_value: has_rank NCBITaxon:phylum
+
+[Term]
+id: NCBITaxon:1279
+name: Staphylococcus
+namespace: ncbi_taxonomy
+synonym: "Aurococcus" RELATED synonym []
+xref: GC_ID:11
+xref: PMID:10319469
+xref: PMID:10319495
+xref: PMID:10425778
+xref: PMID:10758876
+xref: PMID:12656157
+xref: PMID:17220435
+xref: PMID:9734063
+is_a: NCBITaxon:90964 ! Staphylococcaceae
+property_value: has_rank NCBITaxon:genus
+
+[Term]
+id: NCBITaxon:1280
+name: Staphylococcus aureus
+namespace: ncbi_taxonomy
+alt_id: NCBITaxon:325213
+alt_id: NCBITaxon:46170
+alt_id: NCBITaxon:72759
+synonym: "Micrococcus aureus" RELATED synonym []
+synonym: "Micrococcus pyogenes" RELATED synonym []
+synonym: "Staphlococcus pyogenes citreus" RELATED synonym []
+synonym: "Staphylococcus aureus subsp. anaerobius" RELATED synonym []
+synonym: "Staphylococcus pyogenes aureus" RELATED synonym []
+xref: GC_ID:11
+xref: PMID:31023808
+xref: PMID:8573498
+is_a: NCBITaxon:1279 ! Staphylococcus
+property_value: has_rank NCBITaxon:species
+
+[Term]
+id: NCBITaxon:1300
+name: Streptococcaceae
+namespace: ncbi_taxonomy
+xref: GC_ID:11
+is_a: NCBITaxon:186826 ! Lactobacillales
+property_value: has_rank NCBITaxon:family
+
+[Term]
+id: NCBITaxon:1301
+name: Streptococcus
+namespace: ncbi_taxonomy
+xref: GC_ID:11
+xref: PMID:10555340
+xref: PMID:14657115
+xref: PMID:1720654
+xref: PMID:19620365
+xref: PMID:19880633
+xref: PMID:7537076
+xref: PMID:8995803
+is_a: NCBITaxon:1300 ! Streptococcaceae
+property_value: has_rank NCBITaxon:genus
+
+[Term]
+id: NCBITaxon:1313
+name: Streptococcus pneumoniae
+namespace: ncbi_taxonomy
+synonym: "Diplococcus pneumoniae" RELATED synonym []
+synonym: "Micrococcus pneumoniae" RELATED synonym []
+xref: GC_ID:11
+is_a: NCBITaxon:1301 ! Streptococcus
+property_value: has_rank NCBITaxon:species
+
+[Term]
+id: NCBITaxon:1314
+name: Streptococcus pyogenes
+namespace: ncbi_taxonomy
+synonym: "Micrococcus scarlatinae" RELATED synonym []
+synonym: "Streptococcus erysipelatos" RELATED synonym []
+synonym: "Streptococcus hemolyticus" RELATED synonym []
+synonym: "Streptococcus scarlatinae" RELATED synonym []
+xref: GC_ID:11
+is_a: NCBITaxon:1301 ! Streptococcus
+property_value: has_rank NCBITaxon:species
+
+[Term]
+id: NCBITaxon:1338369
+name: Dipnotetrapodomorpha
+namespace: ncbi_taxonomy
+xref: GC_ID:1
+is_a: NCBITaxon:8287 ! Sarcopterygii
+property_value: has_rank NCBITaxon:clade
+
+[Term]
+id: NCBITaxon:1350
+name: Enterococcus
+namespace: ncbi_taxonomy
+xref: GC_ID:11
+xref: PMID:8427810
+xref: PMID:9103648
+is_a: NCBITaxon:81852 ! Enterococcaceae
+property_value: has_rank NCBITaxon:genus
+
+[Term]
+id: NCBITaxon:1352
+name: Enterococcus faecium
+namespace: ncbi_taxonomy
+alt_id: NCBITaxon:295340
+synonym: "Streptococcus faecium" RELATED synonym []
+xref: GC_ID:11
+xref: PMID:34402778
+is_a: NCBITaxon:1350 ! Enterococcus
+property_value: has_rank NCBITaxon:species
+
+[Term]
+id: NCBITaxon:135621
+name: Pseudomonadaceae
+namespace: ncbi_taxonomy
+xref: GC_ID:11
+is_a: NCBITaxon:72274 ! Pseudomonadales
+property_value: has_rank NCBITaxon:family
+
+[Term]
+id: NCBITaxon:135625
+name: Pasteurellales
+namespace: ncbi_taxonomy
+synonym: "Pasteruellaceae group" RELATED synonym []
+xref: GC_ID:11
+is_a: NCBITaxon:1236 ! Gammaproteobacteria
+property_value: has_rank NCBITaxon:order
+
+[Term]
+id: NCBITaxon:136841
+name: Pseudomonas aeruginosa group
+namespace: ncbi_taxonomy
+xref: GC_ID:11
+is_a: NCBITaxon:286 ! Pseudomonas
+property_value: has_rank NCBITaxon:species_group
+
+[Term]
+id: NCBITaxon:1385
+name: Bacillales
+namespace: ncbi_taxonomy
+alt_id: NCBITaxon:2954866
+synonym: "Bacillus/Staphylococcus group" RELATED synonym []
+synonym: "Caryophanales" RELATED synonym []
+xref: GC_ID:11
+is_a: NCBITaxon:91061 ! Bacilli
+property_value: has_rank NCBITaxon:order
+
+[Term]
+id: NCBITaxon:1437010
+name: Boreoeutheria
+namespace: ncbi_taxonomy
+synonym: "Boreotheria" RELATED synonym []
+xref: GC_ID:1
+xref: PMID:11743200
+xref: PMID:11791233
+is_a: NCBITaxon:9347 ! Eutheria
+property_value: has_rank NCBITaxon:clade
+
+[Term]
+id: NCBITaxon:1496
+name: Clostridioides difficile
+namespace: ncbi_taxonomy
+alt_id: NCBITaxon:1440055
+alt_id: NCBITaxon:1581190
+synonym: "Bacillus difficilis" RELATED synonym []
+synonym: "Clostridium difficile" RELATED synonym []
+synonym: "Peptoclostridium difficile" RELATED synonym []
+xref: GC_ID:11
+xref: PMID:23834245
+xref: PMID:27370902
+xref: PMID:27902176
+is_a: NCBITaxon:1870884 ! Clostridioides
+property_value: has_rank NCBITaxon:species
+
+[Term]
+id: NCBITaxon:1760
+name: Actinomycetia
+namespace: ncbi_taxonomy
+alt_id: NCBITaxon:85003
+synonym: "Actinomycetes" RELATED synonym []
+synonym: "high G+C Gram-positive bacteria" EXACT genbank_common_name []
+synonym: "high G+C Gram-positive bacteria" RELATED blast_name []
+xref: GC_ID:11
+xref: PMID:10028260
+xref: PMID:11155976
+xref: PMID:11321122
+xref: PMID:19244447
+xref: PMID:28840812
+xref: PMID:30186281
+is_a: NCBITaxon:201174 ! Actinobacteria
+property_value: has_rank NCBITaxon:class
+
+[Term]
+id: NCBITaxon:1762
+name: Mycobacteriaceae
+namespace: ncbi_taxonomy
+xref: GC_ID:11
+xref: PMID:19244447
+xref: PMID:29497402
+xref: PMID:30186281
+is_a: NCBITaxon:85007 ! Corynebacteriales
+property_value: has_rank NCBITaxon:family
+
+[Term]
+id: NCBITaxon:1763
+name: Mycobacterium
+namespace: ncbi_taxonomy
+xref: GC_ID:11
+xref: PMID:1380284
+xref: PMID:1581193
+xref: PMID:16014496
+xref: PMID:1883713
+xref: PMID:2275850
+xref: PMID:29497402
+xref: PMID:31296783
+xref: PMID:31649146
+xref: PMID:31649147
+xref: PMID:34554081
+xref: PMID:7547284
+xref: PMID:7547304
+xref: PMID:7907223
+xref: PMID:8863452
+is_a: NCBITaxon:1762 ! Mycobacteriaceae
+property_value: has_rank NCBITaxon:genus
+
+[Term]
+id: NCBITaxon:1773
+name: Mycobacterium tuberculosis
+namespace: ncbi_taxonomy
+alt_id: NCBITaxon:2528440
+synonym: "Bacillus tuberculosis" RELATED synonym []
+synonym: "Bacterium tuberculosis" RELATED synonym []
+synonym: "Mycobacterium tuberculosis typus humanus" RELATED synonym []
+synonym: "Mycobacterium tuberculosis var. hominis" RELATED synonym []
+synonym: "Mycobacterium tuberculosis variant tuberculosis" RELATED synonym []
+xref: GC_ID:11
+xref: PMID:29205127
+is_a: BPO:00001 ! Acid-fast Bacteria
+is_a: NCBITaxon:77643 ! Mycobacterium tuberculosis complex
+property_value: has_rank NCBITaxon:species
+
+[Term]
+id: NCBITaxon:1783257
+name: PVC group
+namespace: ncbi_taxonomy
+alt_id: NCBITaxon:51290
+xref: GC_ID:11
+xref: PMID:16704931
+xref: PMID:23851394
+xref: PMID:24185849
+is_a: NCBITaxon:2 ! Bacteria
+is_a: NCIT:C173514 ! Gram Negative Bacteria
+property_value: has_rank NCBITaxon:clade
+
+[Term]
+id: NCBITaxon:1783272
+name: Terrabacteria group
+namespace: ncbi_taxonomy
+xref: GC_ID:11
+xref: PMID:18988685
+xref: PMID:23851394
+is_a: NCBITaxon:2 ! Bacteria
+is_a: NCIT:C173515 ! Gram Positive Bacteria
+property_value: has_rank NCBITaxon:clade
+
+[Term]
+id: NCBITaxon:1785
+name: Mycobacterium sp.
+is_a: BPO:00001 ! Acid-fast Bacteria
+
+[Term]
+id: NCBITaxon:186801
+name: Clostridia
+namespace: ncbi_taxonomy
+synonym: "Natranaerobiia" RELATED synonym []
+xref: GC_ID:11
+xref: PMID:26410691
+xref: PMID:31076745
+xref: PMID:32955149
+is_a: NCBITaxon:1239 ! Firmicutes
+property_value: has_rank NCBITaxon:class
+
+[Term]
+id: NCBITaxon:186802
+name: Eubacteriales
+namespace: ncbi_taxonomy
+synonym: "Clostridiales" RELATED synonym []
+xref: GC_ID:11
+xref: PMID:24480908
+is_a: NCBITaxon:186801 ! Clostridia
+property_value: has_rank NCBITaxon:order
+
+[Term]
+id: NCBITaxon:186804
+name: Peptostreptococcaceae
+namespace: ncbi_taxonomy
+synonym: "Clostridium cluster XI" RELATED synonym []
+xref: GC_ID:11
+is_a: NCBITaxon:186802 ! Eubacteriales
+property_value: has_rank NCBITaxon:family
+
+[Term]
+id: NCBITaxon:186826
+name: Lactobacillales
+namespace: ncbi_taxonomy
+xref: GC_ID:11
+is_a: NCBITaxon:91061 ! Bacilli
+property_value: has_rank NCBITaxon:order
+
+[Term]
+id: NCBITaxon:1870884
+name: Clostridioides
+namespace: ncbi_taxonomy
+xref: GC_ID:11
+xref: PMID:27370902
+xref: PMID:27902176
+is_a: NCBITaxon:186804 ! Peptostreptococcaceae
+property_value: has_rank NCBITaxon:genus
+
+[Term]
+id: NCBITaxon:1903411
+name: Yersiniaceae
+namespace: ncbi_taxonomy
+xref: GC_ID:11
+xref: PMID:27620848
+is_a: NCBITaxon:91347 ! Enterobacterales
+property_value: has_rank NCBITaxon:family
+
+[Term]
+id: NCBITaxon:1903414
+name: Morganellaceae
+namespace: ncbi_taxonomy
+synonym: "Morganellaceae Adeolu et al. 2016" RELATED synonym []
+xref: GC_ID:11
+xref: PMID:27620848
+is_a: NCBITaxon:91347 ! Enterobacterales
+property_value: has_rank NCBITaxon:family
+
+[Term]
+id: NCBITaxon:194
+name: Campylobacter
+namespace: ncbi_taxonomy
+xref: GC_ID:11
+xref: PMID:11542086
+xref: PMID:12361288
+xref: PMID:16627635
+xref: PMID:1704793
+xref: PMID:19801389
+xref: PMID:29034857
+is_a: NCBITaxon:72294 ! Campylobacteraceae
+property_value: has_rank NCBITaxon:genus
+
+[Term]
+id: NCBITaxon:1963758
+name: Myomorpha
+namespace: ncbi_taxonomy
+synonym: "mice and others" EXACT genbank_common_name []
+synonym: "Sciurognathi" RELATED in_part []
+xref: GC_ID:1
+is_a: NCBITaxon:9989 ! Rodentia
+property_value: has_rank NCBITaxon:suborder
+
+[Term]
+id: NCBITaxon:2
+name: Bacteria
+namespace: ncbi_taxonomy
+synonym: "bacteria" RELATED blast_name []
+synonym: "eubacteria" EXACT genbank_common_name []
+synonym: "Monera" RELATED in_part []
+synonym: "Procaryotae" RELATED in_part []
+synonym: "Prokaryota" RELATED in_part []
+synonym: "Prokaryotae" RELATED in_part []
+synonym: "prokaryote" RELATED in_part []
+synonym: "prokaryotes" RELATED in_part []
+xref: GC_ID:11
+xref: PMID:10425795
+xref: PMID:10425796
+xref: PMID:10425797
+xref: PMID:10490293
+xref: PMID:10843050
+xref: PMID:10939651
+xref: PMID:10939673
+xref: PMID:10939677
+xref: PMID:11211268
+xref: PMID:11321083
+xref: PMID:11321113
+xref: PMID:11411719
+xref: PMID:11540071
+xref: PMID:11542017
+xref: PMID:11542087
+xref: PMID:11760965
+xref: PMID:12054223
+xref: PMID:2112744
+xref: PMID:270744
+xref: PMID:7520741
+xref: PMID:8123559
+xref: PMID:8186100
+xref: PMID:8590690
+xref: PMID:9103655
+xref: PMID:9336922
+is_a: OBI:0100026 ! organism
+property_value: has_rank NCBITaxon:superkingdom
+
+[Term]
+id: NCBITaxon:201174
+name: Actinobacteria
+namespace: ncbi_taxonomy
+synonym: "Actinobacteraeota" RELATED synonym []
+synonym: "actinobacteria" RELATED blast_name []
+synonym: "Actinobacteriota" RELATED synonym []
+xref: GC_ID:11
+xref: PMID:11837318
+xref: PMID:16280504
+xref: PMID:26654112
+xref: PMID:29458499
+is_a: NCBITaxon:1783272 ! Terrabacteria group
+property_value: has_rank NCBITaxon:phylum
+
+[Term]
+id: NCBITaxon:204428
+name: Chlamydiae
+namespace: ncbi_taxonomy
+synonym: "Chlamydaeota" RELATED synonym []
+synonym: "Chlamydiota" RELATED synonym []
+xref: GC_ID:11
+xref: PMID:24185849
+xref: PMID:26654112
+xref: PMID:29458499
+is_a: NCBITaxon:1783257 ! PVC group
+property_value: has_rank NCBITaxon:phylum
+
+[Term]
+id: NCBITaxon:204429
+name: Chlamydiia
+namespace: ncbi_taxonomy
+synonym: "Chlamydiae" RELATED synonym []
+xref: GC_ID:11
+xref: PMID:26179278
+is_a: NCBITaxon:204428 ! Chlamydiae
+property_value: has_rank NCBITaxon:class
+
+[Term]
+id: NCBITaxon:205
+name: Campylobacter sp.
+namespace: ncbi_taxonomy
+xref: GC_ID:11
+is_a: NCBITaxon:2593542 ! unclassified Campylobacter
+property_value: has_rank NCBITaxon:species
+
+[Term]
+id: NCBITaxon:206351
+name: Neisseriales
+namespace: ncbi_taxonomy
+xref: GC_ID:11
+xref: PMID:23575986
+is_a: NCBITaxon:28216 ! Betaproteobacteria
+property_value: has_rank NCBITaxon:order
+
+[Term]
+id: NCBITaxon:209
+name: Helicobacter
+namespace: ncbi_taxonomy
+alt_id: NCBITaxon:28203
+xref: GC_ID:11
+xref: PMID:11156001
+xref: PMID:15143020
+xref: PMID:1704793
+xref: PMID:17329766
+xref: PMID:29034857
+is_a: NCBITaxon:72293 ! Helicobacteraceae
+property_value: has_rank NCBITaxon:genus
+
+[Term]
+id: NCBITaxon:210
+name: Helicobacter pylori
+namespace: ncbi_taxonomy
+alt_id: NCBITaxon:219
+synonym: "Campylobacter pylori" RELATED synonym []
+synonym: "Campylobacter pylori subsp. pylori" RELATED synonym []
+synonym: "Campylobacter pyloridis" RELATED synonym []
+synonym: "Helicobacter nemestrinae" RELATED synonym []
+xref: GC_ID:11
+xref: PMID:11931154
+xref: PMID:1995031
+xref: PMID:8186097
+xref: PMID:8494747
+is_a: NCBITaxon:209 ! Helicobacter
+property_value: has_rank NCBITaxon:species
+
+[Term]
+id: NCBITaxon:213849
+name: Campylobacterales
+namespace: ncbi_taxonomy
+xref: GC_ID:11
+xref: PMID:16403855
+is_a: NCBITaxon:29547 ! Epsilonproteobacteria
+property_value: has_rank NCBITaxon:order
+
+[Term]
+id: NCBITaxon:2593542
+name: unclassified Campylobacter
+namespace: ncbi_taxonomy
+xref: GC_ID:11
+is_a: NCBITaxon:194 ! Campylobacter
+
+[Term]
+id: NCBITaxon:2629414
+name: unclassified Shigella
+namespace: ncbi_taxonomy
+xref: GC_ID:11
+is_a: NCBITaxon:620 ! Shigella
+
+[Term]
+id: NCBITaxon:2750822
+name: unclassified Mycobacterium avium complex (MAC)
+namespace: ncbi_taxonomy
+xref: GC_ID:11
+is_a: NCBITaxon:120793 ! Mycobacterium avium complex (MAC)
+
+[Term]
+id: NCBITaxon:2759
+name: Eukaryota
+namespace: ncbi_taxonomy
+synonym: "Eucarya" RELATED synonym []
+synonym: "Eucaryotae" RELATED synonym []
+synonym: "eucaryotes" EXACT genbank_common_name []
+synonym: "Eukarya" RELATED synonym []
+synonym: "Eukaryotae" RELATED synonym []
+synonym: "eukaryotes" EXACT common_name []
+synonym: "eukaryotes" RELATED blast_name []
+xref: GC_ID:1
+xref: PMID:23020233
+xref: PMID:30257078
+is_a: OBI:0100026 ! organism
+property_value: has_rank NCBITaxon:superkingdom
+
+[Term]
+id: NCBITaxon:28216
+name: Betaproteobacteria
+namespace: ncbi_taxonomy
+synonym: "b-proteobacteria" RELATED blast_name []
+synonym: "beta proteobacteria" RELATED synonym []
+synonym: "beta subdivision" RELATED synonym []
+synonym: "beta subgroup" RELATED synonym []
+synonym: "Proteobacteria beta subdivision" RELATED synonym []
+synonym: "Purple bacteria, beta subdivision" RELATED synonym []
+xref: GC_ID:11
+xref: PMID:16403855
+xref: PMID:28581923
+is_a: NCBITaxon:1224 ! Proteobacteria
+property_value: has_rank NCBITaxon:class
+
+[Term]
+id: NCBITaxon:286
+name: Pseudomonas
+namespace: ncbi_taxonomy
+alt_id: NCBITaxon:212745
+synonym: "\"Chlorobacterium\" Guillebeau 1890, nom. rejic. Opin. 6 (not \"Chlorobacterium\" Lauterborn 1916)" RELATED synonym []
+synonym: "Liquidomonas" RELATED synonym []
+synonym: "Loefflerella" RELATED synonym []
+synonym: "RNA similarity group I" RELATED synonym []
+xref: GC_ID:11
+xref: PMID:10758879
+xref: PMID:10939664
+xref: PMID:15950132
+xref: PMID:18048745
+xref: PMID:23918787
+xref: PMID:7727274
+xref: PMID:9103607
+is_a: NCBITaxon:135621 ! Pseudomonadaceae
+property_value: has_rank NCBITaxon:genus
+
+[Term]
+id: NCBITaxon:287
+name: Pseudomonas aeruginosa
+namespace: ncbi_taxonomy
+alt_id: NCBITaxon:1224290
+alt_id: NCBITaxon:1437768
+alt_id: NCBITaxon:1437769
+alt_id: NCBITaxon:1437770
+alt_id: NCBITaxon:1508364
+alt_id: NCBITaxon:1607811
+alt_id: NCBITaxon:1607813
+alt_id: NCBITaxon:1683559
+alt_id: NCBITaxon:1683561
+alt_id: NCBITaxon:1851858
+alt_id: NCBITaxon:1851865
+alt_id: NCBITaxon:1860124
+alt_id: NCBITaxon:665948
+alt_id: NCBITaxon:912077
+alt_id: NCBITaxon:931955
+alt_id: NCBITaxon:931956
+alt_id: NCBITaxon:931957
+alt_id: NCBITaxon:931958
+alt_id: NCBITaxon:932477
+synonym: "Bacillus aeruginosus" RELATED synonym []
+synonym: "Bacillus pyocyaneus" RELATED synonym []
+synonym: "Bacterium aeruginosum" RELATED synonym []
+synonym: "Bacterium pyocyaneum" RELATED synonym []
+synonym: "Micrococcus pyocyaneus" RELATED synonym []
+synonym: "probable synonym or variety: \"Pseudomonas polycolor\" Clara 1930" RELATED synonym []
+synonym: "Pseudomonas polycolor" RELATED synonym []
+synonym: "Pseudomonas pyocyanea" RELATED synonym []
+xref: GC_ID:11
+is_a: NCBITaxon:136841 ! Pseudomonas aeruginosa group
+property_value: has_rank NCBITaxon:species
+
+[Term]
+id: NCBITaxon:2887326
+name: Moraxellales
+namespace: ncbi_taxonomy
+xref: GC_ID:11
+is_a: NCBITaxon:1236 ! Gammaproteobacteria
+property_value: has_rank NCBITaxon:order
+
+[Term]
+id: NCBITaxon:2890311
+name: Klebsiella/Raoultella group
+namespace: ncbi_taxonomy
+xref: GC_ID:11
+xref: PMID:34186167
+is_a: NCBITaxon:543 ! Enterobacteriaceae
+
+[Term]
+id: NCBITaxon:292
+name: Burkholderia cepacia
+namespace: ncbi_taxonomy
+alt_id: NCBITaxon:146787
+alt_id: NCBITaxon:146800
+alt_id: NCBITaxon:1628202
+alt_id: NCBITaxon:1637870
+alt_id: NCBITaxon:1637872
+alt_id: NCBITaxon:1637873
+alt_id: NCBITaxon:1637881
+alt_id: NCBITaxon:1637902
+alt_id: NCBITaxon:1683533
+synonym: "Burkholderia cepacia genomovar I" EXACT equivalent_name []
+synonym: "Pseudomonas cepacia" RELATED synonym []
+synonym: "Pseudomonas kingii" RELATED synonym []
+synonym: "Pseudomonas multivorans" RELATED synonym []
+xref: GC_ID:11
+xref: PMID:1283774
+xref: PMID:5963505
+xref: PMID:7526797
+is_a: NCBITaxon:87882 ! Burkholderia cepacia complex
+property_value: has_rank NCBITaxon:species
+
+[Term]
+id: NCBITaxon:29547
+name: Epsilonproteobacteria
+namespace: ncbi_taxonomy
+synonym: "Campylobacterota" RELATED synonym []
+synonym: "e-proteobacteria" RELATED blast_name []
+synonym: "epsilon proteobacteria" RELATED synonym []
+synonym: "epsilon subdivision" RELATED synonym []
+synonym: "epsilon subgroup" RELATED synonym []
+synonym: "Epsilonbacteraeota" RELATED synonym []
+synonym: "Proteobacteria epsilon subdivision" RELATED synonym []
+synonym: "Purple bacteria, epsilon subdivision" RELATED synonym []
+xref: GC_ID:11
+xref: PMID:11837318
+xref: PMID:16403855
+xref: PMID:28484436
+xref: PMID:29720974
+is_a: NCBITaxon:68525 ! delta/epsilon subdivisions
+property_value: has_rank NCBITaxon:class
+
+[Term]
+id: NCBITaxon:314146
+name: Euarchontoglires
+namespace: ncbi_taxonomy
+xref: GC_ID:1
+xref: PMID:11214319
+xref: PMID:12082125
+xref: PMID:12878460
+xref: PMID:15522813
+is_a: NCBITaxon:1437010 ! Boreoeutheria
+property_value: has_rank NCBITaxon:superorder
+
+[Term]
+id: NCBITaxon:314147
+name: Glires
+namespace: ncbi_taxonomy
+synonym: "Rodents and rabbits" EXACT genbank_common_name []
+xref: GC_ID:1
+xref: PMID:11214319
+xref: PMID:12082125
+xref: PMID:15522813
+is_a: NCBITaxon:314146 ! Euarchontoglires
+property_value: has_rank NCBITaxon:clade
+
+[Term]
+id: NCBITaxon:32008
+name: Burkholderia
+namespace: ncbi_taxonomy
+synonym: "Pseudomonas RNA homology group II" RELATED synonym []
+xref: GC_ID:11
+xref: PMID:10555347
+xref: PMID:1283774
+xref: PMID:25566316
+is_a: NCBITaxon:119060 ! Burkholderiaceae
+property_value: has_rank NCBITaxon:genus
+
+[Term]
+id: NCBITaxon:32523
+name: Tetrapoda
+namespace: ncbi_taxonomy
+synonym: "tetrapods" EXACT genbank_common_name []
+xref: GC_ID:1
+is_a: NCBITaxon:1338369 ! Dipnotetrapodomorpha
+property_value: has_rank NCBITaxon:clade
+
+[Term]
+id: NCBITaxon:32524
+name: Amniota
+namespace: ncbi_taxonomy
+synonym: "amniotes" EXACT genbank_common_name []
+xref: GC_ID:1
+is_a: NCBITaxon:32523 ! Tetrapoda
+property_value: has_rank NCBITaxon:clade
+
+[Term]
+id: NCBITaxon:32525
+name: Theria <mammals>
+namespace: ncbi_taxonomy
+synonym: "Theria" EXACT scientific_name []
+xref: GC_ID:1
+is_a: NCBITaxon:40674 ! Mammalia
+property_value: has_rank NCBITaxon:clade
+
+[Term]
+id: NCBITaxon:33154
+name: Opisthokonta
+namespace: ncbi_taxonomy
+synonym: "Fungi/Metazoa group" RELATED synonym []
+synonym: "opisthokonts" RELATED synonym []
+xref: GC_ID:1
+is_a: NCBITaxon:2759 ! Eukaryota
+property_value: has_rank NCBITaxon:clade
+
+[Term]
+id: NCBITaxon:33208
+name: Metazoa
+namespace: ncbi_taxonomy
+synonym: "Animalia" RELATED synonym []
+synonym: "animals" RELATED blast_name []
+synonym: "metazoans" EXACT genbank_common_name []
+synonym: "multicellular animals" EXACT common_name []
+xref: GC_ID:1
+is_a: NCBITaxon:33154 ! Opisthokonta
+property_value: has_rank NCBITaxon:kingdom
+
+[Term]
+id: NCBITaxon:33213
+name: Bilateria
+namespace: ncbi_taxonomy
+xref: GC_ID:1
+is_a: NCBITaxon:6072 ! Eumetazoa
+property_value: has_rank NCBITaxon:clade
+
+[Term]
+id: NCBITaxon:33511
+name: Deuterostomia
+namespace: ncbi_taxonomy
+synonym: "deuterostomes" EXACT common_name []
+xref: GC_ID:1
+is_a: NCBITaxon:33213 ! Bilateria
+property_value: has_rank NCBITaxon:clade
+
+[Term]
+id: NCBITaxon:337687
+name: Muroidea
+namespace: ncbi_taxonomy
+xref: GC_ID:1
+xref: PMID:15019624
+xref: PMID:15371245
+is_a: NCBITaxon:1963758 ! Myomorpha
+property_value: has_rank NCBITaxon:clade
+
+[Term]
+id: NCBITaxon:37162
+name: Mycobacterium avium complex sp.
+namespace: ncbi_taxonomy
+synonym: "Mycobacterium avium complex bacterium" RELATED synonym []
+xref: GC_ID:11
+is_a: BPO:00001 ! Acid-fast Bacteria
+is_a: NCBITaxon:2750822 ! unclassified Mycobacterium avium complex (MAC)
+property_value: has_rank NCBITaxon:species
+
+[Term]
+id: NCBITaxon:39107
+name: Murinae
+namespace: ncbi_taxonomy
+alt_id: NCBITaxon:109679
+xref: GC_ID:1
+is_a: NCBITaxon:10066 ! Muridae
+property_value: has_rank NCBITaxon:subfamily
+
+[Term]
+id: NCBITaxon:40674
+name: Mammalia
+namespace: ncbi_taxonomy
+synonym: "mammals" EXACT genbank_common_name []
+synonym: "mammals" RELATED blast_name []
+xref: GC_ID:1
+is_a: NCBITaxon:32524 ! Amniota
+property_value: has_rank NCBITaxon:class
+
+[Term]
+id: NCBITaxon:468
+name: Moraxellaceae
+namespace: ncbi_taxonomy
+synonym: "Acinetobacteraceae" RELATED synonym []
+synonym: "Branhamaceae" RELATED synonym []
+xref: GC_ID:11
+xref: PMID:9542079
+is_a: NCBITaxon:2887326 ! Moraxellales
+property_value: has_rank NCBITaxon:family
+
+[Term]
+id: NCBITaxon:469
+name: Acinetobacter
+namespace: ncbi_taxonomy
+xref: GC_ID:11
+xref: PMID:10028249
+xref: PMID:7520730
+xref: PMID:8934907
+xref: PMID:9226915
+xref: PMID:9336926
+is_a: NCBITaxon:468 ! Moraxellaceae
+property_value: has_rank NCBITaxon:genus
+
+[Term]
+id: NCBITaxon:470
+name: Acinetobacter baumannii
+namespace: ncbi_taxonomy
+alt_id: NCBITaxon:2729987
+alt_id: NCBITaxon:566319
+alt_id: NCBITaxon:981223
+synonym: "Acinetobacter genomosp. 2" RELATED synonym []
+synonym: "Acinetobacter genomospecies 2" RELATED synonym []
+synonym: "Bacterium anitratum" RELATED synonym []
+xref: GC_ID:11
+is_a: NCBITaxon:909768 ! Acinetobacter calcoaceticus/baumannii complex
+property_value: has_rank NCBITaxon:species
+
+[Term]
+id: NCBITaxon:481
+name: Neisseriaceae
+namespace: ncbi_taxonomy
+synonym: "Vitreoscillaceae" RELATED in_part []
+xref: GC_ID:11
+xref: PMID:13983561
+xref: PMID:16350128
+xref: PMID:23575986
+xref: PMID:8347509
+is_a: NCBITaxon:206351 ! Neisseriales
+property_value: has_rank NCBITaxon:family
+
+[Term]
+id: NCBITaxon:482
+name: Neisseria
+namespace: ncbi_taxonomy
+synonym: "\"Merismopedia\" Zopf 1885" RELATED synonym []
+synonym: "Gonococcus" RELATED synonym []
+xref: GC_ID:11
+xref: PMID:7520730
+is_a: NCBITaxon:481 ! Neisseriaceae
+property_value: has_rank NCBITaxon:genus
+
+[Term]
+id: NCBITaxon:485
+name: Neisseria gonorrhoeae
+namespace: ncbi_taxonomy
+synonym: "Diplococcus gonorrhoeae" RELATED synonym []
+synonym: "Gonococcus neisseri" RELATED synonym []
+synonym: "Merismopedia gonorrhoeae" RELATED synonym []
+synonym: "Micrococcus der gonorrhoe" RELATED synonym []
+synonym: "Micrococcus gonococcus" RELATED synonym []
+synonym: "Micrococcus gonorrhoeae" RELATED synonym []
+xref: GC_ID:11
+is_a: NCBITaxon:482 ! Neisseria
+property_value: has_rank NCBITaxon:species
+
+[Term]
+id: NCBITaxon:51291
+name: Chlamydiales
+namespace: ncbi_taxonomy
+synonym: "chlamydias" RELATED blast_name []
+xref: GC_ID:11
+xref: PMID:10319462
+xref: PMID:10826799
+xref: PMID:11211265
+xref: PMID:16079343
+xref: PMID:25634949
+xref: PMID:26179278
+is_a: NCBITaxon:204429 ! Chlamydiia
+property_value: has_rank NCBITaxon:order
+
+[Term]
+id: NCBITaxon:543
+name: Enterobacteriaceae
+namespace: ncbi_taxonomy
+synonym: "Enterobacteraceae" RELATED synonym []
+synonym: "enterobacteria" RELATED blast_name []
+synonym: "gamma-3 proteobacteria" RELATED in_part []
+xref: GC_ID:11
+xref: PMID:10555323
+xref: PMID:10555334
+xref: PMID:16166704
+xref: PMID:27620848
+is_a: NCBITaxon:91347 ! Enterobacterales
+property_value: has_rank NCBITaxon:family
+
+[Term]
+id: NCBITaxon:561
+name: Escherichia
+namespace: ncbi_taxonomy
+xref: GC_ID:11
+xref: PMID:19700542
+is_a: NCBITaxon:543 ! Enterobacteriaceae
+property_value: has_rank NCBITaxon:genus
+
+[Term]
+id: NCBITaxon:562
+name: Escherichia coli
+namespace: ncbi_taxonomy
+alt_id: NCBITaxon:1637691
+alt_id: NCBITaxon:1806490
+alt_id: NCBITaxon:469598
+alt_id: NCBITaxon:662101
+alt_id: NCBITaxon:662104
+synonym: "Bacillus coli" RELATED synonym []
+synonym: "Bacterium coli" RELATED synonym []
+synonym: "Bacterium coli commune" RELATED synonym []
+synonym: "E. coli" EXACT common_name []
+synonym: "Enterococcus coli" RELATED synonym []
+synonym: "Escherichia/Shigella coli" EXACT equivalent_name []
+xref: GC_ID:11
+xref: PMID:10319482
+is_a: NCBITaxon:561 ! Escherichia
+property_value: has_rank NCBITaxon:species
+
+[Term]
+id: NCBITaxon:570
+name: Klebsiella
+namespace: ncbi_taxonomy
+alt_id: NCBITaxon:39823
+synonym: "Calymmatobacterium" RELATED synonym []
+synonym: "Donovania" RELATED synonym []
+synonym: "Hyalococcus" RELATED synonym []
+xref: GC_ID:11
+xref: PMID:10555350
+xref: PMID:11411716
+xref: PMID:12635932
+is_a: NCBITaxon:2890311 ! Klebsiella/Raoultella group
+property_value: has_rank NCBITaxon:genus
+
+[Term]
+id: NCBITaxon:573
+name: Klebsiella pneumoniae
+namespace: ncbi_taxonomy
+alt_id: NCBITaxon:1096019
+alt_id: NCBITaxon:1673140
+alt_id: NCBITaxon:1795825
+alt_id: NCBITaxon:585494
+alt_id: NCBITaxon:692338
+alt_id: NCBITaxon:875801
+synonym: "'Klebsiella aerogenes' (Kruse) Taylor et al. 1956" RELATED synonym []
+synonym: "Bacillus pneumoniae" RELATED synonym []
+synonym: "Bacterium pneumoniae crouposae" RELATED synonym []
+synonym: "Hyalococcus pneumoniae" RELATED synonym []
+synonym: "Klebsiella pneumoniae aerogenes" RELATED synonym []
+xref: GC_ID:11
+xref: PMID:11411715
+xref: PMID:1581186
+is_a: NCBITaxon:570 ! Klebsiella
+property_value: has_rank NCBITaxon:species
+
+[Term]
+id: NCBITaxon:583
+name: Proteus <enterobacteria>
+namespace: ncbi_taxonomy
+synonym: "Liquidobacterium" RELATED synonym []
+synonym: "Proteus" EXACT scientific_name []
+xref: GC_ID:11
+xref: PMID:26944634
+is_a: NCBITaxon:1903414 ! Morganellaceae
+property_value: has_rank NCBITaxon:genus
+
+[Term]
+id: NCBITaxon:590
+name: Salmonella
+namespace: ncbi_taxonomy
+xref: GC_ID:11
+xref: PMID:10319519
+xref: PMID:10939679
+xref: PMID:12072558
+xref: PMID:15653929
+xref: PMID:15653930
+xref: PMID:3231714
+xref: PMID:9731304
+is_a: NCBITaxon:543 ! Enterobacteriaceae
+property_value: has_rank NCBITaxon:genus
+
+[Term]
+id: NCBITaxon:6072
+name: Eumetazoa
+namespace: ncbi_taxonomy
+xref: GC_ID:1
+is_a: NCBITaxon:33208 ! Metazoa
+property_value: has_rank NCBITaxon:clade
+
+[Term]
+id: NCBITaxon:613
+name: Serratia
+namespace: ncbi_taxonomy
+xref: GC_ID:11
+is_a: NCBITaxon:1903411 ! Yersiniaceae
+property_value: has_rank NCBITaxon:genus
+
+[Term]
+id: NCBITaxon:620
+name: Shigella
+namespace: ncbi_taxonomy
+xref: GC_ID:11
+xref: PMID:26834722
+is_a: NCBITaxon:543 ! Enterobacteriaceae
+property_value: has_rank NCBITaxon:genus
+
+[Term]
+id: NCBITaxon:625
+name: Shigella sp.
+namespace: ncbi_taxonomy
+alt_id: NCBITaxon:366318
+xref: GC_ID:11
+is_a: NCBITaxon:2629414 ! unclassified Shigella
+property_value: has_rank NCBITaxon:species
+
+[Term]
+id: NCBITaxon:68525
+name: delta/epsilon subdivisions
+namespace: ncbi_taxonomy
+xref: GC_ID:11
+xref: PMID:11837318
+is_a: NCBITaxon:1224 ! Proteobacteria
+property_value: has_rank NCBITaxon:subphylum
+
+[Term]
+id: NCBITaxon:712
+name: Pasteurellaceae
+namespace: ncbi_taxonomy
+xref: GC_ID:11
+xref: PMID:10843050
+xref: PMID:15280320
+xref: PMID:15388716
+xref: PMID:17220461
+xref: PMID:2223605
+xref: PMID:29923825
+is_a: NCBITaxon:135625 ! Pasteurellales
+property_value: has_rank NCBITaxon:family
+
+[Term]
+id: NCBITaxon:72274
+name: Pseudomonadales
+namespace: ncbi_taxonomy
+synonym: "gamma-3 proteobacteria" RELATED in_part []
+synonym: "Pseudomonaceae/Moraxellaceae group" RELATED synonym []
+xref: GC_ID:11
+is_a: NCBITaxon:1236 ! Gammaproteobacteria
+property_value: has_rank NCBITaxon:order
+
+[Term]
+id: NCBITaxon:72293
+name: Helicobacteraceae
+namespace: ncbi_taxonomy
+synonym: "Helicobacter group" RELATED synonym []
+xref: GC_ID:11
+xref: PMID:16403855
+xref: PMID:29034857
+is_a: NCBITaxon:213849 ! Campylobacterales
+property_value: has_rank NCBITaxon:family
+
+[Term]
+id: NCBITaxon:72294
+name: Campylobacteraceae
+namespace: ncbi_taxonomy
+synonym: "Campylobacter group" RELATED synonym []
+xref: GC_ID:11
+xref: PMID:29034857
+is_a: NCBITaxon:213849 ! Campylobacterales
+property_value: has_rank NCBITaxon:family
+
+[Term]
+id: NCBITaxon:724
+name: Haemophilus
+namespace: ncbi_taxonomy
+xref: GC_ID:11
+xref: PMID:1736960
+is_a: NCBITaxon:712 ! Pasteurellaceae
+property_value: has_rank NCBITaxon:genus
+
+[Term]
+id: NCBITaxon:727
+name: Haemophilus influenzae
+namespace: ncbi_taxonomy
+synonym: "Bacterium influenzae" RELATED synonym []
+synonym: "Coccobacillus pfeifferi" RELATED synonym []
+synonym: "Haemophilus meningitidis" RELATED synonym []
+synonym: "Influenza-bacillus" RELATED synonym []
+synonym: "Mycobacterium influenzae" RELATED synonym []
+xref: GC_ID:11
+is_a: NCBITaxon:724 ! Haemophilus
+property_value: has_rank NCBITaxon:species
+
+[Term]
+id: NCBITaxon:7711
+name: Chordata
+namespace: ncbi_taxonomy
+synonym: "chordates" EXACT genbank_common_name []
+synonym: "chordates" RELATED blast_name []
+xref: GC_ID:1
+is_a: NCBITaxon:33511 ! Deuterostomia
+property_value: has_rank NCBITaxon:phylum
+
+[Term]
+id: NCBITaxon:7742
+name: Vertebrata <vertebrates>
+namespace: ncbi_taxonomy
+synonym: "Vertebrata" EXACT scientific_name []
+synonym: "vertebrates" EXACT genbank_common_name []
+synonym: "vertebrates" RELATED blast_name []
+xref: GC_ID:1
+is_a: NCBITaxon:89593 ! Craniata <chordates>
+property_value: has_rank NCBITaxon:clade
+
+[Term]
+id: NCBITaxon:77643
+name: Mycobacterium tuberculosis complex
+namespace: ncbi_taxonomy
+synonym: "Mycobacterium complex" EXACT equivalent_name []
+xref: GC_ID:11
+xref: PMID:15243089
+xref: PMID:29205127
+is_a: NCBITaxon:1763 ! Mycobacterium
+property_value: has_rank NCBITaxon:species_group
+
+[Term]
+id: NCBITaxon:7776
+name: Gnathostomata <vertebrates>
+namespace: ncbi_taxonomy
+synonym: "Gnathostomata" EXACT scientific_name []
+synonym: "jawed vertebrates" EXACT genbank_common_name []
+xref: GC_ID:1
+is_a: NCBITaxon:7742 ! Vertebrata <vertebrates>
+property_value: has_rank NCBITaxon:clade
+
+[Term]
+id: NCBITaxon:80840
+name: Burkholderiales
+namespace: ncbi_taxonomy
+synonym: "Burkholderia/Oxalobacter/Ralstonia group" RELATED synonym []
+xref: GC_ID:11
+xref: PMID:16403855
+is_a: NCBITaxon:28216 ! Betaproteobacteria
+property_value: has_rank NCBITaxon:order
+
+[Term]
+id: NCBITaxon:809
+name: Chlamydiaceae
+namespace: ncbi_taxonomy
+xref: GC_ID:11
+xref: PMID:10319462
+xref: PMID:10319506
+xref: PMID:11211261
+xref: PMID:11211265
+xref: PMID:25618261
+is_a: NCBITaxon:51291 ! Chlamydiales
+property_value: has_rank NCBITaxon:family
+
+[Term]
+id: NCBITaxon:810
+name: Chlamydia
+namespace: ncbi_taxonomy
+alt_id: NCBITaxon:83553
+synonym: "\"Prowazekia\" Coles 1953" RELATED synonym []
+synonym: "Bedsonia" RELATED synonym []
+synonym: "Chlamydophila" RELATED synonym []
+synonym: "Miyagawanella" RELATED synonym []
+synonym: "Rakeia" RELATED synonym []
+synonym: "Rickettsiaformis" RELATED synonym []
+xref: GC_ID:11
+xref: PMID:10319462
+xref: PMID:11211265
+xref: PMID:21048221
+xref: PMID:21048222
+xref: PMID:23620152
+xref: PMID:25618261
+xref: PMID:9103632
+xref: PMID:9103637
+is_a: NCBITaxon:1113537 ! Chlamydia/Chlamydophila group
+property_value: has_rank NCBITaxon:genus
+
+[Term]
+id: NCBITaxon:81852
+name: Enterococcaceae
+namespace: ncbi_taxonomy
+xref: GC_ID:11
+is_a: NCBITaxon:186826 ! Lactobacillales
+property_value: has_rank NCBITaxon:family
+
+[Term]
+id: NCBITaxon:8287
+name: Sarcopterygii
+namespace: ncbi_taxonomy
+xref: GC_ID:1
+is_a: NCBITaxon:117571 ! Euteleostomi
+property_value: has_rank NCBITaxon:superclass
+
+[Term]
+id: NCBITaxon:85007
+name: Corynebacteriales
+namespace: ncbi_taxonomy
+alt_id: NCBITaxon:1761
+synonym: "Corynebacterineae" RELATED synonym []
+synonym: "Mycobacteriales" RELATED synonym []
+xref: GC_ID:11
+xref: PMID:11837321
+xref: PMID:1736962
+xref: PMID:19244447
+xref: PMID:31157615
+is_a: NCBITaxon:1760 ! Actinomycetia
+property_value: has_rank NCBITaxon:order
+
+[Term]
+id: NCBITaxon:862507
+name: Mus <subgenus>
+namespace: ncbi_taxonomy
+synonym: "Mus" EXACT scientific_name []
+xref: GC_ID:1
+is_a: NCBITaxon:10088 ! Mus <genus>
+property_value: has_rank NCBITaxon:subgenus
+
+[Term]
+id: NCBITaxon:87882
+name: Burkholderia cepacia complex
+namespace: ncbi_taxonomy
+xref: GC_ID:11
+xref: PMID:7526797
+xref: PMID:9336927
+is_a: NCBITaxon:32008 ! Burkholderia
+property_value: has_rank NCBITaxon:species_group
+
+[Term]
+id: NCBITaxon:89593
+name: Craniata <chordates>
+namespace: ncbi_taxonomy
+synonym: "Craniata" EXACT scientific_name []
+xref: GC_ID:1
+is_a: NCBITaxon:7711 ! Chordata
+property_value: has_rank NCBITaxon:subphylum
+
+[Term]
+id: NCBITaxon:90964
+name: Staphylococcaceae
+namespace: ncbi_taxonomy
+synonym: "Staphylococcus group" RELATED synonym []
+xref: GC_ID:11
+is_a: NCBITaxon:1385 ! Bacillales
+property_value: has_rank NCBITaxon:family
+
+[Term]
+id: NCBITaxon:909768
+name: Acinetobacter calcoaceticus/baumannii complex
+namespace: ncbi_taxonomy
+xref: GC_ID:11
+xref: PMID:2007635
+is_a: NCBITaxon:469 ! Acinetobacter
+property_value: has_rank NCBITaxon:species_group
+
+[Term]
+id: NCBITaxon:91061
+name: Bacilli
+namespace: ncbi_taxonomy
+synonym: "Bacillus/Lactobacillus/Streptococcus group" RELATED synonym []
+synonym: "Firmibacteria" RELATED synonym []
+xref: GC_ID:11
+is_a: NCBITaxon:1239 ! Firmicutes
+property_value: has_rank NCBITaxon:class
+
+[Term]
+id: NCBITaxon:91347
+name: Enterobacterales
+namespace: ncbi_taxonomy
+synonym: "Enterobacteriaceae and related endosymbionts" RELATED synonym []
+synonym: "Enterobacteriaceae group" RELATED synonym []
+synonym: "Enterobacteriales" RELATED synonym []
+synonym: "gamma-3 proteobacteria" RELATED in_part []
+xref: GC_ID:11
+xref: PMID:27620848
+is_a: NCBITaxon:1236 ! Gammaproteobacteria
+property_value: has_rank NCBITaxon:order
+
+[Term]
+id: NCBITaxon:9347
+name: Eutheria
+namespace: ncbi_taxonomy
+synonym: "eutherian mammals" EXACT common_name []
+synonym: "placental mammals" EXACT common_name []
+synonym: "Placentalia" RELATED synonym []
+synonym: "placentals" EXACT genbank_common_name []
+synonym: "placentals" RELATED blast_name []
+xref: GC_ID:1
+is_a: NCBITaxon:32525 ! Theria <mammals>
+property_value: has_rank NCBITaxon:clade
+
+[Term]
+id: NCBITaxon:9989
+name: Rodentia
+namespace: ncbi_taxonomy
+synonym: "rodent" EXACT genbank_common_name []
+synonym: "rodents" RELATED blast_name []
+xref: GC_ID:1
+is_a: NCBITaxon:314147 ! Glires
+property_value: has_rank NCBITaxon:order
+
+[Term]
+id: NCIT:C173514
+name: Gram Negative Bacteria
+synonym: "G -ve" EXACT []
+is_a: BPO:00002 ! staining-based organism grouping
+
+[Term]
+id: NCIT:C173515
+name: Gram Positive Bacteria
+synonym: "G +ve" EXACT []
+is_a: BPO:00002 ! staining-based organism grouping
+
+[Term]
+id: NCIT:C17375
+name: Murine AIDS
+synonym: "M-AIDS" EXACT []
+synonym: "Murine AIDS" EXACT []
+is_a: BPO:00028 ! other mouse strain
+is_a: NCBITaxon:10090 ! Mus musculus
+property_value: IAO:0000119 "AIDS mouse" xsd:string
+
+[Term]
+id: NCIT:C28161
+name: Intramuscular Route of Administration
+def: "Intramuscular injection is a route of drug administration via injection into muscle tissue. Aqueous or oleaginous solutions and emulsions or suspensions may be administered. Absorption rates, delay in availability of the drug to the systemic circulation, and duration of effect are perfusion-limited, depend on molecular size of the agent, volume, and osmolarity of the drug solution, fat content of the injection site, and patient physical activity." [] {http://purl.obolibrary.org/obo/NCIT_P378="NCI"}
+subset: NCIT:C148636
+subset: NCIT:C150107
+subset: NCIT:C54452
+subset: NCIT:C54455
+subset: NCIT:C61410
+subset: NCIT:C66729
+subset: NCIT:C66830
+subset: NCIT:C77526
+subset: NCIT:C77527
+subset: NCIT:C78420
+subset: NCIT:C78425
+subset: NCIT:C90259
+synonym: "IM" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="AB", http://purl.obolibrary.org/obo/NCIT_P386="Route of Administration (C-DRG-00301)", http://purl.obolibrary.org/obo/NCIT_P385="005", http://purl.obolibrary.org/obo/NCIT_P384="FDA"}
+synonym: "IM" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="AB", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+synonym: "INTRAMUSCULAR" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P386="SPL", http://purl.obolibrary.org/obo/NCIT_P384="FDA"}
+synonym: "INTRAMUSCULAR" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="SY", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+synonym: "INTRAMUSCULAR" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P384="CDISC"}
+synonym: "INTRAMUSCULAR" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P386="Route of Administration (C-DRG-00301)", http://purl.obolibrary.org/obo/NCIT_P385="005", http://purl.obolibrary.org/obo/NCIT_P384="FDA"}
+synonym: "Intramuscular" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P386="ICSR-CVM", http://purl.obolibrary.org/obo/NCIT_P384="FDA"}
+synonym: "Intramuscular Injection" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="SY", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+synonym: "intramuscular injection" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P385="CDR0000044049", http://purl.obolibrary.org/obo/NCIT_P384="NCI-GLOSS"}
+synonym: "Intramuscular Route of Administration" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+synonym: "Intramuscular Route of Administration" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P384="NICHD"}
+synonym: "Intramuscular Route of Administration" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="SY", http://purl.obolibrary.org/obo/NCIT_P384="caDSR"}
+synonym: "Intramuscular use" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P384="EDQM-HC", http://purl.obolibrary.org/obo/NCIT_P385="20035000", http://purl.obolibrary.org/obo/NCIT_P386="ROA"}
+xref: VO:0000340
+is_a: VO:0000574 ! route of administration
+property_value: NCIT:NHC0 "C28161" xsd:string
+property_value: NCIT:P106 "Therapeutic or Preventive Procedure" xsd:string
+property_value: NCIT:P108 "Intramuscular Route of Administration" xsd:string
+property_value: NCIT:P207 "C1556154" xsd:string
+property_value: NCIT:P317 "Route of Administration (C-DRG-00301)" xsd:string
+property_value: NCIT:P322 "CDISC" xsd:string
+property_value: NCIT:P322 "EDQM-HC" xsd:string
+property_value: NCIT:P322 "FDA" xsd:string
+property_value: NCIT:P322 "NICHD" xsd:string
+property_value: NCIT:P325 "Administration within a muscle. (FDA)" xsd:string {http://purl.obolibrary.org/obo/NCIT_P378="CDISC"}
+property_value: NCIT:P325 "Injection of a medicinal product into muscular tissue." xsd:string {http://purl.obolibrary.org/obo/NCIT_P378="EDQM-HC"}
+property_value: NCIT:P366 "Intramuscular_Injection" xsd:string
+
+[Term]
+id: NCIT:C38208
+name: Endotracheal Route of Administration
+def: "Endotracheal drug administration involves the introduction of the agent directly through the endotracheal tube in an intubated patient. Generally this route is considered as a last resort for drug administration, and provides a fast, effective means of drug delivery in a patient who requires immediate medication. Plasma levels obtained via endotracheal administration are considerably less than those obtained with an equal dosage administered intravenously or intraosseously. Endotracheal administration must be followed by hyper-insufflation of the lungs to promote optimal drug absorption." [] {http://purl.obolibrary.org/obo/NCIT_P378="NCI"}
+subset: NCIT:C148636
+subset: NCIT:C150107
+subset: NCIT:C54452
+subset: NCIT:C54455
+subset: NCIT:C61410
+subset: NCIT:C66729
+subset: NCIT:C66830
+subset: NCIT:C77526
+synonym: "E-TRACHE" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="AB", http://purl.obolibrary.org/obo/NCIT_P386="Route of Administration (C-DRG-00301)", http://purl.obolibrary.org/obo/NCIT_P385="401", http://purl.obolibrary.org/obo/NCIT_P384="FDA"}
+synonym: "ENDOTRACHEAL" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P384="CDISC"}
+synonym: "ENDOTRACHEAL" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P386="Route of Administration (C-DRG-00301)", http://purl.obolibrary.org/obo/NCIT_P385="401", http://purl.obolibrary.org/obo/NCIT_P384="FDA"}
+synonym: "ENDOTRACHEAL" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P386="SPL", http://purl.obolibrary.org/obo/NCIT_P384="FDA"}
+synonym: "Endotracheal" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P386="ICSR-CVM", http://purl.obolibrary.org/obo/NCIT_P384="FDA"}
+synonym: "Endotracheal Route of Administration" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+synonym: "Endotracheopulmonary use" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P384="EDQM-HC", http://purl.obolibrary.org/obo/NCIT_P385="20008000", http://purl.obolibrary.org/obo/NCIT_P386="ROA"}
+synonym: "ET" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="AB", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+synonym: "Intratracheal" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="SY", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+synonym: "Intratracheal Route of Administration" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="SY", http://purl.obolibrary.org/obo/NCIT_P384="CDISC"}
+synonym: "Intratracheal Route of Administration" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="SY", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+is_a: VO:0000574 ! route of administration
+property_value: NCIT:NHC0 "C38208" xsd:string
+property_value: NCIT:P106 "Functional Concept" xsd:string
+property_value: NCIT:P108 "Endotracheal Route of Administration" xsd:string
+property_value: NCIT:P207 "C1522653" xsd:string
+property_value: NCIT:P317 "Route of Administration (C-DRG-00301)" xsd:string
+property_value: NCIT:P322 "CDISC" xsd:string
+property_value: NCIT:P322 "EDQM-HC" xsd:string
+property_value: NCIT:P322 "FDA" xsd:string
+property_value: NCIT:P325 "Administration directly into the trachea. Synonymous with the term intratracheal. (FDA)" xsd:string {http://purl.obolibrary.org/obo/NCIT_P378="CDISC"}
+property_value: NCIT:P325 "Administration of a medicinal product to the trachea and/or bronchi by instillation (preparations for inhalation are excluded; see inhalation use)." xsd:string {http://purl.obolibrary.org/obo/NCIT_P378="EDQM-HC"}
+property_value: NCIT:P366 "Endotracheal_Route_of_Drug_Administration" xsd:string
+
+[Term]
+id: NCIT:C38225
+name: Intrabronchial Route of Administration
+def: "Administration of a drug within a bronchus or bronchi. The intrabronchial drug delivery can be used for both local and systemic drug action." [] {http://purl.obolibrary.org/obo/NCIT_P378="NCI"}
+subset: NCIT:C54452
+subset: NCIT:C54455
+subset: NCIT:C61410
+subset: NCIT:C66729
+subset: NCIT:C66830
+subset: NCIT:C77526
+synonym: "I-BRONCHI" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="AB", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+synonym: "I-BRONCHI" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="AB", http://purl.obolibrary.org/obo/NCIT_P386="Route of Administration (C-DRG-00301)", http://purl.obolibrary.org/obo/NCIT_P384="FDA", http://purl.obolibrary.org/obo/NCIT_P385="067"}
+synonym: "INTRABRONCHIAL" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P386="SPL", http://purl.obolibrary.org/obo/NCIT_P384="FDA"}
+synonym: "INTRABRONCHIAL" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P384="CDISC"}
+synonym: "INTRABRONCHIAL" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P386="Route of Administration (C-DRG-00301)", http://purl.obolibrary.org/obo/NCIT_P384="FDA", http://purl.obolibrary.org/obo/NCIT_P385="067"}
+synonym: "Intrabronchial" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="SY", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+synonym: "Intrabronchial Route of Administration" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+is_a: VO:0000574 ! route of administration
+property_value: NCIT:NHC0 "C38225" xsd:string
+property_value: NCIT:P106 "Functional Concept" xsd:string
+property_value: NCIT:P108 "Intrabronchial Route of Administration" xsd:string
+property_value: NCIT:P207 "C1512914" xsd:string
+property_value: NCIT:P317 "Route of Administration (C-DRG-00301)" xsd:string
+property_value: NCIT:P322 "CDISC" xsd:string
+property_value: NCIT:P322 "FDA" xsd:string
+property_value: NCIT:P325 "Administration within a bronchus. (FDA)" xsd:string {http://purl.obolibrary.org/obo/NCIT_P378="CDISC"}
+property_value: NCIT:P366 "Intrabronchial_Route_of_Drug_Administration" xsd:string
+
+[Term]
+id: NCIT:C38238
+name: Intradermal Route of Administration
+def: "Intradermal injection is a method of drug administration within the substance of the skin, particularly the dermis." [] {http://purl.obolibrary.org/obo/NCIT_P378="NCI"}
+subset: NCIT:C148636
+subset: NCIT:C150107
+subset: NCIT:C54452
+subset: NCIT:C54455
+subset: NCIT:C61410
+subset: NCIT:C66729
+subset: NCIT:C66830
+subset: NCIT:C77526
+synonym: "DL" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="AB", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+synonym: "I-DERMAL" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="AB", http://purl.obolibrary.org/obo/NCIT_P386="Route of Administration (C-DRG-00301)", http://purl.obolibrary.org/obo/NCIT_P385="008", http://purl.obolibrary.org/obo/NCIT_P384="FDA"}
+synonym: "I-dermal" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="SY", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+synonym: "IC" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="AB", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+synonym: "ID" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="AB", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+synonym: "Intracutaneous" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="SY", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+synonym: "INTRADERMAL" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P386="SPL", http://purl.obolibrary.org/obo/NCIT_P384="FDA"}
+synonym: "INTRADERMAL" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P386="Route of Administration (C-DRG-00301)", http://purl.obolibrary.org/obo/NCIT_P385="008", http://purl.obolibrary.org/obo/NCIT_P384="FDA"}
+synonym: "INTRADERMAL" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P384="CDISC"}
+synonym: "Intradermal" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P386="ICSR-CVM", http://purl.obolibrary.org/obo/NCIT_P384="FDA"}
+synonym: "Intradermal" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="SY", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+synonym: "Intradermal Injection" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="SY", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+synonym: "Intradermal Route of Administration" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+synonym: "Intradermal use" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P384="EDQM-HC", http://purl.obolibrary.org/obo/NCIT_P385="20030000", http://purl.obolibrary.org/obo/NCIT_P386="ROA"}
+xref: VO:0000887
+is_a: VO:0000574 ! route of administration
+property_value: NCIT:NHC0 "C38238" xsd:string
+property_value: NCIT:P106 "Functional Concept" xsd:string
+property_value: NCIT:P108 "Intradermal Route of Administration" xsd:string
+property_value: NCIT:P207 "C1522475" xsd:string
+property_value: NCIT:P317 "Route of Administration (C-DRG-00301)" xsd:string
+property_value: NCIT:P322 "CDISC" xsd:string
+property_value: NCIT:P322 "EDQM-HC" xsd:string
+property_value: NCIT:P322 "FDA" xsd:string
+property_value: NCIT:P325 "Administration within the dermis. (FDA)" xsd:string {http://purl.obolibrary.org/obo/NCIT_P378="CDISC"}
+property_value: NCIT:P325 "Injection of a medicinal product into the dermis." xsd:string {http://purl.obolibrary.org/obo/NCIT_P378="EDQM-HC"}
+property_value: NCIT:P366 "Intradermal_Route_of_Drug_Administration" xsd:string
+
+[Term]
+id: NCIT:C38258
+name: Intraperitoneal Route of Administration
+def: "Administration of a drug via injection or infusion of a substance into the peritoneum, where it is absorbed by the lining." [] {http://purl.obolibrary.org/obo/NCIT_P378="NCI"}
+subset: NCIT:C116977
+subset: NCIT:C118169
+subset: NCIT:C148636
+subset: NCIT:C150107
+subset: NCIT:C54452
+subset: NCIT:C54455
+subset: NCIT:C61410
+subset: NCIT:C66729
+subset: NCIT:C66830
+subset: NCIT:C77526
+subset: NCIT:C77527
+subset: NCIT:C78420
+subset: NCIT:C78425
+synonym: "I-PERITON" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="AB", http://purl.obolibrary.org/obo/NCIT_P386="Route of Administration (C-DRG-00301)", http://purl.obolibrary.org/obo/NCIT_P384="FDA", http://purl.obolibrary.org/obo/NCIT_P385="004"}
+synonym: "INTRAPERITONEAL" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P386="Route of Administration (C-DRG-00301)", http://purl.obolibrary.org/obo/NCIT_P384="FDA", http://purl.obolibrary.org/obo/NCIT_P385="004"}
+synonym: "INTRAPERITONEAL" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P386="SPL", http://purl.obolibrary.org/obo/NCIT_P384="FDA"}
+synonym: "INTRAPERITONEAL" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P384="CDISC"}
+synonym: "Intraperitoneal" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P386="ICSR-CVM", http://purl.obolibrary.org/obo/NCIT_P384="FDA"}
+synonym: "Intraperitoneal" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="SY", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+synonym: "Intraperitoneal Infusion" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="SY", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+synonym: "intraperitoneal infusion" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P385="CDR0000046071", http://purl.obolibrary.org/obo/NCIT_P384="NCI-GLOSS"}
+synonym: "Intraperitoneal Route of Administration" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+synonym: "Intraperitoneal Route of Administration" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P384="CTRP", http://purl.obolibrary.org/obo/NCIT_P383="DN"}
+synonym: "Intraperitoneal Route of Administration" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="SY", http://purl.obolibrary.org/obo/NCIT_P384="caDSR"}
+synonym: "Intraperitoneal use" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P384="EDQM-HC", http://purl.obolibrary.org/obo/NCIT_P385="20038000", http://purl.obolibrary.org/obo/NCIT_P386="ROA"}
+synonym: "IP" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="AB", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+synonym: "peritoneal infusion" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P385="CDR0000386219", http://purl.obolibrary.org/obo/NCIT_P384="NCI-GLOSS"}
+xref: VO:0000344
+is_a: VO:0000574 ! route of administration
+property_value: NCIT:NHC0 "C38258" xsd:string
+property_value: NCIT:P106 "Functional Concept" xsd:string
+property_value: NCIT:P107 "Intraperitoneal Route of Administration" xsd:string
+property_value: NCIT:P108 "Intraperitoneal Route of Administration" xsd:string
+property_value: NCIT:P207 "C1522583" xsd:string
+property_value: NCIT:P317 "Route of Administration (C-DRG-00301)" xsd:string
+property_value: NCIT:P322 "CDISC" xsd:string
+property_value: NCIT:P322 "CTRP" xsd:string
+property_value: NCIT:P322 "EDQM-HC" xsd:string
+property_value: NCIT:P322 "FDA" xsd:string
+property_value: NCIT:P325 "A method of delivering fluids and drugs directly into the abdominal cavity through a thin tube." xsd:string {http://purl.obolibrary.org/obo/NCIT_P378="NCI-GLOSS"}
+property_value: NCIT:P325 "Administration within the peritoneal cavity. (FDA)" xsd:string {http://purl.obolibrary.org/obo/NCIT_P378="CDISC"}
+property_value: NCIT:P325 "Injection of a medicinal product into the peritoneal cavity." xsd:string {http://purl.obolibrary.org/obo/NCIT_P378="EDQM-HC"}
+property_value: NCIT:P366 "Intraperitoneal_Route_of_Drug_Administration" xsd:string
+
+[Term]
+id: NCIT:C38276
+name: Intravenous Route of Administration
+def: "Administration of a drug within or into a vein or veins. Introduction of the drug directly into venous circulation results in 100% bioavailability due to an absence of the absorption phase, provides a precise and continuous mode of drug therapy, especially for drugs with a narrow therapeutic index." [] {http://purl.obolibrary.org/obo/NCIT_P378="NCI"}
+subset: NCIT:C148636
+subset: NCIT:C150107
+subset: NCIT:C157711
+subset: NCIT:C177537
+subset: NCIT:C54452
+subset: NCIT:C54455
+subset: NCIT:C61410
+subset: NCIT:C66729
+subset: NCIT:C66830
+subset: NCIT:C77526
+subset: NCIT:C90259
+synonym: "INTRAVENOUS" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P386="Route of Administration (C-DRG-00301)", http://purl.obolibrary.org/obo/NCIT_P384="FDA", http://purl.obolibrary.org/obo/NCIT_P385="002"}
+synonym: "INTRAVENOUS" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P384="CDISC"}
+synonym: "INTRAVENOUS" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P386="SPL", http://purl.obolibrary.org/obo/NCIT_P384="FDA"}
+synonym: "Intravenous" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P386="ICSR-CVM", http://purl.obolibrary.org/obo/NCIT_P384="FDA"}
+synonym: "Intravenous" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="SY", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+synonym: "Intravenous Route of Administration" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P384="GDC"}
+synonym: "Intravenous Route of Administration" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="SY", http://purl.obolibrary.org/obo/NCIT_P384="caDSR"}
+synonym: "Intravenous Route of Administration" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P384="NICHD"}
+synonym: "Intravenous Route of Administration" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+synonym: "Intravenous use" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P385="20045000", http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P384="EDQM-HC", http://purl.obolibrary.org/obo/NCIT_P386="ROA"}
+synonym: "IV" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="AB", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+synonym: "IV" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="AB", http://purl.obolibrary.org/obo/NCIT_P386="Route of Administration (C-DRG-00301)", http://purl.obolibrary.org/obo/NCIT_P384="FDA", http://purl.obolibrary.org/obo/NCIT_P385="002"}
+xref: VO:0000416
+is_a: VO:0000574 ! route of administration
+property_value: NCIT:A32 NCIT:C38114
+property_value: NCIT:NHC0 "C38276" xsd:string
+property_value: NCIT:P106 "Functional Concept" xsd:string
+property_value: NCIT:P108 "Intravenous Route of Administration" xsd:string
+property_value: NCIT:P207 "C1522726" xsd:string
+property_value: NCIT:P317 "Route of Administration (C-DRG-00301)" xsd:string
+property_value: NCIT:P322 "CDISC" xsd:string
+property_value: NCIT:P322 "EDQM-HC" xsd:string
+property_value: NCIT:P322 "FDA" xsd:string
+property_value: NCIT:P322 "GDC" xsd:string
+property_value: NCIT:P322 "NICHD" xsd:string
+property_value: NCIT:P325 "Administration within or into a vein or veins. (FDA)" xsd:string {http://purl.obolibrary.org/obo/NCIT_P378="CDISC"}
+property_value: NCIT:P325 "Injection of a medicinal product into a vein." xsd:string {http://purl.obolibrary.org/obo/NCIT_P378="EDQM-HC"}
+property_value: NCIT:P366 "Intravenous_Route_of_Drug_Administration" xsd:string
+property_value: NCIT:P375 "Intravenous Route of Administration" xsd:string {http://purl.obolibrary.org/obo/NCIT_P393="Has Synonym", http://purl.obolibrary.org/obo/NCIT_P394="PT", http://purl.obolibrary.org/obo/NCIT_P395="route_of_administration", http://purl.obolibrary.org/obo/NCIT_P396="GDC"}
+
+[Term]
+id: NCIT:C38284
+name: Nasal Route of Administration
+def: "Administration of a drug by the way of the nose. This often results in systemic action of the agent due to absorption through the nasal mucosa. The richly supplied vascular nature of the nasal mucosa coupled with its high drug permeation makes the nasal route of administration attractive for many drugs, including proteins and peptides." [] {http://purl.obolibrary.org/obo/NCIT_P378="NCI"}
+subset: NCIT:C148636
+subset: NCIT:C150107
+subset: NCIT:C54452
+subset: NCIT:C54455
+subset: NCIT:C61410
+subset: NCIT:C66729
+subset: NCIT:C66830
+subset: NCIT:C77526
+subset: NCIT:C77527
+subset: NCIT:C78420
+subset: NCIT:C78425
+subset: NCIT:C90259
+synonym: "Intranasal Route of Administration" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="SY", http://purl.obolibrary.org/obo/NCIT_P384="CDISC"}
+synonym: "NASAL" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P386="SPL", http://purl.obolibrary.org/obo/NCIT_P384="FDA"}
+synonym: "NASAL" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="AB", http://purl.obolibrary.org/obo/NCIT_P386="Route of Administration (C-DRG-00301)", http://purl.obolibrary.org/obo/NCIT_P385="014", http://purl.obolibrary.org/obo/NCIT_P384="FDA"}
+synonym: "NASAL" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P386="Route of Administration (C-DRG-00301)", http://purl.obolibrary.org/obo/NCIT_P385="014", http://purl.obolibrary.org/obo/NCIT_P384="FDA"}
+synonym: "NASAL" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P384="CDISC"}
+synonym: "Nasal" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P386="ICSR-CVM", http://purl.obolibrary.org/obo/NCIT_P384="FDA"}
+synonym: "Nasal" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="SY", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+synonym: "Nasal Route of Administration" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+synonym: "Nasal Route of Administration" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P384="NICHD"}
+synonym: "Nasal use" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P384="EDQM-HC", http://purl.obolibrary.org/obo/NCIT_P385="20049000", http://purl.obolibrary.org/obo/NCIT_P386="ROA"}
+xref: VO:0000341
+is_a: VO:0000574 ! route of administration
+property_value: NCIT:NHC0 "C38284" xsd:string
+property_value: NCIT:P106 "Functional Concept" xsd:string
+property_value: NCIT:P108 "Nasal Route of Administration" xsd:string
+property_value: NCIT:P207 "C1522019" xsd:string
+property_value: NCIT:P317 "Route of Administration (C-DRG-00301)" xsd:string
+property_value: NCIT:P322 "CDISC" xsd:string
+property_value: NCIT:P322 "EDQM-HC" xsd:string
+property_value: NCIT:P322 "FDA" xsd:string
+property_value: NCIT:P322 "NICHD" xsd:string
+property_value: NCIT:P325 "Administration of a medicinal product to the nose to obtain a systemic or local effect. Inhalation therapy intended for the lower respiratory tract is excluded; see inhalation use." xsd:string {http://purl.obolibrary.org/obo/NCIT_P378="EDQM-HC"}
+property_value: NCIT:P325 "Administration to the nose; administered by way of the nose. (FDA)" xsd:string {http://purl.obolibrary.org/obo/NCIT_P378="CDISC"}
+property_value: NCIT:P366 "Nasal_Route_of_Drug_Administration" xsd:string
+
+[Term]
+id: NCIT:C38288
+name: Oral Route of Administration
+def: "The introduction of a substance to the mouth or into the gastrointestinal tract by the way of the mouth, usually for systemic action. It is the most common, convenient, and usually the safest and least expensive route of drug administration, but it uses the most complicated pathway to the tissues and bioavailability varies. The disadvantages of method are hepatic first pass metabolism and enzymatic degradation of the drug within the gastrointestinal tract. This prohibits oral administration of certain classes of drugs especially peptides and proteins." [] {http://purl.obolibrary.org/obo/NCIT_P378="NCI"}
+subset: NCIT:C148636
+subset: NCIT:C150107
+subset: NCIT:C157711
+subset: NCIT:C177537
+subset: NCIT:C186328
+subset: NCIT:C186341
+subset: NCIT:C54452
+subset: NCIT:C54455
+subset: NCIT:C61410
+subset: NCIT:C66729
+subset: NCIT:C66830
+subset: NCIT:C77526
+subset: NCIT:C77527
+subset: NCIT:C78420
+subset: NCIT:C78425
+subset: NCIT:C90259
+synonym: "Intraoral Route of Administration" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="SY", http://purl.obolibrary.org/obo/NCIT_P384="CDISC"}
+synonym: "ORAL" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P386="Route of Administration (C-DRG-00301)", http://purl.obolibrary.org/obo/NCIT_P384="FDA", http://purl.obolibrary.org/obo/NCIT_P385="001"}
+synonym: "ORAL" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="AB", http://purl.obolibrary.org/obo/NCIT_P386="Route of Administration (C-DRG-00301)", http://purl.obolibrary.org/obo/NCIT_P384="FDA", http://purl.obolibrary.org/obo/NCIT_P385="001"}
+synonym: "ORAL" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P386="SPL", http://purl.obolibrary.org/obo/NCIT_P384="FDA"}
+synonym: "ORAL" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P384="CDISC"}
+synonym: "Oral" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P384="PCDC", http://purl.obolibrary.org/obo/NCIT_P386="HL"}
+synonym: "Oral" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P386="ICSR-CVM", http://purl.obolibrary.org/obo/NCIT_P384="FDA"}
+synonym: "Oral" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P384="GDC"}
+synonym: "Oral" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="SY", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+synonym: "Oral Route of Administration" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P384="NICHD"}
+synonym: "Oral Route of Administration" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="SY", http://purl.obolibrary.org/obo/NCIT_P384="caDSR"}
+synonym: "Oral Route of Administration" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+synonym: "Oral use" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P385="20053000", http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P384="EDQM-HC", http://purl.obolibrary.org/obo/NCIT_P386="ROA"}
+synonym: "Orally" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="SY", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+synonym: "Per Os" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="SY", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+synonym: "PO" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="AB", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+synonym: "PO" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="SY", http://purl.obolibrary.org/obo/NCIT_P384="CDISC"}
+xref: VO:0000886
+is_a: VO:0000574 ! route of administration
+property_value: NCIT:A32 NCIT:C38114
+property_value: NCIT:NHC0 "C38288" xsd:string
+property_value: NCIT:P106 "Functional Concept" xsd:string
+property_value: NCIT:P108 "Oral Route of Administration" xsd:string
+property_value: NCIT:P207 "C1527415" xsd:string
+property_value: NCIT:P317 "Route of Administration (C-DRG-00301)" xsd:string
+property_value: NCIT:P322 "CDISC" xsd:string
+property_value: NCIT:P322 "EDQM-HC" xsd:string
+property_value: NCIT:P322 "FDA" xsd:string
+property_value: NCIT:P322 "GDC" xsd:string
+property_value: NCIT:P322 "NICHD" xsd:string
+property_value: NCIT:P322 "PCDC" xsd:string
+property_value: NCIT:P325 "Administration to or by way of the mouth. (FDA)" xsd:string {http://purl.obolibrary.org/obo/NCIT_P378="CDISC"}
+property_value: NCIT:P325 "Taking a medicinal product by means of swallowing." xsd:string {http://purl.obolibrary.org/obo/NCIT_P378="EDQM-HC"}
+property_value: NCIT:P366 "Oral_Route_of_Drug_administration" xsd:string
+property_value: NCIT:P375 "Oral" xsd:string {http://purl.obolibrary.org/obo/NCIT_P393="Has Synonym", http://purl.obolibrary.org/obo/NCIT_P394="PT", http://purl.obolibrary.org/obo/NCIT_P395="route_of_administration", http://purl.obolibrary.org/obo/NCIT_P396="GDC"}
+
+[Term]
+id: NCIT:C38289
+name: Oropharyngeal Route of Administration
+def: "Administration of a drug directly to the mouth and pharynx." [] {http://purl.obolibrary.org/obo/NCIT_P378="NCI"}
+subset: NCIT:C148636
+subset: NCIT:C150107
+subset: NCIT:C54452
+subset: NCIT:C54455
+subset: NCIT:C61410
+subset: NCIT:C66729
+subset: NCIT:C66830
+subset: NCIT:C77526
+synonym: "ORO" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="AB", http://purl.obolibrary.org/obo/NCIT_P386="Route of Administration (C-DRG-00301)", http://purl.obolibrary.org/obo/NCIT_P385="410", http://purl.obolibrary.org/obo/NCIT_P384="FDA"}
+synonym: "ORO" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="AB", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+synonym: "OROPHARYNGEAL" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P386="SPL", http://purl.obolibrary.org/obo/NCIT_P384="FDA"}
+synonym: "OROPHARYNGEAL" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P386="Route of Administration (C-DRG-00301)", http://purl.obolibrary.org/obo/NCIT_P385="410", http://purl.obolibrary.org/obo/NCIT_P384="FDA"}
+synonym: "OROPHARYNGEAL" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P384="CDISC"}
+synonym: "Oropharyngeal" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P386="ICSR-CVM", http://purl.obolibrary.org/obo/NCIT_P384="FDA"}
+synonym: "Oropharyngeal" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="SY", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+synonym: "Oropharyngeal Route of Administration" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+synonym: "Oropharyngeal use" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P384="EDQM-HC", http://purl.obolibrary.org/obo/NCIT_P385="20055000", http://purl.obolibrary.org/obo/NCIT_P386="ROA"}
+is_a: NCIT:C38288 ! Oral Route of Administration
+property_value: NCIT:NHC0 "C38289" xsd:string
+property_value: NCIT:P106 "Functional Concept" xsd:string
+property_value: NCIT:P108 "Oropharyngeal Route of Administration" xsd:string
+property_value: NCIT:P207 "C1522409" xsd:string
+property_value: NCIT:P317 "Route of Administration (C-DRG-00301)" xsd:string
+property_value: NCIT:P322 "CDISC" xsd:string
+property_value: NCIT:P322 "EDQM-HC" xsd:string
+property_value: NCIT:P322 "FDA" xsd:string
+property_value: NCIT:P325 "Administration directly to the mouth and pharynx. (FDA)" xsd:string {http://purl.obolibrary.org/obo/NCIT_P378="CDISC"}
+property_value: NCIT:P325 "Administration of a medicinal product to the oropharynx (throat) to obtain a local effect." xsd:string {http://purl.obolibrary.org/obo/NCIT_P378="EDQM-HC"}
+property_value: NCIT:P366 "Oropharyngeal_Route_of_Drug_Administration" xsd:string
+
+[Term]
+id: NCIT:C38299
+name: Subcutaneous Route of Administration
+def: "Drug administration beneath the skin. It provides for relatively slow, sustained release of the drug. The rate of absorption into the blood is perfusion-limited, proportional to the amount of drug at the site and can be enhanced by chemical or physical stimulation of blood flow. Subcutaneous administration minimizes the risks associated with intravascular injection: for subcutaneous infusions, external and implantable pumps are used." [] {http://purl.obolibrary.org/obo/NCIT_P378="NCI"}
+subset: NCIT:C148636
+subset: NCIT:C150107
+subset: NCIT:C54452
+subset: NCIT:C54455
+subset: NCIT:C61410
+subset: NCIT:C66729
+subset: NCIT:C66830
+subset: NCIT:C77526
+subset: NCIT:C77527
+subset: NCIT:C78420
+subset: NCIT:C78425
+subset: NCIT:C90259
+synonym: "SC" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="AB", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+synonym: "SC" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="SY", http://purl.obolibrary.org/obo/NCIT_P384="CDISC"}
+synonym: "SC" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="AB", http://purl.obolibrary.org/obo/NCIT_P386="Route of Administration (C-DRG-00301)", http://purl.obolibrary.org/obo/NCIT_P385="003", http://purl.obolibrary.org/obo/NCIT_P384="FDA"}
+synonym: "SUBCUTANEOUS" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P386="Route of Administration (C-DRG-00301)", http://purl.obolibrary.org/obo/NCIT_P385="003", http://purl.obolibrary.org/obo/NCIT_P384="FDA"}
+synonym: "SUBCUTANEOUS" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P386="SPL", http://purl.obolibrary.org/obo/NCIT_P384="FDA"}
+synonym: "SUBCUTANEOUS" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P384="CDISC"}
+synonym: "Subcutaneous" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P386="ICSR-CVM", http://purl.obolibrary.org/obo/NCIT_P384="FDA"}
+synonym: "Subcutaneous" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="SY", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+synonym: "Subcutaneous Route of Administration" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+synonym: "Subcutaneous Route of Administration" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P384="NICHD"}
+synonym: "Subcutaneous Route of Administration" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="SY", http://purl.obolibrary.org/obo/NCIT_P384="caDSR"}
+synonym: "Subcutaneous use" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P384="EDQM-HC", http://purl.obolibrary.org/obo/NCIT_P385="20066000", http://purl.obolibrary.org/obo/NCIT_P386="ROA"}
+synonym: "Subdermal Route of Administration" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="SY", http://purl.obolibrary.org/obo/NCIT_P384="CDISC"}
+xref: VO:0000532
+is_a: VO:0000574 ! route of administration
+property_value: NCIT:NHC0 "C38299" xsd:string
+property_value: NCIT:P106 "Functional Concept" xsd:string
+property_value: NCIT:P108 "Subcutaneous Route of Administration" xsd:string
+property_value: NCIT:P207 "C1522438" xsd:string
+property_value: NCIT:P317 "Route of Administration (C-DRG-00301)" xsd:string
+property_value: NCIT:P322 "CDISC" xsd:string
+property_value: NCIT:P322 "EDQM-HC" xsd:string
+property_value: NCIT:P322 "FDA" xsd:string
+property_value: NCIT:P322 "NICHD" xsd:string
+property_value: NCIT:P325 "Administration beneath the skin; hypodermic. Synonymous with the term SUBDERMAL. (FDA)" xsd:string {http://purl.obolibrary.org/obo/NCIT_P378="CDISC"}
+property_value: NCIT:P325 "Injection of a medicinal product directly underneath the skin, i.e. subdermally" xsd:string {http://purl.obolibrary.org/obo/NCIT_P378="EDQM-HC"}
+property_value: NCIT:P366 "Subcutaneous_Route_of_Drug_Administration" xsd:string
+
+[Term]
+id: OBI:0000011
+name: planned process
+is_a: BFO:0000015 ! process
+
+[Term]
+id: OBI:0000094
+name: material processing
+is_a: OBI:0000011 ! planned process
+
+[Term]
+id: OBI:0100026
+name: organism
+is_a: BFO:0000040 ! material entity
+
+[Term]
+id: OBI:0302887
+name: staining
+synonym: "staining method" EXACT []
+is_a: OBI:0000094 ! material processing
+property_value: IAO:0000119 NCIT:C23010 xsd:string
+
+[Term]
+id: OMIT:0016996
+name: Mice, SCID
+xref: MESH:D016513
+xref: NCIT:C14294
+is_a: BPO:00028 ! other mouse strain
+is_a: NCBITaxon:10090 ! Mus musculus
+property_value: IAO:0000111 "SCID mouse" xsd:string
+
+[Term]
+id: PATO:0000001
+name: quality
+namespace: quality
+alt_id: PATO:0000072
+def: "A dependent entity that inheres in a bearer by virtue of how the bearer is related to other entities" [PATOC:GVG]
+is_a: BFO:0000020 ! specifically dependent continuant
+
+[Term]
+id: PATO:0000047
+name: biological sex
+namespace: quality
+def: "An organismal quality inhering in a bearer by virtue of the bearer's ability to undergo sexual reproduction in order to differentiate the individuals or types involved." [MGED:MGED]
+subset: attribute_slim
+is_a: PATO:0001995 ! organismal quality
+
+[Term]
+id: PATO:0000383
+name: female
+namespace: quality
+def: "A biological sex quality inhering in an individual or a population that only produces gametes that can be fertilised by male gametes." [MGED:MGED]
+subset: mpath_slim
+subset: value_slim
+is_a: PATO:0001894 ! phenotypic sex
+
+[Term]
+id: PATO:0000384
+name: male
+namespace: quality
+def: "A biological sex quality inhering in an individual or a population whose sex organs contain only male gametes." [MGED:MGED]
+subset: mpath_slim
+subset: value_slim
+is_a: PATO:0001894 ! phenotypic sex
+
+[Term]
+id: PATO:0001241
+name: physical object quality
+namespace: quality
+alt_id: PATO:0001237
+alt_id: PATO:0001238
+def: "A quality which inheres in a continuant." [PATOC:GVG]
+comment: Relational qualities are qualities that hold between multiple entities. Normal (monadic) qualities such as the shape of a eyeball exist purely as a quality of that eyeball. A relational quality such as sensitivity to light is a quality of that eyeball (and connecting nervous system) as it relates to incoming light waves/particles.
+synonym: "monadic quality of a continuant" EXACT []
+synonym: "monadic quality of an object" NARROW []
+synonym: "monadic quality of continuant" NARROW []
+synonym: "multiply inhering quality of a physical entity" EXACT []
+synonym: "quality of a continuant" EXACT []
+synonym: "quality of a single physical entity" EXACT []
+synonym: "quality of an object" EXACT []
+synonym: "quality of continuant" EXACT []
+xref: snap:Quality
+is_a: PATO:0000001 ! quality
+
+[Term]
+id: PATO:0001894
+name: phenotypic sex
+namespace: quality
+def: "An organismal quality inhering in a bearer by virtue of the bearer's physical expression of sexual characteristics." []
+subset: attribute_slim
+is_a: PATO:0000047 ! biological sex
+
+[Term]
+id: PATO:0001995
+name: organismal quality
+namespace: quality
+def: "A quality that inheres in an entire organism or part of an organism." [PATOC:CJM]
+is_a: PATO:0001241 ! physical object quality
+
+[Term]
+id: VO:0000574
+name: route of administration
+xref: NCIT:C38114
+is_a: BFO:0000029 ! site
+
+[Typedef]
+id: HANCESTRO:0301
+name: hasAncestryStatus
+
