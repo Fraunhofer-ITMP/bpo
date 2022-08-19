@@ -10,6 +10,7 @@ LIB_DIR = '../../bin'
 ONTOLOGY_EXPORT_DIR = '../../imports'
 TEMPLATE_DIR = '../templates'
 REPORT_DIR = 'reports'
+RELEASE_DIR = '../../release'
 
 os.makedirs(ONTOLOGY_EXPORT_DIR, exist_ok=True)
 os.makedirs(REPORT_DIR, exist_ok=True)
@@ -240,20 +241,32 @@ def main(
              --annotation dc:title 'Bioassay Protocol Ontology' \
              --annotation dc:license https://creativecommons.org/licenses/by/4.0/ \
              --annotation dc:description 'An ontology for bioassay protocols' \
-             -o {ONTOLOGY_EXPORT_DIR}/bpo_{version}_annotated.owl"
+             -o {ONTOLOGY_EXPORT_DIR}/bpo_annotated.owl"
     )
+
+    os.makedirs(f'{RELEASE_DIR}/v{version}')
 
     logger.warning(f'Reasoning merge')
     os.system(
         f"java -jar {LIB_DIR}/robot.jar materialize --reasoner ELK \
         -i {ONTOLOGY_EXPORT_DIR}/bpo_{version}_annotated.owl \
-        reduce -o {ONTOLOGY_EXPORT_DIR}/bpo_{version}_reduced.owl"
+        reduce -o {RELEASE_DIR}/v{version}/bpo.owl"
     )
 
     logger.warning(f'Generating report')
     os.system(
-        f"java -jar {LIB_DIR}/robot.jar report -i {ONTOLOGY_EXPORT_DIR}/bpo_{version}_reduced.owl \
-        -o {REPORT_DIR}/report_bpo_{version}.tsv"
+        f"java -jar {LIB_DIR}/robot.jar report -i {RELEASE_DIR}/v{version}/bpo.owl \
+        -o {REPORT_DIR}/report_bpo.tsv"
+    )
+
+    # Exporting to different formats
+    os.system(
+        f"java -jar {LIB_DIR}/robot.jar export --input bpo.owl --header 'ID|LABEL|SubClasses' \
+         --format tsv --export {RELEASE_DIR}/v{version}/bpo.tsv"
+    )
+
+    os.system(
+        f'java -jar {LIB_DIR}/robot.jar convert --input bpo.owl --output {RELEASE_DIR}/v{version}/bpo.obo'
     )
 
 
