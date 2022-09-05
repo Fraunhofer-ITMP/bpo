@@ -51,7 +51,8 @@ Since the current ontology is an application ontology, it makes use of various e
 | Experimental Factor Ontology | EFO | 7 | Yes |
 | *Bioassay Protocol Ontology* | BPO | 32 | Yes |
 
-To get a brief overview of the project, check out the [ESCMID 2022 Conference Poster](https://github.com/Fraunhofer-ITMP/bpo/blob/main/ESCMID-2022/index.html)
+To get a brief overview of the project, check out the **ESCMID 2022 Conference Poster** below:
+<iframe src="ESCMID - BPO Poster.pdf" width="800" height="500"></iframe>
 
 ## Developers / Contributors
 

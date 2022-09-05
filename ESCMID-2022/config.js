@@ -1,1 +1,0 @@
-IDRViewer.config = {"pagecount":1,"title":"ESCMID - BPO Poster","author":"","subject":"","keywords":"","creator":"Google","producer":"","creationdate":"","moddate":"","trapped":"","fileName":"ESCMID_-_BPO_Poster.pdf","bounds":[[3640,2572]],"bookmarks":[],"thumbnailType":"jpg","pageType":"html","pageLabels":["1"]};
