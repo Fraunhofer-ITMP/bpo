@@ -28,11 +28,11 @@ The [ROBOT](http://robot.obolibrary.org/) tool was used to build this ontology a
 
 ## Versioning and Formats
 
-The ontology is available in [Ontology Web Language (OWL)](https://www.w3.org/TR/owl-guide/) format.
+The ontology is available in [Ontology Web Language (OWL)](https://www.w3.org/TR/owl-guide/) and [Open Biomedical Ontologies (OBO)](https://owlcollab.github.io/oboformat/doc/GO.format.obo-1_4.html)format.
 
-The **current version of the ontology is 0.0.1** and can be found [here](bpo_0.0.1.owl). 
+The **latest version of the ontology is 0.0.1** and can be found [here]([bpo_0.0.1.owl](https://github.com/Fraunhofer-ITMP/bpo/tree/main/release/v0.0.1)). 
 
-BPO has 202 classes and 2,547 axioms and follows the BFO top-level ontology tree.
+BPO has 209 classes and 2,242 axioms and follows the BFO top-level ontology tree.
 
 ## Ontology Overview
 
@@ -50,6 +50,8 @@ Since the current ontology is an application ontology, it makes use of various e
 | Infectious Disease Ontology | IDO | 3 | Yes |
 | Experimental Factor Ontology | EFO | 7 | Yes |
 | *Bioassay Protocol Ontology* | BPO | 32 | Yes |
+
+To get a brief overview of the project, check out the [ESCMID 2022 Conference Poster](https://github.com/Fraunhofer-ITMP/bpo/blob/main/ESCMID-2022/index.html)
 
 ## Developers / Contributors
 
