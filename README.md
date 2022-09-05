@@ -52,7 +52,7 @@ Since the current ontology is an application ontology, it makes use of various e
 | *Bioassay Protocol Ontology* | BPO | 32 | Yes |
 
 To get a brief overview of the project, check out the **ESCMID 2022 Conference Poster** below:
-<iframe src="ESCMID - BPO Poster.pdf" width="800" height="500"></iframe>
+<object data="images/ESCMID - BPO Poster.pdf" width="800" height="500"></object>
 
 ## Developers / Contributors
 
