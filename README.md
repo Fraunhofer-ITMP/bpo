@@ -52,16 +52,54 @@ Since the current ontology is an application ontology, it makes use of various e
 | *Bioassay Protocol Ontology* | BPO | 32 | Yes |
 
 ## Developers / Contributors
-| Person | Role |
-| --- | ----------- |
-| [Yojana Gadiya](https://orcid.org/0000-0002-7683-0452) | Maintainer and Developer |
-| [Rakel Arrazuria](https://orcid.org/0000-0002-0757-3915) | Domain expert | 
-| [Jon Ulf Hansen](https://orcid.org/0000-0002-6410-5755) | Domain expert | 
-| [Danielle Welter](https://orcid.org/0000-0003-1058-2668) | Ontology expert | 
-| [Fuqi Xu](https://orcid.org/0000-0002-5923-3859) | Co-developer and ontology expert | 
-| [Philippe Rocca-Serra](https://orcid.org/0000-0001-9853-5668) | Ontology expert | 
-| [Nick Juty](https://orcid.org/0000-0002-2036-8350) | Project Lead | 
-| [Philip Gribbon](https://orcid.org/0000-0001-7655-2459) | Project Lead |
+
+<table>
+  <tr>
+    <th>Person Name</th>
+    <th>Affiliation</th>
+    <th>Role</th>
+  </tr>
+  <tr>
+    <td><a href='https://orcid.org/0000-0002-7683-0452'>Yojana Gadiya</a></td>
+    <td>Fraunhofer Insititue for Translational and Medicine Pharamcology</td>
+    <td>Maintainer and Developer</td>
+  </tr>
+  <tr>
+    <td><a href='https://orcid.org/0000-0002-0757-3915'>Rakel Arrazuria</a></td>
+    <td>Paul-Ehrlich-Institut</td>
+    <td>Domain expert</td>
+  </tr>
+  <tr>
+    <td><a href='https://orcid.org/0000-0002-6410-5755'>Jon Ulf Hansen</a></td>
+    <td>Statens Serum Institut</td>
+    <td>Domain expert</td>
+  </tr>
+  <tr>
+    <td><a href='https://orcid.org/0000-0003-1058-2668'>Danielle Welter</a></td>
+    <td>Luxembourg Centre for Systems Biomedicine</td>
+    <td>Ontology expert</td>
+  </tr>
+  <tr>
+    <td><a href='https://orcid.org/0000-0002-5923-3859'>Fuqi Xu</a></td>
+    <td>European Molecular Biology Laboratory</td>
+    <td>Co-developer and ontology expert</td>
+  </tr>
+  <tr>
+    <td><a href='https://orcid.org/0000-0001-9853-5668'>Philippe Rocca-Serra</a></td>
+    <td>University of Oxford e-Research Centre</td>
+    <td>Ontology expert</td>
+  </tr>
+  <tr>
+    <td><a href='https://orcid.org/0000-0002-2036-8350'>Nick Juty</a></td>
+    <td>University of Manchester</td>
+    <td>Project Lead</td>
+  </tr>
+  <tr>
+    <td><a href='https://orcid.org/0000-0001-7655-2459'>Philip Gribbon</a></td>
+    <td>Fraunhofer Insititue for Translational and Medicine Pharamcology</td>
+    <td>Project Lead</td>
+  </tr>
+</table>
 
 
 ## Affiliations and Funders
