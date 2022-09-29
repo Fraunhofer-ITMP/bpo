@@ -22,6 +22,15 @@ To enhance the reproducibility and usability of bioassays in antimicrobial resis
 
 The development of BPO is a first attempt to standardise and organise information within in-vivo AMR-related drug discovery bioassay protocol data in a structured manner. BPO will allow researchers to capture information regarding experimental details such as the type of mouse model, the bacterial strain, and the sex and growth phases of mouse and bacteria respectively from the protocol.
 
+## How can you use it?
+The building of this ontology is a way to promote use of sustainable and FAIR prinicples within experimental data records. The assay can plug-in your in-house workflows in either retrospective or prospective approach.
+
+1. Retrospective perspective - In this approach, you would train Natural Language Processing Model (NLP) to identify the entities relevant for replicability of the assay results for members outside the project or laboratory. The ontology can assist in training your NLP model or else can searve as starting point to understand what information should be captured for replication of reuslts.
+
+2. Prospective prespective - In this approach, you would enable formulation of templates for input of data within your system (e.g. electronic lab notebooks ELN). The bases for formulation of the template can be the underlying ontology.
+
+IMI COMBINE is building pipelines to tackle both these fronts and will enable researches around the globe to leverage the underlying resources within their drug discovery pipeline.
+
 ## Building tools
 
 The [ROBOT](http://robot.obolibrary.org/) tool was used to build this ontology and the structure of the ontology was formulated based on the [Ontology Development Kit (ODK)](https://github.com/INCATools/ontology-development-kit)
@@ -53,6 +62,11 @@ Since the current ontology is an application ontology, it makes use of various e
 
 To get a brief overview of the project, check out the **ESCMID 2022 Conference Poster** below:
 <object data="images/ESCMID - BPO Poster.pdf" width="800" height="500"></object>
+
+
+## Found something missing? Please contribute!!
+Since the ontology is not covering all domains of the AMR experimental data, there are going to be missing components. Nevertheless, we are always happy to hear from you what is missing and collaboratively work on adding new terms to the ontology. You can reach us via [GitHub Issues](https://github.com/Fraunhofer-ITMP/bpo/issues) or you can drop the developers an email.
+
 
 ## Developers / Contributors
 
@@ -95,12 +109,12 @@ To get a brief overview of the project, check out the **ESCMID 2022 Conference P
   <tr>
     <td><a href='https://orcid.org/0000-0002-2036-8350'>Nick Juty</a></td>
     <td>University of Manchester</td>
-    <td>Project Lead</td>
+    <td>Group Lead (FAIRplus)</td>
   </tr>
   <tr>
     <td><a href='https://orcid.org/0000-0001-7655-2459'>Philip Gribbon</a></td>
     <td>Fraunhofer Insititue for Translational and Medicine Pharamcology</td>
-    <td>Project Lead</td>
+    <td>Group Lead (COMBINE)</td>
   </tr>
 </table>
 
