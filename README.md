@@ -8,6 +8,10 @@
   <br>
   <i>Bioassay Protocol Ontology (BPO)</i>
   <br>
+  
+  <a href='https://img.shields.io/badge/codebase-java--11-yellowgreen'>
+        <img src='https://img.shields.io/badge/codebase-java--11-yellowgreen' alt='Java version' />
+  </a>
 </h1>
 
 <p align="center">
